@@ -1,0 +1,917 @@
+This is TeX, Version 3.1415 (preloaded format=latex 95.10.5)  26 OCT 2001 14:17
+**&latex swp0000.tex
+(
+LaTeX2e <1995/06/01>
+Hyphenation patterns for english, ukenglish, catalan, danish, spanish, french, 
+german, italian, latin, dutch, polish, portuguese, loaded.
+(
+sebase.cls 20 Dec 1995
+Base style for Style Editor v 2.5
+NOTICE: This macro file is NOT proprietary and may be freely copied and distrib
+uted.
+(
+Package: theorem 1994/02/03 LaTeX2e package v2.2a
+
+Package: `theorem' v2.2a    <1994/02/03> (FMi)
+English documentation as of <1994/02/28> (FMi)
+\theorem@style=\toks15
+\theorem@bodyfont=\toks16
+\theorempreskipamount=\skip41
+\theorempostskipamount=\skip42
+(
+File: thp.sty 1994/02/03 Theorem layout style v2.2a
+Theorem layout: `theorem-plain' v2.2a <1994/02/03> (FMi)
+)) (
+Package: multicol 1994/06/07 v1.5g multicolum formatting
+\c@tracingmulticols=\count82
+\mult@box=\box26
+\multicol@leftmargin=\dimen102
+\c@unbalance=\count83
+\c@collectmore=\count84
+\doublecol@number=\count85
+\multicoltolerance=\count86
+\multicolpretolerance=\count87
+\full@width=\dimen103
+\page@free=\dimen104
+\premulticols=\dimen105
+\postmulticols=\dimen106
+\multicolsep=\skip43
+\multicolbaselineskip=\skip44
+\partial@page=\box27
+\last@line=\box28
+\mult@rightbox=\box29
+\mult@grightbox=\box30
+\mult@gfirstbox=\box31
+\mult@firstbox=\box32
+\@tempa=\box33
+\@tempa=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\c@columnbadness=\count88
+\c@finalcolumnbadness=\count89
+\last@try=\dimen107
+\multicolovershoot=\dimen108
+\multicolundershoot=\dimen109
+\mult@nat@firstbox=\box50
+) () (
+Package: amssymb 1995/02/01 v2.2a
+ (
+Package: amsfonts 1995/02/01 v2.2b
+\@emptytoks=\toks17
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 128.
+))
+\@temptokenb=\toks18
+\NormalParIndent=\dimen110
+\thepar=\toks19
+\@tempcount=\count90
+\trimmargin=\dimen111
+\verttrimmargin=\dimen112
+\c@@Document=\count91
+\CurrentMark=\toks20
+\NewMark=\toks21
+\PreviousPrimaryMark=\toks22
+\MarkToks=\toks23
+\OldOutput=\toks24
+ (
+
+LaTeX Warning: You have requested package `afterpag',
+               but the package provides `afterpage'.
+
+Package: afterpage 1994/05/23 v1.07 After-Page Package (DPC)
+\AP@output=\toks25
+\AP@partial=\box51
+)
+\@GenTocEntryLevel=\count92
+\c@Temp=\count93
+\mathindent=\dimen113
+\abovecaptionskip=\skip45
+\belowcaptionskip=\skip46
+\c@figure=\count94
+\c@table=\count95
+\c@@LevelFiveDiv=\count96
+\c@@LevelFourDiv=\count97
+\c@@LevelOneDiv=\count98
+\c@@LevelThreeDiv=\count99
+\c@@LevelTwoDiv=\count100
+) ( ( () () ())
+\c@@ObsoleteEqCount=\count101
+\c@@TituloSumarioCount=\count102
+\c@@apendixCount=\count103
+\c@@apendixsectionCount=\count104
+\c@@apendixsubsectionCount=\count105
+\c@@apendixsubsubsectionCount=\count106
+\c@@bibitemCount=\count107
+\c@@bibliographyCount=\count108
+\c@@bibsectionCount=\count109
+\c@@chapterCount=\count110
+\c@@contentssectionCount=\count111
+\c@@descriptionAcount=\count112
+\c@@descriptionBcount=\count113
+\c@@descriptionCcount=\count114
+\c@@descriptionDcount=\count115
+\c@@enumerateAcount=\count116
+\c@@enumerateBcount=\count117
+\c@@enumerateCcount=\count118
+\c@@enumerateDcount=\count119
+\c@@itemizeAcount=\count120
+\c@@itemizeBcount=\count121
+\c@@itemizeCcount=\count122
+\c@@itemizeDcount=\count123
+\c@@paragraphCount=\count124
+\c@@sectionCount=\count125
+\c@@subparagraphCount=\count126
+\c@@subsectionCount=\count127
+\c@@subsubsectionCount=\count128
+\c@@subsubsubsectionCount=\count129
+\argbox=\box52
+\c@example=\count130
+\c@remark=\count131
+\c@theorem=\count132
+ ()) (
+TCILATEX Macros for Scientific Word 2.5 <22 Dec 95>.
+NOTICE: This macro file is NOT proprietary and may be freely copied and distrib
+uted.
+\@hour=\count133
+\@minute=\count134
+\GRAPHICSTYPE=\count135
+\draft=\count136
+\dispkind=\count137
+\theight=\dimen114
+LaTeX Info: Redefining \it on input line 561.
+(
+Package: latexsym 1995/03/18 v2.2a Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 81.
+)
+\c@axiom=\count138
+\c@exercise=\count139
+\c@definition=\count140
+\c@equationnumber=\count141
+\intno@=\count142
+\ex@=\dimen115
+) (
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+ (
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1])
+\tf@toc=\write3
+
+[2]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+Overfull \hbox (4.4235pt too wide) in paragraph at lines 97--110
+\T1/Serif/medium/upright/12 ter-mi-na^^e7^^e3o dos par^^e2met-ros que de-vem se
+r mod-i-fi-ca-dos para a adap-ta^^e7^^e3o destes ^^e0s condi^^e7^^f5es
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
+Overfull \hbox (9.4235pt too wide) in paragraph at lines 133--146
+\T1/Serif/medium/upright/12 ex-ce-lentes re-sul-ta-dos pr^^e1ti-cos nas car-ac-
+ter^^eds-ti-cas de Han-dling[3] . At-ual-mente pesquisadores
+ []
+
+[4]
+LaTeX Font Info:    Try loading font information for U+msa on input line 179.
+ (
+File: Umsa.fd 1995/01/05 v2.2e AMS font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 179.
+ (
+File: Umsb.fd 1995/01/05 v2.2e AMS font definitions
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 179.
+ (
+File: Ulasy.fd 1995/03/18 v2.2aLaTeX symbol font definitions
+) [5
+
+]
+Overfull \hbox (10.236pt too wide) in paragraph at lines 204--210
+\T1/Serif/medium/upright/12 MacPher-son con-sis-tia em posi-cionar o ponto de a
+poio in-fe-rior do con-junto mola/amortecedor
+ []
+
+
+Overfull \vbox (9.77954pt too high) has occurred while \output is active []
+
+
+[6]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8]
+Underfull \vbox (badness 3557) has occurred while \output is active []
+
+ [9]
+[10]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11]
+Underfull \vbox (badness 3612) has occurred while \output is active []
+
+ [12]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13]
+[14]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25]
+[26]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30]
+Overfull \hbox (15.87271pt too wide) in paragraph at lines 1029--1035
+\T1/Serif/medium/upright/12 sal alta, para rea-gir com pe-quenos deslo-ca-men-t
+os a pe-que-nas for^^e7as apli-cadas ao ve^^edculo.''[13]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1029--1035
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [33]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [34]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [36]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[37]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40]
+Overfull \hbox (4.0828pt too wide) in paragraph at lines 1390--1390
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [42]
+Overfull \hbox (7.03677pt too wide) in paragraph at lines 1460--1463
+[]\T1/Serif/medium/upright/12 Segundo Jolly[25] , ex-is-tem duas classes de par
+^^e2met-ros que de-finem um mod-elo matem^^e1tico
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [43]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 1436) has occurred while \output is active []
+
+ [44]
+Overfull \hbox (23.6797pt too wide) in alignment at lines 1541--1546
+ [][][] []
+ []
+
+
+Overfull \hbox (35.7727pt too wide) in alignment at lines 1550--1555
+ [][][] []
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [45]
+Overfull \hbox (147.64877pt too wide) detected at line 1596
+[] [] \OML/cmm/m/it/12 : [] \OT1/cmr/m/n/12 + [] \OML/cmm/m/it/12 : [] \OT1/cmr
+/m/n/12 + [] \OML/cmm/m/it/12 : [] \OT1/cmr/m/n/12 = [][]
+ []
+
+
+Underfull \vbox (badness 4291) has occurred while \output is active []
+
+ [46]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [47]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [48]
+Overfull \hbox (18.08557pt too wide) in paragraph at lines 1709--1718
+[]\T1/Serif/medium/upright/12 O gr^^e1-fico 3.23[] a seguir ap-re-senta a FRF d
+a acel-er-a^^e7^^e3o da car-ro-ce-ria que ^^e9 obtida multiplicando-
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [49]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [50]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[51]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [52]
+Overfull \hbox (8.44302pt too wide) in paragraph at lines 1871--1878
+[]\T1/Serif/medium/upright/12 Nota-se que o amortec-i-mento so-mente ser^^e1 be
+n^^e9-fico nas regi^^f5es cor-re-spon-dentes a resson^^e2n-
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [53]
+Overfull \hbox (4.85709pt too wide) in paragraph at lines 1879--1889
+[]\T1/Serif/medium/upright/12 Normalmente, se-gundo Jolly[25] , os co-e-fi-cien
+tes de amortec-i-mento cr^^edtico para a resson^^e2n-
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [54]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [55]
+Overfull \hbox (2.09047pt too wide) in paragraph at lines 1957--1964
+[]\T1/Serif/medium/upright/12 A figura 3.27[] mostra a acel-er-a^^e7^^e3o da ca
+r-ro-ce-ria  de-v-ido as ir-reg-u-lar-i-dades da pista variando-
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [56]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [57]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [58]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [59]
+Overfull \hbox (208.16054pt too wide) detected at line 2180
+[] [] \OML/cmm/m/it/12 : [] \OT1/cmr/m/n/12 + [] \OML/cmm/m/it/12 : [] \OT1/cmr
+/m/n/12 + [] \OML/cmm/m/it/12 : [] \OT1/cmr/m/n/12 = [][]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [60]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [61]
+[62]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [63]
+Overfull \hbox (1.37662pt too wide) in paragraph at lines 2344--2351
+[]\T1/Serif/medium/upright/12 De acordo com Genta [13] , este se-gundo crit^^e9
+rio ^^e9 facil-mente preenchido pe-los au-tom^^f3veis
+ []
+
+
+Overfull \hbox (2.87662pt too wide) in paragraph at lines 2357--2366
+\T1/Serif/medium/upright/12 cumprindo as re-comen-da^^e7^^f5es de Ol-ley ^^e9 c
+on-sid-er-ado um au-tom^^f3vel com boas pro-priedades
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [64]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [65]
+Overfull \hbox (14.53677pt too wide) in paragraph at lines 2450--2464
+\T1/Serif/medium/upright/12 dos sem en-costo para a de-ter-mi-na^^e7^^e3o ex-pe
+r-i-men-tal dos con-tornos do con-forto vi-bra-cional.[30]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [66]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [67]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [68]
+[69]
+
+LaTeX Font Warning: Font shape `T1/Serif/medium/upright' in size <6> not availa
+ble
+(Font)              size <5> substituted on input line 2562.
+
+
+Overfull \hbox (1.02406pt too wide) in paragraph at lines 2574--2576
+[]\T1/Serif/medium/upright/12 O ADAMS/Solver, como o nome in-dica, ^^e9 o mod-u
+lo re-spon-s^^e1vel pela solu^^e7^^e3o das equa^^e7^^f5es
+ []
+
+
+Overfull \hbox (21.1813pt too wide) in paragraph at lines 2577--2580
+\T1/Serif/medium/upright/12 que fa-cilita a cri-a^^e7^^e3o dos mod-e-los e a in
+-ter-pre-ta^^e7^^e3o dos re-sul-ta-dos obti-dos pelo ADAMS/Solver. 
+ []
+
+
+Overfull \hbox (2.5485pt too wide) in paragraph at lines 2589--2596
+\T1/Serif/medium/upright/12 para conec-tar ou fixar as Partes, Jun-tas Prim-i-t
+i-vas (\T1/Serif/medium/italic/12 Joint Prim-i-tives\T1/Serif/medium/upright/12
+ ) que at-uam re-stringindo
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [70
+
+]
+Overfull \hbox (1.63344pt too wide) in paragraph at lines 2608--2612
+[]\T1/Serif/medium/upright/12 O ADAMS/Solver per-mite que se re-al-izem cinco t
+ipos de an^^e1lises, cu-jas fi-nal-i-dades variam
+ []
+
+
+Overfull \hbox (8.83755pt too wide) in paragraph at lines 2608--2612
+\T1/Serif/medium/upright/12 de acordo com as car-ac-ter^^eds-ti-cas do mod-elo 
+e do in-ter-esse do usu^^e1rio. As an^^e1lises dispon^^edveis
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [71]
+Overfull \hbox (8.83755pt too wide) in paragraph at lines 2645--2651
+\T1/Serif/medium/upright/12 a^^e7^^f5es e for^^e7as in-ter-nas nas Partes e Jun
+-tas do mod-elo. Na an^^e1lise din^^e2mica o ADAMS/Solver
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [72]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [73]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [74]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [75]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [76]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [77]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [78]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [79]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [80]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [81]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [82]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [83]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [84]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [85]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [86]
+Overfull \hbox (0.47017pt too wide) in paragraph at lines 3140--3142
+[]$[][] \OT1/cmr/m/n/12 = []$ \T1/Serif/medium/upright/12 Valor do n^^famero de
+ onda que de-ter-mina o ponto de in-flex^^e3o do mod-elo [$\OML/cmm/m/it/12 cil
+os=m$\T1/Serif/medium/upright/12 ]$\OT1/cmr/m/n/12 ;$ 
+ []
+
+
+Underfull \vbox (badness 2735) has occurred while \output is active []
+
+ [87]
+Overfull \hbox (25.62073pt too wide) detected at line 3239
+[][][]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [88]
+[89]
+Overfull \hbox (6.86pt too wide) in paragraph at lines 3292--3298
+[]\T1/Serif/medium/upright/12 A obten^^e7^^e3o dos mo-dos nat-u-rais foi de gra
+nde util-i-dade para ajus-tar e cor-ri-gir al-guns par^^e2met-
+ []
+
+
+Underfull \vbox (badness 5403) has occurred while \output is active []
+
+ [90
+
+]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `Result:WHFOFemode' on page 91 undefined on input line
+ 3392.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [91]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [92]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[93]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [94]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [95]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [96]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[97]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [98]
+[99]
+
+LaTeX Warning: Reference `Griffin' on page 100 undefined on input line 3611.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [100]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[101] [102] [103]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [104
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [105]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [106]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [107
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [108]
+[109]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [110
+
+]
+Overfull \hbox (8.91177pt too wide) in paragraph at lines 3984--3986
+[]\T1/Serif/medium/upright/12 ReDim Pre-serve v1(i) 'Con-ver-tendo o ve-tor Wf 
+de rad/seg para nu-mero de onda v1(ciclos/m) 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [111]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [112]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [113]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [114]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [115]
+Overfull \hbox (8.91177pt too wide) in paragraph at lines 4245--4247
+[]\T1/Serif/medium/upright/12 ReDim Pre-serve v1(i) 'Con-ver-tendo o ve-tor Wf 
+de rad/seg para nu-mero de onda v1(ciclos/m) 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [116]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [117]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [118]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [119]
+[120]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[121
+
+] [122] [123
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [124
+
+]
+Overfull \hbox (102.40787pt too wide) in paragraph at lines 4576--4577
+[]\T1/Serif/medium/italic/12 3. o princ^^ed-pio de su-per-posi^^e7^^e3o ^^e9 v^
+^e1lido.                                                                       
+                                                                               
+                O
+ []
+
+
+Underfull \vbox (badness 3428) has occurred while \output is active []
+
+ [125]
+Underfull \hbox (badness 10000) in paragraph at lines 4607--4611
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [126]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [127]
+Underfull \vbox (badness 5592) has occurred while \output is active []
+
+ [128]
+[129]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [130]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [131]
+[132] ()
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 1.0pt have occured.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ )
+Here is how much of TeX's memory you used:
+3351 strings out of 10823
+37368 string characters out of 72203
+121034 words of memory out of 262141
+6214 multiletter control sequences out of 10000
+20531 words of font info for 71 fonts, out of 100000 for 255
+94 hyphenation exceptions out of 607
+30i,19n,32p,662b,350s stack positions out of 300i,40n,60p,4096b,4000s
+
+Output written on  (134 pages, 318276 bytes).

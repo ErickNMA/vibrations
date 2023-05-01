@@ -1,0 +1,36 @@
+\ContentsEntry {chapter@toc}{1}{Introdu\c {c}\~{a}o}{1}
+\ContentsEntry {section@toc}{1.1}{Justificativa}{2}
+\ContentsEntry {chapter@toc}{2}{O autom\'{o}vel}{5}
+\ContentsEntry {section@toc}{2.1}{Caracter\'{i}sticas construtivas do autom\'{o}vel.}{5}
+\ContentsEntry {section@toc}{2.2}{ A Suspens\~{a}o McPherson}{5}
+\ContentsEntry {subsection@toc}{2.2.1}{As for\c {c}as atuantes:}{7}
+\ContentsEntry {section@toc}{2.3}{A suspens\~{a}o Semi-Trailing Arm}{10}
+\ContentsEntry {subsection@toc}{2.3.1}{As for\c {c}as atuantes}{10}
+\ContentsEntry {chapter@toc}{3}{Conforto Vibracional}{11}
+\ContentsEntry {section@toc}{3.1}{Introdu\c {c}\~{a}o}{11}
+\ContentsEntry {section@toc}{3.2}{Fontes internas de Excita\c {c}\~{a}o}{12}
+\ContentsEntry {subsection@toc}{3.2.1}{Conjunto Pneum\'{a}ticos e Rodas}{13}
+\ContentsEntry {subsection@toc}{3.2.2}{Comportamento din\^{a}mico dos pneus}{15}
+\ContentsEntry {subsection@toc}{3.2.3}{Sistema de Transmiss\~{a}o}{16}
+\ContentsEntry {subsection@toc}{3.2.4}{Motor}{18}
+\ContentsEntry {section@toc}{3.3}{Fontes Externas de Vibra\c {c}\~{a}o}{20}
+\ContentsEntry {subsection@toc}{3.3.1}{Excita\c {c}\~{a}o devido \`{a}s irregularidades da pista}{20}
+\ContentsEntry {section@toc}{3.4}{A Resposta Din\^{a}mica de um Autom\'{o}vel}{27}
+\ContentsEntry {subsection@toc}{3.4.1}{Comportamento Din\^{a}mico de um Autom\'{o}vel}{28}
+\ContentsEntry {subsection@toc}{3.4.2}{ Modelo de 1/4 de ve\'{i}culo}{29}
+\ContentsEntry {subsection@toc}{3.4.3}{Resposta da massa suspensa e n\~{a}o suspensa.}{32}
+\ContentsEntry {subsection@toc}{3.4.4}{Influencia do amortecimento na resposta da massa suspensa.}{37}
+\ContentsEntry {subsection@toc}{3.4.5}{A influ\^{e}ncia da rigidez na resposta da massa suspensa}{40}
+\ContentsEntry {subsection@toc}{3.4.6}{A influ\^{e}ncia da resson\^{a}ncia da massa n\~{a}o suspensa na resposta da massa suspensa.}{41}
+\ContentsEntry {subsection@toc}{3.4.7}{Os modos de ''Bounce'' e ''Pitch''}{43}
+\ContentsEntry {section@toc}{3.5}{A percep\c {c}\~{a}o do conforto}{50}
+\ContentsEntry {subsection@toc}{3.5.1}{Toler\^{a}ncia humana \`{a}s vibra\c {c}\~{o}es}{51}
+\ContentsEntry {chapter@toc}{4}{An\'{a}lise de Sensibilidade}{57}
+\ContentsEntry {section@toc}{4.1}{O problema de otimiza\c {c}\~{a}o de sistemas}{57}
+\ContentsEntry {subsection@toc}{4.1.1}{A an\'{a}lise de sensibilidade}{60}
+\ContentsEntry {subsection@toc}{4.1.2}{Diferenciabilidade da vari\'{a}vel dependente.}{62}
+\ContentsEntry {subsection@toc}{4.1.3}{M\'{e}todo de diferencia\c {c}\~{a}o direta}{63}
+\ContentsEntry {subsection@toc}{4.1.4}{M\'{e}todo Adjunto (M\'{e}todo da vari\'{a}vel adjunta)}{64}
+\ContentsEntry {subsection@toc}{4.1.5}{T\'{i}tulo da sub se\c {c}\~{a}o}{65}
+\ContentsEntry {appendix@toc}{A}{LISTAGEM DE PROGRAMAS MATLAB }{66}
+\ContentsEntry {bibsection@toc}{}{Bibliografia }{67}

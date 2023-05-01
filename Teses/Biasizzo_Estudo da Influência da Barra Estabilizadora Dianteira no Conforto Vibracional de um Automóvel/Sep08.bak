@@ -1,0 +1,3622 @@
+
+\documentclass{sebase}
+\usepackage{amssymb}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tesepuc}
+
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Created=Thu Jun 07 21:50:19 2001}
+%TCIDATA{LastRevised=Tue Sep 11 10:39:56 2001}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Style Editor\tesepuc #1">}
+%TCIDATA{CSTFile=tesepuc.cst}
+
+\input{tcilatex}
+
+\begin{document}
+
+
+\begin{NFThesistitle}
+Estudo do Conforto de um autom\`{o}vel utilizando a paranormalidade comparada
+\end{NFThesistitle}
+
+\begin{NFThesisauthor}
+Mauro Bruno Biasizzo
+\end{NFThesisauthor}
+
+\begin{NFDessertationreq}
+Disserta\c{c}\~{a}o de Mestrado
+\end{NFDessertationreq}
+
+\begin{NFDegreename}
+Departamento de Engenharia Mec\^{a}nica
+\end{NFDegreename}
+
+\begin{NFMajorsubject}
+Belo Horizonte, Minas Gerais
+\end{NFMajorsubject}
+
+\begin{NFMinorsubject}
+LaTeX
+\end{NFMinorsubject}
+
+\begin{NFUniversity}
+Pontif\'{i}cia Universidade Cat\'{o}lica de Minas Gerais
+\end{NFUniversity}
+
+\begin{NFThesisdate}
+Julho de 2001
+\end{NFThesisdate}
+
+\begin{NFTcopyright}
+Copyright 1994 by C.W. Casey
+\end{NFTcopyright}
+
+%TCIMACRO{
+%\TeXButton{Dissertation With Major Minor}{\TitleDisMajorMinor{}%
+%}}%
+%BeginExpansion
+\TitleDisMajorMinor{}%
+%
+%EndExpansion
+
+\begin{NFDissertation}
+Mestre em Engenharia Mec\^{a}nica
+\end{NFDissertation}
+
+\begin{NFCommitteesigna}
+Clovis Sperb de Barcellos
+
+Dean of Scientific Word
+\end{NFCommitteesigna}
+
+\begin{NFCommitteesignb}
+Juan Manuel Fangio
+
+Chair of the Examining Committee
+\end{NFCommitteesignb}
+
+\begin{NFCommitteesignc}
+Enzo\ Ferrari
+
+Co-Chair of the Examining Committee
+\end{NFCommitteesignc}
+
+\begin{NFDate}
+Julho de 2001
+\end{NFDate}
+
+\begin{NFCommittee}
+Committee in charge:
+
+Dr. Luca Cordero di Montezemolo
+
+Dr. Jean Tod
+\end{NFCommittee}
+
+%TCIMACRO{
+%\TeXButton{Sign Page}{\SignPage{}%
+%}}%
+%BeginExpansion
+\SignPage{}%
+%
+%EndExpansion
+
+\begin{NFChairperson}
+Dr. San Martin, Chair
+\end{NFChairperson}
+
+%TCIMACRO{
+%\TeXButton{Abstract for Dissertation}{\AbstractDis{}%
+%}}%
+%BeginExpansion
+\AbstractDis{}%
+%
+%EndExpansion
+\newpage
+
+\QTP{contents}
+Sum\'{a}rio
+
+%TCIMACRO{
+%\TeXButton{gerar sumario}{\TableOfContents%
+%}}%
+%BeginExpansion
+\TableOfContents%
+%
+%EndExpansion
+\newpage
+
+\chapter{Introdu\c{c}\~{a}o}
+
+%TCIMACRO{
+%\TeXButton{pagina numeração =1}{\setcounter{page}{1}%
+%}}%
+%BeginExpansion
+\setcounter{page}{1}%
+%
+%EndExpansion
+
+\bigskip
+
+As suspens\~{o}es tradicionais de autom\'{o}veis, ou as chamadas
+suspens\~{o}es passivas, s\~{a}o projetadas de maneira a obter um
+compromisso no que diz respeito \`{a}s caracter\'{i}sticas de
+estabilidade/manobrabilidade (handling) e conforto vibracional dos
+autom\'{o}veis. As caracter\'{i}sticas de ride s\~{a}o associadas
+primariamente com a capacidade do sistema de suspens\~{a}o em absorver esfor%
+\c{c}os verticais, ou seja, minimizar a transmiss\~{a}o de vibra\c{c}\~{o}es
+para os ocupantes do ve\'{i}culo. Handling representa a capacidade e o esfor%
+\c{c}o do conjunto ve\'{i}culo/motorista para realizar manobras com sucesso,
+o estudo de como isso ocorre e o estudo da percep\c{c}\~{a}o do motorista
+quanto ao comportamento do ve\'{i}culo em manobras\cite{teste01}. Desta
+maneira as caracter\'{i}sticas de Handling est\~{a}o ligadas \`{a}s for\c{c}%
+as horizontais que atuam sobre o CG do ve\'{i}culo, \`{a} transfer\^{e}ncia
+de peso devido \`{a}s acelera\c{c}\~{o}es e \`{a}s caracter\'{i}sticas dos
+pneum\'{a}ticos.
+
+As suspens\~{o}es ativas e semi-ativas permitem que se alcancem boas condi\c{%
+c}\~{o}es de conforto sem o detrimento das caracter\'{i}sticas de handling,
+e vice-versa. Para obter bons par\^{a}metros de conforto/handling, as
+suspens\~{o}es ativas utilizam , geralmente, complexos algoritmos e sistemas
+de controle associados a sensores e atuadores
+hidr\'{a}ulicos/pneum\'{a}ticos de alta press\~{a}o. Alterando as
+caracter\'{i}sticas de rigidez e amortecimento dos elementos das
+suspens\~{a}o de acordo com as condi\c{c}\~{o}es de tr\'{a}fego do
+ve\'{i}culo ou atuando diretamente na resposta din\^{a}mica do ve\'{i}culo,
+os par\^{a}metros propostos s\~{a}o alcan\c{c}ados. Apesar de realmente
+eficientes, o alto custo dos sensores e atuadores ainda limita a utiliza\c{c}%
+\~{a}o deste tipo de suspens\~{a}o aos ve\'{i}culos topo de linha.
+
+Existem, ainda, sistemas que tem como principal finalidade diminuir o
+rolamento da carroceria em curvas atrav\'{e}s se um sistema de controle da
+rigidez da barra estabilizadora. Em compara\c{c}\~{a}o com os sistemas
+passivos, este sistema oferece melhoras substanciais em termos de conforto e
+handling. Comparando-o com os sistemas ativos, possui uma excelente rela\c{c}%
+\~{a}o custo/beneficio, j\'{a} que o n\'{u}mero de atuadores e a press\~{a}o
+de opera\c{c}\~{a}o destes \'{e} consideravelmente menor\cite{teste03}.
+Embora n\~{a}o exercendo um controle total sobre o sistema de suspens\~{a}o
+do ve\'{i}culo (atua somente minimizando o rolamento da carroceria) este
+tipo de sistema \'{e} capaz de melhorar substancialmente algumas
+caracter\'{i}sticas de handling e conforto.
+
+Alguns estudos experimentais e num\'{e}ricos sobre este tipo de sistema
+foram realizados concentrando-se exclusivamente nos benef\'{i}cios alcan\c{c}%
+ados para as caracter\'{i}sticas de handling\cite{teste03}. Mesmo tendo-se
+percebido uma consider\'{a}vel melhora no isolamento de vibra\c{c}\~{o}es,
+ou seja , nos par\^{a}metros de conforto, todas as considera\c{c}\~{o}es a
+esse respeito foram puramente subjetivas.
+
+\section{Justificativa}
+
+Nos \'{u}ltimos anos, com a libera\c{c}\~{a}o das importa\c{c}\~{o}es de
+autom\'{o}veis, temos acompanhado uma substancial melhora tecnol\'{o}gica e,
+consequentemente, da qualidade dos autom\'{o}veis fabricados no Brasil.
+Frente a um mercado cada vez mais competitivo, as montadoras instaladas no
+pa\'{i}s procuram fazer com que os autom\'{o}veis nacionais atinjam
+n\'{i}veis de qualidade equiparados aos n\'{i}veis dos produtos
+comercializados na Europa e EUA.
+
+Os autom\'{o}veis nacionais, que t\^{e}m seus projetos desenvolvidos nas
+matrizes das montadoras na Europa ou EUA, s\~{a}o adaptados \`{a}s condi\c{c}%
+\~{o}es clim\'{a}ticas e \`{a}s caracter\'{i}sticas das estradas e relevos
+do pa\'{i}s. Um dos principais sistemas adaptados para os mercados
+sul-americanos, juntamente com sistemas de arrefecimento, \'{e} o de
+suspens\~{a}o que deve proporcionar aos ocupantes do ve\'{i}culo bons
+n\'{i}veis de conforto e handling.
+
+Embora os autom\'{o}veis nacionais tenham alcan\c{c}ado n\'{i}veis de
+sofistica\c{c}\~{a}o t\~{a}o altos, a determina\c{c}\~{a}o dos
+par\^{a}metros que devem ser modificados para a adapta\c{c}\~{a}o destes
+\`{a}s condi\c{c}\~{o}es brasileiras \'{e}, na maioria dos casos, puramente
+emp\'{i}rica, ou seja, pilotos experientes relatam as suas impress\~{o}es ao
+dirigirem o autom\'{o}vel aos t\'{e}cnicos e engenheiros que atuam adaptando
+os projetos. Esse tipo de procedimento, de fundamental import\^{a}ncia e que
+produz bons resultados, fica condicionado \`{a}s habilidades/sensibilidade
+deste ou outro piloto, habilidades estas que podem ser alteradas devido
+\`{a}s condi\c{c}\~{o}es em que o piloto se encontra no momento da realiza\c{%
+c}\~{a}o dos experimentos, al\'{e}m de n\~{a}o fornecer nenhum par\^{a}metro
+mensur\'{a}vel a n\~{a}o ser a sensa\c{c}\~{o}es que o piloto \'{e} capaz de
+transmitir ao pessoal t\'{e}cnico.
+
+Dentre os v\'{a}rios componentes de um sistema de suspens\~{a}o de um
+autom\'{o}vel, a barra estabilizadora cumpre um importante papel no
+''afinamento'' das suspens\~{o}es. O estudo da influ\^{e}ncia da barra
+estabilizadora em par\^{a}metros de conforto, ou seja, um estudo das
+v\'{a}rias freq\"{u}\^{e}ncias de vibra\c{c}\~{a}o, provenientes da pista,
+que atingem os ocupantes do ve\'{i}culo, possibilitar\'{a} identificar qual
+a influ\^{e}ncia da rigidez e da forma da barra estabilizadora no conforto
+de um autom\'{o}vel.
+
+Utilizando a t\'{e}cnica de prototipagem virtual, que ''permite o
+desenvolvimento de um produto sem a constru\c{c}\~{a}o de um prot\'{o}tipo
+f\'{i}sico''\cite{teste05}, as altera\c{c}\~{o}es dos par\^{a}metros de
+projetos podem ser efetuadas computacionalmente, verificando-se sua
+efici\^{e}ncia atrav\'{e}s de uma simula\c{c}\~{a}o num\'{e}rica dos
+experimentos realizados nas estradas e pistas. Portanto, a cria\c{c}\~{a}o
+de um modelo num\'{e}rico de um autom\'{o}vel e o dom\'{i}nio da t\'{e}cnica
+de prototipagem virtual resultar\~{a}o em uma economia de tempo, j\'{a} que
+n\~{a}o ser\'{a} necess\'{a}ria a constru\c{c}\~{a}o de tantos
+prot\'{o}tipos f\'{i}sicos, e proporcionar\~{a}o \`{a}s empresas uma maior
+agilidade para a adequa\c{c}\~{a}o dos novos modelos \`{a}s condi\c{c}%
+\~{o}es brasileiras o que pode-se traduzir em redu\c{c}\~{a}o de custos.
+
+O desenvolvimento de um sistema de controle para variar a rigidez da barra
+estabilizadora \'{e} uma alternativa, tratando-se de suspens\~{o}es ativas,
+de baixo custo e com possibilidade de excelentes resultados pr\'{a}ticos nas
+caracter\'{i}sticas de Handling\cite{teste03}. Atualmente pesquisadores
+ingleses e americanos est\~{a}o desenvolvendo, para a DELPHI, sistemas de
+controle similares para a utiliza\c{c}\~{a}o em utilit\'{a}rios
+(ve\'{i}culos com C.G. alto que necessitam minimizar os efeitos do rolamento
+da carro\c{c}eria e que ao mesmo tempo sofrem com a alta rigidez de suas
+suspens\~{o}es).Esse estudo tem sido impulsionado pela grande procura por
+este tipo de ve\'{i}culo na Europa e EUA. O n\'{u}mero de artigos que tratam
+exclusivamente da influ\^{e}ncia deste tipo de suspens\~{a}o nos
+par\^{a}metros de conforto \'{e} pequeno, o que d\'{a} a este trabalho
+relevante import\^{a}ncia.
+
+\bigskip \newpage
+
+\chapter{O autom\'{o}vel}
+
+\section{Caracter\'{i}sticas construtivas do autom\'{o}vel.}
+
+O autom\'{o}vel utilizado para o estudo dessa disserta\c{c}\~{a}o \'{e} um
+ve\'{i}culo de tr\^{e}s volumes, de porte m\'{e}dio, com tra\c{c}\~{a}o no
+eixo dianteiro e motor e c\^{a}mbio montados transversalmente.
+
+A suspens\~{a}o dianteira utiliza o sistema McPherson com molas helicoidais,
+amortecedores hidr\'{a}ulicos de dupla a\c{c}\~{a}o e barra estabilizadora e
+a suspens\~{a}o traseira o sistema ''semi-trailing arm'' , com molas
+helicoidais, amortecedores hidr\'{a}ulicos de dupla a\c{c}\~{a}o e barra
+enrijecedora .
+
+\section{Suspens\~{a}o Dianteira - MacPherson}
+
+Atualmente a utiliza\c{c}\~{a}o das suspens\~{o}es McPherson est\'{a}
+largamente difundida nos ve\'{i}culos de passeio, tanto para o eixo
+dianteiro quanto para o traseiro. A sua grande difus\~{a}o entre os
+autom\'{o}veis se d\'{a} principalmente devido as suas boas
+caracter\'{i}sticas de montagem, ou seja, quase todas as partes componentes
+de uma suspens\~{a}o McPherson podem ser agrupadas em um \'{u}nico conjunto.
+
+A rigor o sistema de suspens\~{a}o McPherson, apresentado na figura \ref
+{McPh_show}, \'{e} uma evolu\c{c}\~{a}o, ou melhor, uma continua\c{c}\~{a}o
+do desenvolvimento da ''Double wishbone''(quadril\'{a}teros deform\'{a}veis)
+figura \ref{dwb_forces}. O bra\c{c}o transversal superior da ''Double
+wishbone'' foi substituido por um ponto de giro na torre do amortecedor. A
+chamada torre do amortecedor recebe esse nome porque a extremidade da haste
+do amortecedor e a mola helicoidal s\~{a}o alojadas no seu interior, figura 
+\ref{McPh_show}.
+
+\FRAME{fhFU}{2.7129in}{2.7795in}{0pt}{\Qcb{Sistema de suspens\~{a}o tipo
+McPherson}}{\Qlb{McPh_show}}{mcpherson.jpg}{\special{language "Scientific
+Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
+"F";width 2.7129in;height 2.7795in;depth 0pt;original-width
+6.7291in;original-height 6.896in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";filename 'Mcpherson.jpg';file-properties "XNPEU";}}
+
+As vantagens do sistema de suspens\~{a}o Mcpherson s\~{a}o as seguintes:
+
+1. For\c{c}as laterais aplicadas \`{a} carroceria reduzidas em rela\c{c}%
+\~{a}o \`{a} suspens\~{a}o do tipo DWB, devido \`{a} grande dimens\~{a}o de
+c, (ver fig.\ref{dwb_forces} e eq.\ref{eq.3.1}),
+
+2. Pequena dist\^{a}ncia b, ( ver fig.\ref{McPh_Forces_b} e eq.\ref{eq.3.1}),
+
+3. Possibilita utilizar mola que trabalha com longo curso,
+
+4. Melhor op\c{c}\~{a}o de projeto para a zona de deforma\c{c}\~{a}o
+programada,\cite{Reimpell}
+
+5. Conjunto compacto permitindo um maior compartimento para o motor.
+
+6. Devido ao maior compartimento, possibilita a montagem de motores
+transversais.
+
+Assim como qualquer outro sistema de suspens\~{a}o, o sistema McPherson
+possui algumas desvantagens, s\~{a}o elas:
+
+1. Caracter\'{i}sticas cinem\'{a}ticas n\~{a}o muito favor\'{a}veis,*
+
+2. A introdu\c{c}\~{a}o de for\c{c}as e vibra\c{c}\~{o}es mec\^{a}nicas
+diretamente na carroceria do ve\'{i}culo atrav\'{e}s da torre do amortecedor,
+
+3. A maior dificuldade em isolar as vibra\c{c}\~{o}es provenientes das
+irregularidades do piso, requer que seja utilizado na fixa\c{c}\~{a}o do
+amortecedor e mola \`{a} carroceira um batente de borracha e uma estrutura
+que seja ''desacoplada'' \footnote{%
+O termo ''desacoplado'' \'{e} a tradu\c{c}\~{a}o de decoupled, e significa
+que as for\c{c}as do amortecedor e das molas s\~{a}o absorvidas
+separadamente pela estrutura de fixa\c{c}\~{a}o da suspens\~{a}o \`{a}
+carroceria.}. (figura xx)
+
+4. O atrito causado entre a haste amortecedor e a guia selo prejudica o
+efeito de amortecimento e ocasiona um desgaste prematuro do
+amortecedor.\bigskip \FRAME{fhFU}{2.3791in}{1.8377in}{0pt}{\Qcb{For\c{c}as
+atuantes em uma suspens\~{a}o Double Wish Bone.}}{\Qlb{dwb_forces}}{%
+dwb_forces.jpg}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "F";width
+2.3791in;height 1.8377in;depth 0pt;original-width 3.7706in;original-height
+2.9066in;cropleft "0";croptop "1";cropright "1";cropbottom "0";filename
+'DWB_forces.jpg';file-properties "XNPEU";}}\bigskip \FRAME{fhFU}{6.3439cm}{%
+7.2994cm}{0pt}{\Qcb{For\c{c}as atuantes em um sistema de suspens\~{a}o do
+tipo McPherson devido \`{a} carga vertical.}}{\Qlb{McPh_Forces_b}}{%
+mcph_forces.jpg}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "F";width
+6.3439cm;height 7.2994cm;depth 0pt;original-width 3.6564in;original-height
+4.2082in;cropleft "0";croptop "1.0017";cropright "1.0012";cropbottom
+"0";filename 'Mcph_Forces.jpg';file-properties "XNPEU";}}
+
+\subsection{As for\c{c}as atuantes:}
+
+Considerando que a for\c{c}a $F_{z}$ \'{e} a \'{u}nica for\c{c}a externa que
+atua no sistema, teremos, de acordo com a figura \ref{McPh_Forces_b} , que
+as demais for\c{c}as necess\'{a}rias para equilibrar o sistema ser\~{a}o, $F$
+e $F_{G}$.
+
+Sendo $F$ a for\c{c}a de rea\c{c}\~{a}o do conjunto mola/amortecedor e $%
+F_{G} $ a for\c{c}a de rea\c{c}\~{a}o do bra\c{c}o oscilante.
+
+Quando a mola helicoidal \'{e} montada concentricamente com o amortecedor,
+como na figura, ela s\'{o} \'{e} capaz de absorver esfor\c{c}os nessa dire\c{%
+c}\~{a}o. Dessa forma teremos que as duas componentes da for\c{c}a $F$
+ser\~{a}o:
+
+- $F_{S}$ a for\c{c}a de rea\c{c}\~{a}o da mola helicoidal;
+
+- $F_{E}$ \'{e} uma componente de $F$ que atua na haste do amortecedor.
+
+A componente $F_{E}$ , como foi comentado anteriormente, faz com que a haste
+do amortecedor trabalhe tamb\'{e}m a flex\~{a}o, fazendo-se necess\'{a}ria a
+utiliza\c{c}\~{a}o de hastes de maior di\^{a}metro.
+
+No diagrama de for\c{c}as para a haste do amortecedor, figura \ref
+{McPh_Forces_b}, as for\c{c}as de rea\c{c}\~{a}o $F_{C,Y}$ e $F_{K,Y}$
+s\~{a}o respectivamente as rea\c{c}\~{o}es na guia da haste e no \^{e}mbolo.
+Quanto maiores forem essas for\c{c}as, maiores ser\~{a}o as for\c{c}as de
+atrito entre a haste e a guia e entre o \^{e}mbolo e o cilindro do
+amortecedor, fazendo com que sejam necess\'{a}rias maiores for\c{c}as
+verticais no pneu para deslocar o amortecedor. Isso se traduz em uma maior
+transmissibilidade de vibra\c{c}\~{o}es do sistema de suspens\~{a}o para a
+carroceria do autom\'{o}vel, j\'{a} que para pequenas irregularidades do
+piso que n\~{a}o s\~{a}o capazes de produzir uma rea\c{c}\~{a}o completa do
+amortecedor, o amortecedor funciona como um elemento r\'{i}gido transmitindo
+quase que completamente a for\c{c}a para a carroceria, reduzindo o conforto
+do autom\'{o}vel.
+
+Al\'{e}m do decr\'{e}scimo do conforto, o aumento da for\c{c}a de atrito
+entre os elementos do amortecedor acelera o desgaste da guia da haste
+provocando vazamentos prematuros e perda de efici\^{e}ncia do amortecedor
+devido ao desgaste do embolo do amortecedor.
+
+Para minimizar a componente $F_{E}$, atualmente as molas helicoidais s\~{a}o
+montadas de forma alinhadas com a linha de a\c{c}\~{a}o da for\c{c}a $F$.
+H\'{a} duas formas de se fazer com que a mola helicoidal seja coincidente
+com eixo $EO$, s\~{a}o elas:
+
+1 - Montar a mola de forma que a sua linha de a\c{c}\~{a}o n\~{a}o seja
+coincidente com a linha de a\c{c}\~{a}o do amortecedor, figura xx. Na equa\c{%
+c}\~{a}o \ref{eq.6.1}, a medida que $s$ aumenta $F_{E}$ diminui, ou na equa%
+\c{c}\~{a}o \ref{eq.4.1} \`{a} medida que s aumenta, a diminui e em
+consequ\^{e}ncia o seu seno, desta forma $F_{E}$ tamb\'{e}m diminui.
+
+2 - A outra solu\c{c}\~{a}o \'{e} diminuir $a$ dist\^{a}ncia $b$,ver figura 
+\ref{McPh_Forces_b}, que de acordo com a equa\c{c}\~{a}o \ref{eq.3.1} \'{e}
+diretamente proporcional a $F_{E}$.
+
+\bigskip
+
+\[
+\sum Fv=0 
+\]
+
+\begin{equation}
+F_{Z}+F_{E}.\sin \sigma +F_{G}.\sin \beta =F_{S}\cos \sigma  \label{eq.1.1}
+\end{equation}
+
+\bigskip 
+\[
+\sum F_{H}=0 
+\]
+\begin{equation}
+F_{G}.\cos \beta =F_{E}.\cos \sigma +F_{S}.\sin \sigma  \label{eq.2.1}
+\end{equation}
+
+\bigskip \bigskip 
+\[
+\sum M_{G}=0 
+\]
+
+\begin{equation}
+F_{Z}.b=F_{E}.(c+o)\Longrightarrow F_{E}=\frac{F_{Z}.b}{(c+o)}
+\label{eq.3.1}
+\end{equation}
+
+\bigskip
+
+Da figura, temos que:
+
+\bigskip 
+\begin{equation}
+F_{E}=F.\sin \alpha  \label{eq.4.1}
+\end{equation}
+
+\bigskip 
+\begin{equation}
+F_{S}=F.\cos \alpha  \label{eq.5.1}
+\end{equation}
+
+\bigskip
+
+Para simplificar a an\'{a}lise, ser\'{a} considerado nulo o \^{a}ngulo entre
+o bra\c{c}o oscilante e a horizontal, ou seja, b = 0, desta forma a equa\c{c}%
+\~{a}o \ref{eq.1.1} pode ser escrita da forma:
+
+\begin{equation}
+F_{Z}+F_{E}.\sin \sigma =F_{S}.\cos \sigma \Longrightarrow F_{E}=\frac{%
+F_{S}.\cos \sigma -F_{Z}}{\sin \sigma }  \label{eq.6.1}
+\end{equation}
+
+Entretanto, nessas duas solu\c{c}\~{o}es o espa\c{c}o dispon\'{i}vel na
+caixa de roda n\~{a}o permite a montagem adequada do conjunto
+mola/amortecedor, principalmente quando s\~{a}o utilizados pneum\'{a}ticos
+mais largos. (figura xx)
+
+Para contornar esse inconveniente, atualmente est\~{a}o sendo utilizadas,
+por v\'{a}rias montadoras, molas que possuem uma leve curvatura no seu eixo
+de a\c{c}\~{a}o, as comumente chamadas molas ''banana''. Esse tipo de mola
+auxilia na redu\c{c}\~{a}o da componente $F_{E}$ na haste do amortecedor .
+
+Pela equa\c{c}\~{a}o da dist\^{a}ncia B, mostrar que quanto maior a
+dist\^{a}ncia C, menores ser\~{a}o aos esfor\c{c}os laterais.
+
+Falar do acoplamento do amortecedor e da torre do amortecedor que pelo fato
+de ser desacoplado, s\'{o} a mola suporta a carga vertical e que a For\c{c}a
+
+\bigskip Fe atua no amortecedor j\'{a} que a mola s\'{o} pega carga no
+sentido do seu eixo.\bigskip
+
+\section{Suspens\~{a}o Traseira - Bra\c{c}os Arrastados Interconectados}
+
+\bigskip Nos autom\'{o}veis com motor e tra\c{c}\~{a}o dianteiras, o sistema
+de suspens\~{a}o do eixo traseiro torna-se relativamente simples. A solu\c{c}%
+\~{a}o utilzando bra\c{c}os arrastados interconectados\footnote{%
+O sistema \ e conhecido no idioma Ingl\^{e}s como Compound Crank Axel ou
+Trailing Twist Axel. Em portugu\^{e}s normalmente \'{e} mencionado
+simplesmente como Suspens\~{a}o Semi-Independente ou Bra\c{c}os Oscilantes
+Longitudinais. O designa\c{c}\~{a}o utilizada neste trabalho \'{e} uma
+tentativa de melhor descrever o sistema, embora devesse ser utilizada a
+denomin\c{c}\~{a}o completa de Bra\c{c}os Arrastados Interconectados por
+Viga Sujeita a Tor\c{c}\~{a}o.
+\par
+O termo Bra\c{c}os Arrastados vem do fato de o ponto de pivotamento dos bra%
+\c{c}os oscilantes estar \`{a} frente dos centros das rodas.} \'{e}
+largamente utilizada hoje em dia em autom\'{o}veis de pequeno e m\'{e}dio
+porte. Segundo Bastow \cite{Bastow}, o Volkswagem Golf foi o pionerio na
+utiliza\c{c}\~{a}o desse tipo de sistema.(ver figura \ref{Trailing Arm}\ )
+
+\FRAME{fhFU}{4.9242in}{4.2237in}{0pt}{\Qcb{Suspens\~{a}o Traseira do
+Volkswagem Golf e detalhe da bucha de fixa\c{c}\~{a}o dos bra\c{c}os
+oscilantes \`{a} carroceria.}}{\Qlb{Trailing Arm}}{trseira.jpg}{\special%
+{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "F";width 4.9242in;height 4.2237in;depth
+0pt;original-width 6.9998in;original-height 6.0001in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";filename 'Trseira.jpg';file-properties
+"XNPEU";}}
+
+\bigskip As modernas suspens\~{o}es com bra\c{c}os arrastados
+interconectados consistem em dois bra\c{c}os oscilantes arrastados
+conectados entre si por meio de uma viga de sec\c{c}\~{a}o transversal em
+forma de ''C ''ou ''U''\footnote{%
+No in\'{i}cio do desenvolvimento desse tipo de suspens\~{a}o a viga de
+conex\~{a}o dos bra\c{c}os oscilantes era contru\'{i}da com se\c{c}\~{a}o
+transversal circular, por\'{e}m esa solu\c{c}\~{a}o carecia de uma junta que
+permitisse a tor\c{c}\~{a}o da viga para que a suspens\~{a}o n\~{a}o fosse
+muito rigida em Roll. A utiliza\c{c}\~{a}o de vigas com perfis abertos
+permite que se tenha baixa rigidez torcional e alta rigidez a flex\~{a}o.}
+que \'{e} rigidamente soldada aos bra\c{c}os oscilantes.
+
+A simplicidade desse sistema de suspens\~{a}o que possui poucos componentes
+e o pouco espa\c{c}o que ocupa na parte de tr\'{a}s do ve\'{i}culo,
+possibilitanto que se aproveite ao m\'{a}ximo o porta malas, constituem as
+principais caracteristicas \ que fazem o sistema de bra\c{c}os arrastados
+interconectados ser t\~{a}o bem aceito e t\~{a}o empregado na industria
+automobil\'{i}stica atual.
+
+Do ponto de vista de projeto e ajuste da suspens\~{a}o, a grande vatagem
+\'{e} o reduzido n\'{u}mero de caminhos de carga existentes para a rea\c{c}%
+\~{a}o na carroceria dos esfor\c{c}os provenientes das rodas.\ Tipicamente,
+as duas buchas transmitem para a carroceria todas as cargas laterais e
+longitudinais enquanto as cargas verticais s\~{a}o absorvidas parte pelas
+molas e parte pelas pr\'{o}prias buchas.
+
+A posi\c{c}\~{a}o das buchas e das molas em rela\c{c}\~{a}o ao centro das
+rodas \'{e} de grande influ\^{e}ncia na efici\^{e}ncia estrutural do
+conjunto. A localiza\c{c}\~{a}o longitudinal das molas, por exemplo,
+controla os momentos fletores do bra\c{c}o arrastado, enquanto a sua posi\c{c%
+}\~{a}o transversal, afeta os momentos longitudinais dos mesmos.Um bom
+exemplo de diferentes configura\c{c}\~{o}es do sistema de bra\c{c}os
+arrastados interconectados est\'{a} na compara\c{c}\~{a}o das posi\c{c}%
+\~{o}es das molas, buchas e amortecedores das suspens\~{o}es dos modelos de
+m\'{e}dio porte das montadoras FIAT, GM e Volkswagem.
+
+As v\'{a}rias posi\c{c}\~{o}es dos componentes da suspens\~{a}o s\~{a}o fun%
+\c{c}\~{a}o principalmente do comportamento que se deseja do autom\'{o}vel,
+tanto nos aspectos de conforto como de estabilidade, tra\c{c}\~{a}o,
+frenagem e seguran\c{c}a.
+
+No sistema de bra\c{c}os arrastados interconectados a viga que interconecta
+os dois bra\c{c}os oscilantes, \'{e} segundo Stachell \cite{Satchell} , o
+componente mais importante e cuja posi\c{c}\~{a}o tem grande influ\^{e}ncia
+no comportamento cinem\'{a}tico da suspens\c{c}\~{a}o. A viga deve suportar
+momentos fletores longitudinais e verticais com um m\'{i}nimo de
+deflex\~{o}es e ao mesmo tempo permitir grandes tor\c{c}\~{o}es.Para cumprir
+esses requisitos utilizam-se normalmente perfis abertos que possuem grandes
+momentos de inercia \ e baixa rigidez \ torcional. Por\'{e}m a utiliza\c{c}%
+\~{a}o de se\c{c}\~{o}es transversais n\~{a}o circulares para vigas sujeitas
+\`{a} tor\c{c}\~{a}o acarreta no aparecimento de \textit{warping} \footnote{%
+\bigskip \textit{Warping effect}, \'{e} efeito da perda de planicidade da se%
+\c{c}\~{a}o transversal de uma barra n\~{a}o circular submetida a tor\c{c}%
+\~{a}o. (Te\'{o}ria Cl\'{a}ssica da Tor\c{c}\~{a}o - Saint Venant)
+\par
+Em 1853 o engenheiro franc\^{e}s Adh\'{e}mar Jean Barr\'{e} de Saint-Venant
+apresentou na Academia Francesa de Ci\^{e}ncias a teoria cl\'{a}ssica da tor%
+\c{c}\~{a}o. Saint-Venant mostrou que quando uma barra n\~{a}o circular
+\'{e} torcida, a se\c{c}\~{a}o transversal que era planar antes da tor\c{c}%
+\~{a}o n\~{a}o mais permanecia planar ap\'{o}s a tor\c{c}\~{a}o.} o que faz
+com que a regi\~{a}o da uni\~{a}o entre a viga e os bra\c{c}os oscilantes
+esteja sujeita a tens\~{o}es mais altas se comparada as tens\~{o}es
+decorrentes da utiliza\c{c}\~{a}o de vigas de se\c{c}\~{a}o transversal
+circular.
+
+Do ponto de vista cinem\'{a}tico a posi\c{c}\~{a}o da viga em rela\c{c}%
+\~{a}o ao ponto de pivotamento da suspens\~{a}o na carroceria possue grande
+influencia, e \'{e} trabalhando com essa vari\'{a}vel que os engenherios de
+suspens\~{a}o podem ajustar o comportamento da suspens\~{a}o.
+
+A figura (FIGURA) a seguir mostra as tr\^{e}s alternativas para o
+posicionamento do centro de cisalhamento da viga ao longo do comprimento dos
+bra\c{c}os oscilantes arrastados.
+
+Posicionando-se \ o centro de cisalhamento da viga \ no mesmo alinhamento
+das buchas (articula\c{c}\~{a}o dos bra\c{c}os oscilantes arrastados), ver
+figura XXX-a, est\'{a} desempenhar\'{a} apenas o papel de uma barra
+estabilizadora e o sistema se comporta de forma analoga a um sistema de
+suspens\~{a}o independente por bra\c{c}os oscilantes paralelos. Quando a
+viga \'{e} montada nessa posi\c{c}\~{a}o e a carroceria do ve\'{i}culo rola,
+por exemplo ao realizar uma curva, o \'{u}nico carregamento a que est\'{a}
+sujeita a viga \'{e} a tor\c{c}\~{a}o pura.
+
+Com a viga posicionada entre as buchas e o centro das rodas (ver figura
+XXX-b) o comportamento desse tipo de suspens\~{a}o, quando o autom\'{o}vel
+rola, \ \'{e} semelhante ao comportamento de uma suspens\~{a}o Independende
+de Bra\c{c}os Obl\'{i}quos Arrastados\footnote{%
+A suspens\~{a}o aqui chamada de Independente de Bra\c{c}os Obl\'{i}quos
+Arrastados \'{e} conhecida no idioma Ingl\^{e}s por Semi-Trailing Link
+\par
+Esse tipo de suspens\~{a}o traseira \'{e} encontrada no Omega da GM e nos
+BMW s\'{e}rie 5, por exemplo.} (ver figura XXX1). Para essa configura\c{c}%
+\~{a}o e com o ve\'{i}culo em rolamento, o ponto onde se cruzam o centro de
+cisalhamento da viga de interconex\c{c}\~{a}o e a linha de centro
+imagin\'{a}ria do ve\'{i}culo, encontra-se o segundo ponto de articula\c{c}%
+\~{a}o para a correspond\^{e}ncia com o sistema \ por Bra\c{c}os
+Obl\'{i}quos Arrastados.
+
+A posi\c{c}\~{a}o intermedi\'{a}ria da viga faz com que esta esteja sujeita
+a carregamentos mais severos e principalmente carregamentos combinados de
+flex\~{a}o e tor\c{c}\~{a}o, o que aumenta a import\^{a}ncia de uma boa
+an\'{a}lise de tens\~{o}es na regi\~{a}o da solda que une os bra\c{c}os
+oscilantes \`{a} viga.
+
+A terceira op\c{c}\~{a}o em rela\c{c}\~{a}o ao posicionamento da viga \'{e}
+o alinhamento com os centro das rodas (ver figura XXX-c). Nesta posi\c{c}%
+\~{a}o, segundo Stachell \cite{Satchell}, \'{e} necess\'{a}rio um componente
+adicional com o objetivo de resistir aos esfor\c{c}os laterais que o sistema
+original n\~{a}o \'{e} capaz de absorver, Satchell \cite{Satchell}.
+Normalmente, utiliza-se a chamada barra Panhard como o elemento para
+resistir aos esfor\c{c}os laterais. Um exemplo da utiliza\c{c}\~{a}o desse
+tipo de combina\c{c}\~{a}o esteve presente nas primeiras vers\~{o}es do Ford
+Fiesta.
+
+\subsection{As for\c{c}as atuantes}
+
+\bigskip
+
+\pagebreak
+
+\chapter{Conforto Vibracional}
+
+\section{Introdu\c{c}\~{a}o}
+
+Ao utilizar um autom\'{o}vel deseja-se que este isole os ocupantes das vibra%
+\c{c}\~{o}es induzidas pelas irregularidades da pista, pelas massas
+rotativas (conjunto rodas/pneus/montantes), motor e sistemas de
+transmiss\~{a}o. Essas vibra\c{c}\~{o}es s\~{a}o percebidas pelos ocupantes
+do ve\'{i}culo pelo tato, audi\c{c}\~{a}o e vis\~{a}o. Alguns autores
+estabelecem uma divis\~{a}o bem definida entre as v\'{a}rias frequ\^{e}ncias
+de vibra\c{c}\~{a}o experimentadas pelos ocupantes de autom\'{o}veis. Para
+autores como Gillespe\cite{Gillespie} a divis\~{a}o \'{e} a seguinte:
+
+-RIDE (0-25Hz) - Vibra\c{c}\~{o}es percebidas pelo tato e visualmente;
+
+-NOISE (25-20000Hz) - Vibra\c{c}\~{o}es percebidas pela audi\c{c}\~{a}o.
+
+Justifica-se essa divis\~{a}o do ponto de vista dos limites de audi\c{c}%
+\~{a}o do ser humano, j\'{a} que o limite inferior da faixa de
+frequ\^{e}ncia aud\'{i}vel \'{e} aproximadamente 25Hz. Embora a divis\~{a}o
+te\'{o}rica seja clara \'{e} dific\'{i}l considerar uma ou outra
+separadamente, pois normalmente as duas se apresentam simultaneamente, o
+ruido (NOISE) est\'{a} presente normalmente quando as baixas frequ\^{e}ncias
+s\~{a}o exitadas.
+
+Em outras publica\c{c}\~{o}es o espectro de frequ\^{e}ncias que corresponde
+a faixa mais impotante para o estudo do conforto de autom\'{o}veis est\'{a}
+compreendido em uma faixa um pouco diferente da citada acima. De acordo com
+Reimpell,\cite{Reimpell} os ocupandtes de um autom\'{o}vel est\~{a}o
+sujeitos a uma combina\c{c}\~{a}o de acelera\c{c}\~{o}es e vibra\c{c}\~{o}es
+mec\^{a}nicas que se apresentam em uma faixa bem ampla de frequ\^{e}ncia. A
+faixa de frequ\^{e}ncia considerada cr\'{i}tica para o estudo de conforto de
+um autom\'{o}vel est\'{a} entre 1 e 80 Hz. Dentro dessa faixa de
+frequ\^{e}ncia tida como mais cr\'{i}tica ainda \'{e} sugerida uma separa\c{c%
+}\~{a}o em RIDE\ ou SPRINGING COMFORT que engloba a faixa entre 1 e 4 Hz e
+ROAD\ HARSHNESS que corresponde a frequ\^{e}ncias acima de 4Hz. A separa\c{c}%
+\~{a}o das faixas de frequ\^{e}ncia \'{e} importante pois as frequ\^{e}ncias
+s\~{a}o percebidas de forma diferente pelo corpo humano e al\'{e}m disso
+torna mais f\'{a}cil a distin\c{c}\~{a}o da influ\^{e}ncia de cada
+componente do sistema de suspens\~{a}o na resposta din\^{a}mica do
+ve\'{i}culo completo.
+
+A faixa de frequ\^{e}ncia entre 1 e 4 Hz \'{e} percebida principalmente pela
+parte superior do corpo humano, enquanto as frequ\^{e}ncias acima de \ 4 Hz
+s\~{a}o percebidas pelos ocupantes do ve\'{i}culo no assoalho e assentos do
+ve\'{i}culo e o motorista pode sent\'{i}-las no volante.
+
+O estudo do conforto vibracional de um ve\'{i}culo concentra-se
+principalmente na faixa de vibra\c{c}\~{o}es de baixa frequ\^{e}ncia e
+est\'{a} relacionado \`{a} resposta do o autom\'{o}vel a determinado tipo de
+exita\c{c}\~{a}o. A resposta do autom\'{o}vel determina a magnitude e dire\c{%
+c}\~{o}es das vibra\c{c}\~{o}es que ser\~{a}o impostas ao habit\'{a}culo e
+finalmente a percep\c{c}\~{a}o dos passageiros do comportmanento do
+autom\'{o}vel.
+
+As fontes de exita\c{c}\~{a}o de um autom\'{o}vel podem ser divididas em
+internas e externas:
+
+\section{Fontes internas de Excita\c{c}\~{a}o}
+
+As fontes internas de excita\c{c}\~{a}o s\~{a}o escencialmente tr\^{e}s: O
+sistema de transmiss\~{a}o (caixa de c\^{a}mbio, diferencial, cardan) , o
+motor e o conjunto rodas/pneus. A principal causa dessas excita\c{c}\~{o}es
+s\~{a}o as partes rotantes que produzem excita\c{c}\~{o}es din\^{a}micas
+devido a desbalanceamento. Um rotor est\'{a} perfeitamente balanceado quando
+o seu eixo de rota\c{c}\~{a}o coincide com um dos seus eixos principais de
+in\'{e}rcia, entretanto essa condi\c{c}\~{a}o \'{e} dif\'{i}cil de ser alcan%
+\c{c}ada devido aos desvios de produ\c{c}\~{a}o e as toler\^{a}ncias de
+projeto.
+
+Como uma consequ\^{e}ncia do desbalanceamento o componente rotante exerce
+sobre o seu suporte uma for\c{c}a cuja frequ\^{e}ncia \'{e} proporcional
+\`{a} velocidade angular $\varpi $ e a amplitude proporcional ao quadrado
+dessa velocidade $\varpi 
+%TCIMACRO{\UNICODE[m]{0xb2}}%
+%BeginExpansion
+{{}^2}%
+%EndExpansion
+$. Na equa\c{c}\~{a}o a seguir tem-se que $m$ representa a massa
+desbalanceada, $e$ a ecentricidade da massa e $\varpi $ a velocidade angular
+do componente desbalanceado.
+
+\begin{equation}
+F_{0.}\sin \varpi .t=(m.e.\varpi ^{2})\sin \varpi .t  \label{eq.vibr01}
+\end{equation}
+
+\bigskip \bigskip Esse fato faz com que se possa caracterizar bem cada
+componente j\'{a} que o motor, o sistema de transmiss\~{a}o e as rodas giram
+a velocidades diferentes, dessa forma a frequ\^{e}ncia excitada por cada
+componente est\'{a} em uma faixa diferente.
+
+\subsection{Conjunto Pneum\'{a}ticos e Rodas}
+
+Al\'{e}m das excita\c{c}\~{o}es devido a desbalanceamentos, h\'{a} outros
+efeitos que s\~{a}o particulares de cada componente rotante. As rodas, por
+exemplo, podem ter irregularidades geometricas. A ovaliza\c{c}\~{a}o da
+forma dos pneus, por exemplo, excita frequ\^{e}ncias da ordem de $2\varpi $
+e uma deforma\c{c}\~{a}o de forma triangular frequ\^{e}ncias de \ $3\varpi $%
+, e assim sucessivmente. A banda de rodagem do pneum\'{a}tico, que possui
+sulcos, excita altas frequ\^{e}ncias que se encontram normalmente na faixa
+do espectro aud\'{i}vel (ruido). Alguns tipos de pneus s\~{a}o capazes de
+produzir um ru\'{i}do t\~{a}o caracteristico que \'{e} facilmente
+identificado por ouvidos experientes.De acordo com Genta\cite{Genta} os
+sulcos da banda de rodagem s\~{a}o idealizados de forma irregular, com
+elementos espa\c{c}ados aleat\'{o}riamente para evitar uma forte excita\c{c}%
+\~{a}o com um periodo igual a passagem de um dos elementos da banda de
+rodagem pela pista.
+
+\bigskip As causas da n\~{a}o uniformidade dos pneus s\~{a}o resultado da
+sua pr\'{o}pria caracteristica construtiva que apresenta varia\c{c}\~{o}es
+de espessura e rigidez ao longo da sua estrutura. (figura) Aliado a isso
+desvios causados pelos processos de fabrica\c{c}\~{a}o resultam em vaira\c{c}%
+\~{o}es ao longo da circunfer\^{e}ncia do tipo:
+
+-espessura
+
+-massa
+
+-rigidez
+
+essas varia\c{c}\~{o}es s\~{a}o causadoras de desbalanceamentos, varia\c{c}%
+\~{o}es nas for\c{c}as radiais, laterais e longitudinais e vari\c{c}\~{o}es
+geometricas na banda de rodagem e nos flancos do pneu durante a rota\c{c}%
+\~{a}o.
+
+Dos fen\^{o}menos descritos acima o que aparece de forma mais significativa
+\'{e} a varia\c{c}\~{a}o da for\c{c}a radial devido \`{a} varia\c{c}\~{a}o
+de rigidez do pneum\'{a}tico ao longo da sua circunfer\^{e}ncia.(figura)
+
+\bigskip \FRAME{fhFU}{3.4679in}{1.7988in}{0pt}{\Qcb{Varia\c{c}\~{a}o da
+rigidez radial de um pneu ao longo da sua cirunfer\^{e}ncia.}}{}{tire.jpg}{%
+\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "F";width 3.4679in;height 1.7988in;depth
+0pt;original-width 8.1768in;original-height 4.2289in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";filename 'tire.jpg';file-properties
+"XNPEU";}}
+
+De acordo com Reimpell\cite{Reimpell}, uma varia\c{c}\~{a}o de $\pm 5\%$ \
+na rigidez pode ser esperada em pneus radiais (ex.:175 R14 88 S). Essa varia%
+\c{c}\~{a}o de rigidez gera uma varia\c{c}\~{a}o do raio din\^{a}mico de rota%
+\c{c}\~{a}o do pneu que causa vari\c{c}\~{o}es da for\c{c}a vertical $\
+\Delta Fz$. Normalmente essas varia\c{c}\~{o}es de for\c{c}a s\~{a}o
+inferiores as for\c{c}as de atrito do sistema de suspens\~{a}o. Se o
+autom\'{o}vel trafega em uma pista suficientemente lisa essa varia\c{c}%
+\~{a}o de $Fz$ ser\'{a} percebida pelos ocupantes do ve\'{i}culo, j\'{a} que
+a for\c{c}a vertical que atua nos pneus n\~{a}o ser\'{a} suficiente para
+fazer a suspens\~{a}o trabalhar, com isso toda a varia\c{c}\~{a}o de $Fz$
+ser\'{a} transmitida diretamente para os apoios da suspens\~{a}o na
+carroceria.
+
+\qquad \emph{Se o autom\'{o}vel trafegar por uma pista que induza varia\c{c}%
+\~{o}es de }$Fz$\emph{\ maiores que as induzidas pelos pneus a vibra\c{c}%
+\~{a}o causada por ambas pode ser filtrada pelo sistema de suspens\~{a}o do
+ve\'{i}culo. ( Devo colocar essa observa\c{c}\~{a}o??????)}
+
+As varia\c{c}\~{o}es de rigidez do pneum\'{a}tico ao longo da sua
+circunferencia resultam em for\c{c}as din\^{a}micas com frequ\^{e}ncias
+iguais \`{a} frequ\^{e}ncia de rota\c{c}\~{a}o e seus m\'{u}ltiplos.
+
+Os desvios dimensionais existentes na fabrica\c{c}\~{a}o das rodas e pneus
+n\~{a}o produzem grandes varia\c{c}\~{o}es de rigidez, por\'{e}m geram for\c{%
+c}as e deslocamentos no eixo do ve\'{i}culo enquanto a roda gira. A montagem
+pneu/roda \'{e} um sistema mec\^{a}nico complexo que filtra grande uma parte
+das frequ\^{e}ncias produzidas na interface pneu/pista. As altas
+frequ\^{e}ncias s\~{a}o firltradas primeiramente pelos pneus, depois pelo
+sistema de suspens\~{a}o, e finalmente s\~{a}o percebidas a bordo
+principalmente como ruido e vibra\c{c}\~{o}es do interior (paineis de porta,
+painel de instrumentos, tampas do porta-luvas, etc).
+
+\subsection{Comportamento din\^{a}mico dos pneus}
+
+O comportamento din\^{a}mico dos pneus tem grande import\^{a}ncia no estudo
+do conforto e estabiliade/manobrabilidade de ve\'{i}culos. Para o estudo do
+conforto vibracional \ de um ve\'{i}culo, os pneus s\~{a}o os primeiros
+filtros das irregularidades provenientes da \ pista e s\~{a}o eles ao mesmo
+tempo fontes de exita\c{c}\~{a}o.
+
+Sendo a rigidez dos pneus maior que a rigidez das suspens\~{o}es, o
+comportamento dos mesmos geralmente n\~{a}o \'{e} muito importante em vibra%
+\c{c}\~{o}es de baixas frequ\^{e}ncias (1a 3 Hz), para essas frequ\^{e}ncias
+o pneu pode ser modelado como um corpo r\'{i}gido.
+
+Para uma faixa de frequ\^{e}ncias um pouco mais altas que as anteriores (10
+a 20 Hz) o pneu pode ser considerado como um elemento deform\'{a}vel com
+massa desprez\'{i}vel.
+
+Para aplica\c{c}\~{a}o na modelagem matem\'{a}tica de ve\'{i}culos , ''\'{e}
+poss\'{i}vel mostrar que o pneu \ deve ser caracterizado por uma baixa
+rigidez vertical, de forma a minimizar os deslocamentos verticais das massas
+suspensas em uma superf\'{i}cie irregular, e uma rigidez transversal alta,
+para reagir com pequenos deslocamentos a pequenas for\c{c}as aplicadas ao
+ve\'{i}culo.''\cite{Genta}
+
+H\'{a} diferen\c{c}as de rigidez entre os tipos construtivos de pneus, os
+radiais que apresentam \ rigidez vertical menor que os diagonais.\ Portanto
+os pneus radias possuem uma vantagem, do ponto de vista de conforto, em rela%
+\c{c}\~{a}o aos diagonais. \emph{Hoje em dia a utiliza\c{c}\~{a}o de pneus
+diagonais est\'{a} bastante reduzida e restrita a caminh\~{o}es, \^{o}nibus,
+autom\'{o}veis de competi\c{c}\~{a}o (F1) etc....(Checar este
+coment\'{a}rio...)}
+
+A frequ\^{e}ncias mais altas, acima de 50 Hz, os pneus vibam na sua
+frequ\^{e}ncia natural. Os pneus radias possuem frequ\^{e}ncias naturais que
+variam de 60 a 90 Hz dependendo das suas dimens\~{o}es.\bigskip
+
+\subsection{Sistema de Transmiss\~{a}o}
+
+As exita\c{c}\~{o}es oriundas do sistema de transmiss\~{a}o podem ter
+tr\^{e}s fontes diferentes, a caixa de c\^{a}mbio, o diferencial e o eixo de
+transmiss\~{a}o.Essa divis\~{a}o aplica-se principalmente ao autom\'{o}veis
+com a configura\c{c}\~{a}o motor e caixa dianteiros e tra\c{c}\~{a}o
+traseira, entretanto pode ser aplicada tamb\'{e}m aos autom\'{o}veis com
+motores dianteiros transversais e diferenciais montados dentro da mesma carca%
+\c{c}a da caixa de c\^{a}mbio. Dentre esses componentes o eixo de
+transmiss\~{a}o \'{e} o elemento que possui o maior potencial em \ gerar
+exita\c{c}\~{o}es de frequ\^{e}ncias at\'{e} 20 Hz. Em carros de passeio com
+tra\c{c}\~{a}o traseira ou tra\c{c}\~{a}o nas quatro rodas e em pequenos
+caminh\~{o}es utilizam-se um \'{u}nico eixo, enquanto em caiminh\~{o}es
+maiores e \^{o}nibus o eixo de transmiss\~{a}o \'{e} montado utilizando
+v\'{a}rios segmentos suportados por mancais de rolamento. As exita\c{c}%
+\~{o}es provenientes dos eixos podem ser geradas por dois fen\^{o}menos; um
+poss\'{i}vel desbalanceamento de massa do eixo, e os momentos
+secund\'{a}rios provocados pelo \^{a}ngulo formado entre dois semi-eixos
+conectados por juntas universais.
+
+As exita\c{c}\~{o}es, devido ao desbalanceamento, produzidas pelo eixo de
+transmiss\~{a}o s\~{a}o normalmente devido \`{a} combina\c{c}\~{a}o dos
+seguintes fatores:
+
+-Assimetria das partes girat\'{o}rias;
+
+-O eixo pode estar fora de centro em rela\c{c}\~{a}o aos flanges de
+uni\~{a}o;
+
+-O eixo pode n\~{a}o estar completamente reto;
+
+-As toler\^{a}ncias de motagem podem fazer com que o eixo saia fora do
+centro;
+
+-O eixo, por ser um componente el\'{a}stico, pode defletir e causar o
+desbalanceamento.
+
+Nos ve\'{i}culos que utilizam juntas universais para o acoplamento dos eixos
+de entrada e sa\'{i}da, o momento secund\'{a}rio gerado quando os eixos
+trabalham em angulo \'{e} uma importante fonte de excita\c{c}\~{a}o. A
+caracteriza\c{c}\~{a}o desse momento secund\'{e}rio \'{e} obtida com uma
+simples soma vetorial dos torques de entrada e sa\'{i}da na junta universal,
+como ilustrado a seguir.\cite{Gillespie}(figura)
+
+\FRAME{fhFU}{1.7106in}{1.3543in}{0pt}{\Qcb{Momento secund\'{a}rio em uma
+junta universal}}{}{hook_joint.jpg}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "F";width
+1.7106in;height 1.3543in;depth 0pt;original-width 4.9684in;original-height
+3.9271in;cropleft "0";croptop "1";cropright "1";cropbottom "0";filename
+'hook_joint.jpg';file-properties "XNPEU";}}
+
+A magnitude \ do momento secund\'{a}rio \'{e} proporcional ao torque
+aplicado ao eixo e ao \^{a}ngulo da junta universal, quando h\'{a} varia\c{c}%
+\~{a}o do torque devido \`{a} pulsa\c{c}\~{a}o do motor o momento
+secund\'{a}rio vaira proporcionalmente. \'{E} importante notar que o
+\^{a}ngulo da junta universal pode variar de acordo com condi\c{c}\~{a}o de
+carregamento do ve\'{i}culo, onde geralmente o eixo de entrada move-se
+solid\'{a}rio \`{a} carroceria e o eixo de sa\'{i}da move-se junto com o
+diferencial e conjunto de suspens\~{a}o. Em alguns conceitos mais modernos o
+diferencial est\'{a} solid\'{a}rio a um sub-chassi e essa varia\c{c}\~{a}o
+de \^{a}ngulo na junta universal n\~{a}o ocorre ou \ \'{e} bastante
+reduzida.(figura)
+
+Nos modernos ve\'{i}culos com motores e tra\c{c}\~{a}o dianteira a utiliza\c{%
+c}\~{a}o de juntas homocin\'{e}ticas junto \'{a}s rodas tem reduzido
+bastante as excita\c{c}\~{o}es devido a juntas, por\'{e}m ainda deve-se
+tomar cuidado com os semi-eixos nas montagens motor e c\^{a}mbio
+transversais.
+
+\subsection{Motor}
+
+Os motores alternativos utilizados nos ve\'{i}culos, onde a transmiss\c{c}%
+\~{a}o de torque se d\'{a} de forma ciclica, as massas rotantes s\~{a}o
+desbalanceadas e h\'{a} grandes for\c{c}as de in\'{e}rcia, s\~{a}o
+considerados a principal fonte interna de vibra\c{c}\~{a}o e ruido dos
+ve\'{i}culos. Essas vibra\c{c}\~{o}es tem uma frequ\^{e}ncia natural , em
+motores de quatro cilindros, igual a metade da rota\c{c}\~{a}o do motor, mas
+um grande n\'{u}mero de harmonicos tamb\'{e}m est\'{a} presente.\cite{Genta}
+
+Para tentar minimizar as vibra\c{c}\~{o}es oriundas do motor v\'{a}rias solu%
+\c{c}\~{o}es foram adotadas. Atualmente alguns motores de quatro e cinco
+cilindros utilizam eixos que giram em sentido contrario ao do vibrabrequim \
+e com o dobro da sua velocidade. Frente ao efeito das massa excentricas
+presentes nos eixos contra-rotantes, s\~{a}o atenuadas consideravelmente as
+vibra\c{c}\~{o}es devido \`{a}s tipicas for\c{c}as alternadas dos motores de
+quatro cilindros.\cite{Alonso} (figura)
+
+\FRAME{fhFU}{2.3289in}{1.8766in}{0pt}{\Qcb{Raio-X de um motor que apresenta
+\'{a}rvores contra rotatnes}}{}{motor_came.jpg}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "F";width 2.3289in;height 1.8766in;depth
+0pt;original-width 5.5936in;original-height 4.4996in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";filename 'motor_came.jpg';file-properties
+"XNPEU";}}
+
+As vibra\c{c}\~{o}es produzidas pelo giro do eixo comando de v\'{a}lvulas,
+ficam atenuadas consideravelmente mediante um projeto especial que consiste
+em fazer excentricas as partes intermedi\'{a}rias do eixo entre os cames.
+
+Com um projeto adequado dos coxins e suportes, a massa do grupo
+moto-propurlsor pode ser utilizado como um absorvedor de vibra\c{c}\~{o}es
+atenuando as vibra\c{c}\~{o}es \`{a}s quais o ve\'{i}culo est\'{a} sujeito.
+Na maioria das vezes \'{e} utilizada para o controle de vibra\c{c}\~{o}es
+verticais provenientes das excita\c{c}\~{o}es das rodas. Para esse
+prop\'{o}sito\ o sistema de suporte do grupo moto-propulsor \'{e} projetado
+para ter a frequ\^{e}ncia de resson\^{a}ncia vertical pr\'{o}xima da
+frequ\^{e}ncia de resson\^{a}ncia das rodas (wheel hope) 12-15 Hz, desta
+forma o moto-propulsor pode atuar como um amortecedor de vibra\c{c}\~{o}es
+para esse modo de vibra\c{c}\~{a}o do ve\'{i}culo.\cite{Gillespie}\FRAME{fhFU%
+}{2.808in}{1.8481in}{0pt}{\Qcb{Coxin e suporte do motor.}}{}{motor_suport.jpg%
+}{\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "F";width 2.808in;height 1.8481in;depth
+0pt;original-width 11.2607in;original-height 7.3959in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";filename 'motor_suport.jpg';file-properties
+"XNPEU";}}
+
+Os pontos de entrada das vibra\c{c}\~{o}es provenientes do grupo
+moto-propulsor na carro\c{c}eria s\~{a}o os coxins dos suportes do motor e
+c\^{a}mbio, as fixa\c{c}\~{o}es dos bra\c{c}os oscilantes \`{a} carro\c{c}%
+eria e os suportes do sistema de exaust\~{a}o do motor.(figura) A liga\c{c}%
+\~{a}o entre o coletor de escape dos motores e cano de escape \'{e}
+normalmente feita por uma junta flex\'{i}vel com o intuito de minimizar a
+transmiss\~{a}o de vibra\c{c}\~{o}es para o cano e por sua vez para a
+carroceria.
+
+\FRAME{fhFU}{3.1868in}{2.2762in}{0pt}{\Qcb{Pontos de entrada das vibra\c{c}%
+\~{o}es provenientes do motor/c\^{a}mbio.}}{}{motor_input.jpg}{\special%
+{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "F";width 3.1868in;height 2.2762in;depth
+0pt;original-width 11.4268in;original-height 8.1457in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";filename 'motor_input.jpg';file-properties
+"XNPEU";}}
+
+\bigskip
+
+\section{Fontes Externas de Vibra\c{c}\~{a}o}
+
+\subsection{Excita\c{c}\~{a}o devido \`{a}s irregularidades da pista}
+
+As excita\c{c}\~{o}es devido a irregularidades da pista em que trafega um
+ve\'{i}culo \'{e} de extrema import\^{a}ncia no estudo do conforto de um
+autom\'{o}vel. As irregularidades da superf\'{i}cie da estrada ou pista por
+onde um autom\'{o}vel trafega se apresentam de modo aleat\'{o}rio, por\'{e}m
+podem ser classificadas, para objeto de estudo, da seguinte forma segundo
+Montiglio:\cite{Montiglio}
+
+\textbf{Longas ondula\c{c}\~{o}es}: Varia\c{c}\~{o}es de altura do perfil da
+estrada onde o comprimento de onda \'{e} superior \`{a} dist\^{a}ncia entre
+eixos do ve\'{i}culo. O perfil varia de forma progressiva e
+sim\'{e}trica.Esse tipo de irregularidade \'{e} principalmente devido ao
+assentamento de parte do terreno onde foi construida a estrada ou em grandes
+viadutos ou pontes.
+
+\textbf{Aspereza}: Varia\c{c}\~{o}es de altura independentes do perfil da
+estrada e que possuem dimens\~{o}es compat\'{i}veis com o raio das rodas do
+ve\'{i}culo. O perfil varia de modo brusco e normalmente n\~{a}o \'{e}
+sim\'{e}trico. S\~{a}o causados principalmente por jun\c{c}\~{o}es, danos na
+pista (buracos) e passagens de n\'{i}vel.
+
+\textbf{Descontinuidades}: Varia\c{c}\~{o}es cont\'{i}nuas do perfil da
+pista em dimens\~{o}es inferiores \`{a}s do contato pneu/piso. O perfil
+vaira de modo brusco e casual, normalmente ocorre por danos no manto de
+asfalto ou a superf\'{i}cies n\~{a}o asfaltadas. Como exemplo pode ser
+citado o pav\'{e} belga.
+
+O quadro comparativo a seguir ilustra a faixa de frequ\^{e}ncia de cada uma
+das classifica\c{c}\~{o}es das pistas.(figura)
+
+Da classifica\c{c}\~{a}o dada por Montiglio as longas ondula\c{c}\~{o}es e a
+aspereza s\~{a}o fontes de exita\c{c}\~{a}o deterministicas no tempo. Alguns
+exemplos de fun\c{c}\~{o}es deterministicas que podem reproduzir esses tipos
+de excita\c{c}\~{a}o s\~{a}o as fun\c{c}\~{o}es degrau, rampa e fun\c{c}%
+\~{o}es harm\^{o}nicas.
+
+As irregularidades do manto asf\'{a}ltico s\~{a}o inerentes aos m\'{e}todos
+de constru\c{c}\~{a}o da pista e \`{a} manuten\c{c}\~{a}o da mesma, esse
+tipo de desvio \'{e} caracterizado como n\~{a}o deterministico no tempo.
+
+As irreguladidades da superf\'{i}cie da pista s\~{a}o descritas pelas eleva%
+\c{c}\~{o}es do perfil \ pelo qual os pneus de um ve\'{i}culo passam. O
+perfil da superf\'{i}cie varia de forma aleat\'{o}ria tanto na dira\c{c}%
+\~{a}o longitudinal como na transversal. O perfil de pista, por suas varia\c{%
+c}\~{o}es de eleva\c{c}\~{a}o aleat\'{o}rias, pode ser incluido,
+matematicamente, na categoria de sinal rand\^{o}mico de banda larga
+(broad-band random signals) e pode ser descrito pela pr\'{o}pria eleva\c{c}%
+\~{a}o do perfil \ ou por suas propriedades estat\'{i}sticas.
+
+A partir de experimentos, utilizando \ ''perfilometros '', o perfil da pista
+\'{e} medido e a sua PSD \'{e} obtida fazendo-se a Transformada de Fourier
+do perfil medido tomando-se como base uma medida de comprimento como
+refer\^{e}ncia. A figura \ref{gentagraph01} a seguir mostra algumas PSDs
+t\'{i}picas de pistas de asfalto, concreto e ''pav\'{e}s''\footnote{%
+O termo''Pav\'{e}'' vem de''Belgian Pav\'{e}''. O ''Pav\'{e}'' original
+\'{e} do produto da falta de manuten\c{c}\~{a}o e esquecimento, durante a
+segunda grande Guerra, das t\'{i}picas estradas constu\'{i}das de blocos de
+pedra encontradas na B\'{e}lgica, Fran\c{c}a, Paises Baixos e Alemanha.\cite
+{Bastow}} e as curvas propostas pela ISO para classificar os perfis de pista.%
+\FRAME{fhFU}{3.8035in}{3.5129in}{0pt}{\Qcb{PSD t\'{i}picas de pistas de
+asfalto, concreto e ''paves''.}}{\Qlb{gentagraph01}}{grapf01_genta.jpg}{%
+\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "F";width 3.8035in;height 3.5129in;depth
+0pt;original-width 8.6663in;original-height 8.0004in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";filename
+'grapf01_genta.jpg';file-properties "XNPEU";}}
+
+Mesmo que para cada pista as PSDs correspondentes sejam diferentes
+observa-se um comportamento t\'{i}pico que \'{e} a queda na amplitude a
+medida que aumenta o valor do n\'{u}mero de onda. '' Isso reflete
+simplesmente o fato de que os desvios na superf\'{i}cie da pista da ordem de
+milhares de p\'{e}s de comprimento podem ter amplitudes de polegadas.''\cite
+{Gillespie}
+
+O fato de as v\'{a}rias PSDs de pistas diferentes possuirem um comportamento
+caracter\'{i}sto de queda da amplitude com o aumento do n\'{u}mero de onda
+nos mostra que o conceito de propriedades m\'{e}dias para determinar perfis
+de pista pode ser muito \'{u}til no estudo da resposta de autm\'{o}veis
+\`{a}s excita\c{c}\~{o}es da pista.
+
+Os modelos de perfis de pista s\~{a}o usualmente modelados como uma
+amplitude que diminui com a frequ\^{e}ncia na segunda ou quarta ordem. Os
+modelos, usualmente, utilizam a combina\c{c}\~{a}o de uma sequ\^{e}ncia de
+n\'{u}meros aleat\'{o}rios e uma curva aproximada por polin\^{o}mios\cite
+{Sayers01},\cite{Gillespie}, \cite{Montiglio}, \cite{Genta}, \cite{ElBeheiry
+and Karnopp}, \cite{X.P.Lu}, \cite{Dodds} embora existam propostas que se
+baseiam na obten\c{c}\~{a}o da PSD utilizando uma fun\c{c}\~{a}o exponencial 
+\cite{Tamboli and Joshi} e \cite{Kozin}.
+
+Na literatura especializada encontram-se normalmente duas formas
+anal\'{i}ticas distintas para a constru\c{c}\~{a}o mat\'{e}matica de uma PSD
+representativa para pistas t\'{i}picas de conforto. Autores como Sayers \cite
+{Sayers01}, Genta \cite{Genta}, Montiglio \cite{Montiglio}, ElBeheiry e
+Karnopp \cite{ElBeheiry and Karnopp}, Lu e Segel \cite{X.P.Lu} propuseram e
+desenvolveram trabalhos com seguinte equa\c{c}\~{a}o:
+
+\begin{equation}
+S(\gamma )=G_{o}.\gamma ^{-n}  \label{PSD01}
+\end{equation}
+
+Por outro lado, Gillespie \cite{Gillespie} e Montiglio \cite{Montiglio}
+apresentam a seguinte formula\c{c}\~{a}o para a representa\c{c}\~{a}o da
+pista.
+
+\begin{equation}
+S\left( \gamma \right) =\frac{\left( G_{o}.\gamma ^{n}+\gamma
+_{o}^{n}\right) }{\gamma ^{n}.\left( 2.\pi .\gamma \right) ^{n}}
+\label{merda}
+\end{equation}
+
+Onde tem-se:
+
+$\S(\gamma )$\ = Amplitude da PSD [$m^{2}/ciclos/m$]$;$
+
+$\gamma $ = N\'{u}mero de onda [$cilos/m$]$;$
+
+$G_{o}$=Coeficiente de Rugosidade [$m^{2}\times ciclos/m$]$;$
+
+$\gamma _{o}$= Corte do N\'{u}mero de onda [$cilos/m$]$;$
+
+$n$ = Expoente adimensional.
+
+Dos autores citados acima, Gillespie\cite{Gillespie}, Lu\cite{X.P.Lu},
+ElBeheiry e Karnopp\cite{ElBeheiry and Karnopp} e Sayers\cite{Sayers01}
+prop\~{o}e a utiliza\c{c}\~{a}o do expoente $n$ igual a 2, enquanto Genta 
+\cite{Genta}, Dodds\cite{Dodds} e Montiglio\cite{Montiglio} apresentam o
+expoente $n$ variando entre 1.36 e 3.8.
+
+De acordo com\ Genta\cite{Genta}, as normas ISO sugerem que se utiliza $n=2$
+para irregularidades com comprimento de onda maiores que $6m$ e $n=1.37$
+para irregularidades com comprimentos de onda menores que o limite
+mencionado.
+
+Alguns valores para o Coeficiente de Rugosidade $G_{o}$ utilizados por Lu 
+\cite{X.P.Lu01}, ElBeheiry e Karnopp\cite{ElBeheiry and Karnopp} est\~{a}o
+apresentados na tabela a seguir.
+
+\begin{equation}
+\begin{tabular}{||l||l||}
+\hline\hline
+Tipo de Pista & Coeficiente de Rugosidade da Pista $\left[ m^{2}\times
+ciclos/m\right] $ \\ \hline\hline
+A (Muito Boa) & \multicolumn{1}{||c||}{$0.001\times 10^{-4}$} \\ \hline
+B (Boa) & \multicolumn{1}{||c||}{$0.004\times 10^{-4}$} \\ 
+C (M\'{e}dia) & \multicolumn{1}{||c||}{$0.016\times 10^{-4}$} \\ 
+D (Irregular) & \multicolumn{1}{||c||}{$0.064\times 10^{-4}$} \\ 
+E (Muito Irregular) & \multicolumn{1}{||c||}{$0.259\times 10^{-4}$} \\ 
+\hline\hline
+\end{tabular}
+\label{TabelaGo}
+\end{equation}
+
+O gr\'{a}fico a seguir mostra PSDs t\'{i}picas para cinco tipos de pista
+utilizando a classifica\c{c}\~{a}o e os valores de $G_{o}$ propostos por Lu
+e ElBeheiry\cite{X.P.Lu},\cite{ElBeheiry and Karnopp} e apresentados na
+tabela\ref{TabelaGo}.\FRAME{fhFU}{3.122in}{3.5743in}{0pt}{\Qcb{PSD de
+algumas pistas t\'{i}picas segundo a classifica\c{c}\~{a}o apresentada na
+tabela anterior.}}{}{psd01.jpg}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "F";width
+3.122in;height 3.5743in;depth 0pt;original-width 3.9998in;original-height
+4.5835in;cropleft "0";croptop "1";cropright "1";cropbottom "0";filename
+'PSD01.jpg';file-properties "XNPEU";}}
+
+Da forma como foi apresentada at\'{e} agora a PSD, ela \'{e} uma fun\c{c}%
+\~{a}o do espa\c{c}o e n\~{a}o uma fun\c{c}\~{a}o do tempo. A representa\c{c}%
+\~{a}o de uma PSD de pista pode ser mais \'{u}til se apresentada em fun\c{c}%
+\~{a}o do tempo.
+
+A intensidade e a forma como as vibra\c{c}\~{o}es provenientes de uma pista
+s\~{a}o impostas a um autom\'{o}vel que por ela trafega s\~{a}o,
+basicamente, fun\c{c}\~{o}es da rugosidade da pista e da velocidade com que
+o autom\'{o}vel trafega. Pode-se dessa forma obter PSDs diferentes para uma
+mesma pista variando-se a velocidade do ve\'{i}culo, ou seja, a quantidade
+de energia que ser\'{a} imposta ao ve\'{i}culo ser\'{a} fun\c{c}\~{a}o da
+velocidade que ele trafega pela pista. Para obter PSDs que sejam fun\c{c}%
+\~{a}o do tempo e n\~{a}o do espa\c{c}o, deve-se multiplicar a velocidade
+com que trafega o ve\'{i}culo pelo n\'{u}mero de onda\cite{Gillespie}, como
+mostra a seguinte equa\c{c}\~{a}o\cite{Genta}.
+
+\begin{equation}
+S(\lambda )=\frac{S(\gamma )}{V}  \label{PSDhz}
+\end{equation}
+
+Sendo a frequ\^{e}ncia definida como,
+
+\begin{equation}
+\lambda =V.\gamma  \label{Freq_PSD}
+\end{equation}
+
+tem-se que a PSD temporal de uma pista, pode ser definifa pela equa\c{c}%
+\~{a}o seguinte.
+
+\begin{equation}
+S(\lambda )=G_{o}.V^{n-1}.\lambda ^{-n}  \label{PSDhz01}
+\end{equation}
+
+$S(\lambda )$= PSD do deslocamento [$m^{2}/Hz$]$;$
+
+$V$ = Velocidade horizontal do ve\'{i}clulo [$m/s$]$;$
+
+$\lambda $ = Frequ\^{e}ncia [$Hz$]$;$
+
+\emph{Para ondula\c{c}\~{o}es com comprimentos de onda maiores que 6m, ou
+seja, }$n=2$\emph{\ a PSD do deslocamento \'{e} proporcional a }$\lambda
+^{-2}$\emph{\ e a PSD da acelera\c{c}\~{a}o \'{e} constante, dessa forma a
+PSD da acelera\c{c}\~{a}o vertical pode ser representada por um ru\'{i}do
+branco.} (Deve ou n\~{a}o ser comentado?)
+
+Os gr\'{a}ficos a seguir mostram PSDs para o deslocamento, a velocidade e a
+acelera\c{c}\~{a}o verticais de uma pista classificada como m\'{e}dia, ver
+tabela\ref{TabelaGo} , para um autom\'{o}vel trafegando a $80$ e $100km/h$%
+.\bigskip
+
+\FRAME{fhF}{4.8274in}{2.1309in}{0pt}{}{}{Grafpsdhz}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "F";width 4.8274in;height 2.1309in;depth
+0pt;original-width 9.0935in;original-height 3.9998in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";filename 'PSD02hz.jpg';file-properties
+"XNPEU";}}
+
+Pode-se observar que o espectro de acelera\c{c}\~{a}o possui um aumento com
+o aumento da frequ\^{e}ncia. Esse comportamento mostra que a altas
+frequ\^{e}ncias as irregularidades da pista ser\~{a}o sentidas
+predominantemente na forma de acelera\c{c}\~{o}es.
+
+A influ\^{e}ncia da velocidade pode ser vista nos graficos da figura acima.
+Nota-se que aumentando a velocidade causa o deslocamento das curvas no
+sentido do aumento das amplitudes do deslocamento, velocidade e acelera\c{c}%
+\~{a}o.
+
+Sendo as irregularidades das pistas apresentadas de modo aleat\'{o}rio
+pode-se prever que haja tamb\'{e}m diferen\c{c}as em termos de eleva\c{c}%
+\~{a}o entre os caminhos percorridos pelos pneus de um lado e de outro de um
+ve\'{i}culo.Essa diferen\c{c}a \'{e} respons\'{a}vel por excitar o modo de
+''roll'' do ve\'{i}culo que comumente \'{e} desprezado nos estudos de
+conforto vibracional. Segundo Gillespie\cite{Gillespie}, em grande parte dos
+ve\'{i}culos a resson\^{a}ncia em ''roll'' ocorre a uma frequ\^{e}ncia mais
+baixa que a resson\^{a}ncia em ''bounce'', por\'{e}m, para baixas
+frequ\^{e}ncias a magnitude da exita\c{c}\~{a}o do modo de ''roll'' e
+inferior \`{a} exita\c{c}\~{a}o dos modos de ''bounce'' e ''pitch''. J\'{a}
+nas frequ\^{e}ncias mais altas quando as magnitudes das excita\c{c}\~{o}es
+dos modos de ''roll'' e ''bounce'' s\~{a}o da mesma ordem de grandeza os
+ve\'{i}culos n\~{a}o possuem boa resposta para o modo de ''roll''. \emph{(ou
+n\~{a}o s\~{a}o t\~{a}o responsivos ao modo de roll)}
+
+A densidade espectral \'{e} a distribui\c{c}\~{a}o da varian\c{c}a do perfil
+em fun\c{c}\~{a}o do n\'{u}mero de onda (m\'{e}dia quadr\'{a}tica da eleva\c{%
+c}\~{a}o=varian\c{c}a quando a m\'{e}dia da eleva\c{c}\~{a}o \'{e} igual a
+zero).
+
+\section{A Resposta Din\^{a}mica de um Autom\'{o}vel}
+
+O comportamento din\^{a}mico de um ve\'{i}culo pode ser caracterizado
+principalmente pelas rela\c{c}\~{o}es entre as excita\c{c}\~{o}es a ele
+impostas e a forma como ele reage a estas exicta\c{c}\~{o}es, ou seja, a rela%
+\c{c}\~{a}o entre as entradas e as sa\'{i}das. As entradas podem ser
+qualquer tipo de excita\c{c}\~{a}o j\'{a} apresentada anteriormente ou uma
+combiana\c{c}\~{a}o delas e as respostas normalmente s\~{a}o obtidas em
+forma da acelera\c{c}\~{a}o da carroceria.
+
+Um ve\'{i}culo n\~{a}o responde da mesma forma a todas as faixas de
+frequ\^{e}ncia das excita\c{c}\~{o}es a que ele est\'{a} sujeito, ao
+contr\'{a}rio, ele amplifica ou atenua as excita\c{c}\~{o}es provenientes
+das fontes de excita\c{c}\~{a}o de forma diferente para cada faixa de
+frequ\^{e}ncia.
+
+A frequ\^{e}ncias muito baixas, pode-se afirmar que n\~{a}o se observa
+nenhuma resposta do ve\'{i}culo, pois a carroceria do autom\'{o}vel move-se
+solid\'{a}ria com os eixos do ve\'{i}culo. Na faixa de frequ\^{e}ncia de 1 a
+2 Hz, ocorre a resson\^{a}ncia da carroceria em rela\c{c}\~{a}o \`{a}
+suspens\~{a}o.Nessa faixa de frequ\^{e}ncia as irregularidades da pista
+correspondentes a essa frequ\^{e}ncia s\~{a}o amplificadas pelo modo de
+''bounce'' do ve\'{i}culo. A amplifica\c{c}\~{a}o nessas frequ\^{e}ncias
+gira em torno de 1.5 a 3 vezes dependendo do amortecimento do sistema de
+suspens\~{a}o do ve\'{i}culo. A segunda ress\^{o}nancia ocorre entre 8 e 12
+Hz e corresponde a resson\^{a}ncia da massa n\~{a}o suspensa, sistema
+pneu/roda/montante.
+
+Acima dessa faixa de frequ\^{e}ncia, a amplitude das irregularidades da
+pista \'{e} atenuada pela incapcidade da suspens\~{a}o do ve\'{i}culo em
+seguir as irregularidades e nessa faixa as irregularidades s\~{a}o quase
+totalmente absorvidas pelas deflex\~{o}es dos pneus\cite{Gillespie and
+Sayers}.
+
+\subsection{Comportamento Din\^{a}mico de um Autom\'{o}vel}
+
+O principal objetivo de se ter um modelo mat\'{e}matico que represente,
+mesmo que aproximadamente, o comportamento din\^{a}mico do ve\'{i}culo \'{e}
+o de poder prever o comportamento deste sem a necessidade de se construir um
+prot\'{o}tipo. Os modelos mat\'{e}maticos auxiliam aos projetitas desde o
+in\'{i}cio do desenvolvimento de um autom\'{o}vel at\'{e} nos \'{u}ltimos
+acertos ap\'{o}s at\'{e} da constru\c{c}\~{a}o de um prot\'{o}tipo.
+
+Segundo Jolly\cite{Jolly}, existem duas classes de par\^{a}metros que
+definem um modelo mat\'{e}matico para o estudo do conforto de um
+autom\'{o}vel, s\~{a}o elas:
+
+-par\^{a}metros estruturais, que s\~{a}o as massas suspensas e
+n\~{a}o-suspensas, a rigidez dos pneus, a rigidez das suspens\~{o}es e os
+seus coeficientes de amortecimento,que agem linearmente;e
+
+-par\^{a}metros de ajustes finais, o atrito das suspens\~{o}es, as n\~{a}o
+linearidades dos pneus e os batentes e buchas el\'{a}sticas onde s\~{a}o
+montados os amortecedores e bra\c{c}os da suspens\~{a}o, que agem de forma
+n\~{a}o-linear.
+
+Essas caracter\'{i}sticas corroboram para o fato dos porjetistas utilizarem
+no in\'{i}cio dos projetos modelos mais simples, pois deve-se determinar
+neste momento as caracter\'{i}sticas macro do autom\'{o}vel, e modelos mais
+complexos e refinados para os acertos finais do projeto.
+
+Os modelos simples de um quarto de ve\'{i}culo e meio ve\'{i}culo s\~{a}o,
+normalmente, utilizados no in\'{i}cio dos trabalhos para a determina\c{c}%
+\~{a}o das caracteristicas principais do ve\'{i}culo. Esses dois modelos
+permitem estudos da din\^{a}mica vertical, modo de ''bounce'' no modelo de
+1/4 de ve\'{i}culo e os modos de ''bounce'' e ''pitch'' no modelo de meio
+ve\'{i}culo.
+
+Os modelos modelos completos com 7 graus de liberdade ou mais,
+n\~{a}o-lineares e modelos utilizando t\'{e}cnicas de m\'{u}ltiplos corpos
+podem ser utilizados para os ajustes finais do projeto, verificar a
+influ\^{e}ncia de algum componente no comportamento din\^{a}mico do
+autom\'{o}vel, ou mesmo para o estudo do modos de ''roll'' e ''yaw'' da
+carroceria.
+
+\subsection{ Modelo de 1/4 de ve\'{i}culo}
+
+O modelo de 1/4 de ve\'{i}culo apesar de ser um modelo bastante simples
+\'{e} de extrema importancia para compreender alguns fen\^{o}menos da
+resposta do autom\'{o}vel as fontes de excita\c{c}\~{a}o a que ele est\'{a}
+sujeito.
+
+Carbon\footnote{%
+Bourcier De Carbon Ch.: A theory and an effective design of the damped
+suspension of ground vehicles, III FISITA Congress,1950.}.
+
+Dois dos mais comuns modelos de 1/4 de autom\'{o}vel est\~{a}o apresentados
+na figura abaixo.
+
+\FRAME{fhFU}{3.0312in}{1.919in}{0pt}{\Qcb{Modelos de 1/4 de ve\'{i}culo com
+1 e 2 graus de liberdade.}}{\Qlb{14veiculo}}{carbon.jpg}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "F";width 3.0312in;height 1.919in;depth
+0pt;original-width 6.333in;original-height 3.9998in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";filename 'Carbon.jpg';file-properties
+"XNPEU";}}
+
+O primeiro modelo \'{e} caracterizado por um sistema massa-mola-amortecedor,
+portanto com um \'{u}nico grau de liberdade, com excita\c{c}\~{a}o feita
+pela base, onde o pneu \'{e} considerado como corpo r\'{i}gido, a massa
+representa a carroceria (massa suspensa) e a mola e o amortecedor
+representam a rigidez e o amortecimeto do sistema de suspens\~{a}o. Esse
+tipo de modelo pode ser utilizado quando as frequ\^{e}ncias de interesse
+est\~{a}o pr\'{o}ximas a faixa de frequ\^{e}ncia de resson\^{a}ncia da massa
+suspensa.
+
+O\ segundo modelo tem dois graus de liberdade e considera,, al\'{e}m do
+primeiro, a rigidez e o amortecimento do pneu e a massa n\~{a}o-suspensa.
+Para frequ\^{e}ncias na faixa de 0Hz a 50Hz esse modelo \'{e} utilizado e
+resultados satisfat\'{o}rios s\~{a}o obtidos.
+
+Segundo Genta\cite{Genta}, um terceiro modelo com tr\^{e}s graus de
+liberdade permite estudos em faixas de frequ\^{e}ncia que excedam a primeira
+frequ\^{e}ncia natural dos pneus.
+
+O modelo de 1/4 de ve\'{i}culo com dois graus de liberdade permite o estudo
+da resposta do autom\'{o}vel de forma relativamente f\'{a}cil, com esse
+modelo realizam-se v\'{a}rios estudos de conforto vibracional de
+ve\'{i}culos.
+
+Aplicando a 2%
+%TCIMACRO{\UNICODE{0xaa} }%
+%BeginExpansion
+${{}^a}$%
+%EndExpansion
+lei de Newton para o sistema din\^{a}mico representado pelo modelo de dois
+graus de liberdade da figura anterior, obtem-se o seguinte sistema de equa\c{%
+c}\~{o}es diferenciais:
+
+\begin{eqnarray}
+Ms.\frac{dZ^{2}}{d^{2}t}+Cs.(\frac{dZ}{dt}-\frac{dZu}{dt})+Ks.(Z-Zu) &=&Fm
+\label{14veiculoequa01} \\
+mu.\frac{dZu^{2}}{d^{2}t}+Cs.(\frac{dZu}{dt}-\frac{dZ}{dt})+Ks.(Zu-Z)+Ct.(%
+\frac{dZu}{dt}-\frac{dh}{dt})+Kp.(Zu-h) &=&Ft  \nonumber
+\end{eqnarray}
+
+Reescrevendo a segunda equa\c{c}\~{a}o tem-se:
+
+\begin{eqnarray}
+Ms.\frac{dZ^{2}}{d^{2}t}+Cs.(\frac{dZ}{dt}-\frac{dZu}{dt})+Ks.(Z-Zu) &=&Fm
+\label{14veiculoequa02} \\
+mu.\frac{dZu^{2}}{d^{2}t}+Cs.(\frac{dZu}{dt}-\frac{dZ}{dt})+Ks.(Zu-Z)+Ct.%
+\frac{dZu}{dt}+Kp.Zu &=&
+\end{eqnarray}
+
+$\qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad
+\qquad 
+\begin{array}{c}
+Ft+Ct.\frac{dh}{dt}+Kp.h
+\end{array}
+$
+
+O sistema de equa\c{c}\~{o}es acima pode ser apresentado na forma matricial:
+
+\bigskip 
+\begin{equation}
+\begin{array}{cc}
+\begin{array}{cc}
+Ms & 0 \\ 
+0 & mu
+\end{array}
+.
+\begin{array}{c}
+\frac{dZ^{2}}{d^{2}t} \\ 
+\frac{dZu^{2}}{d^{2}t}
+\end{array}
++
+\begin{array}{cc}
+Cs & -Cs \\ 
+-Cs & Cs+Ct
+\end{array}
+.
+\begin{array}{c}
+\frac{dZ}{dt} \\ 
+\frac{dZu}{dt}
+\end{array}
++
+\begin{array}{cc}
+Ks & -Ks \\ 
+-Ks & Ks+Kp
+\end{array}
+.
+\begin{array}{c}
+Z \\ 
+Zu
+\end{array}
+= & Fm \\ 
+Ft+Ct.\frac{dh}{dt}+Kp.h & 
+\end{array}
+\end{equation}
+
+\bigskip Onde:
+
+$Ms$ \'{e} a massa suspensa;
+
+$mu$ \'{e} a massa n\~{a}o suspensa;
+
+$Cs$ \'{e} o coeficiente de amorteciemento do sistema de suspens\~{a}o;
+
+$Ct$ \'{e} o coeficiente de amortecimento do pneu;
+
+$Ks$ \'{e} a rigidez do sistema de suspens\~{a}o;
+
+$Kp$ \'{e} a rigidez do pneu;
+
+$Fm$ \'{e} uma for\c{c}a que atua na massa suspensa;
+
+$Ft$ \'{e} uma for\c{c}a que atua na massa n\~{a}o suspensa;
+
+$Z$ \'{e} o deslocamento da massa suspensa;
+
+$Zu$ \'{e} o deslocamento da massa n\~{a}o suspensa;
+
+$h$ \'{e} a eleva\c{c}\~{a}o do perfil da pista.
+
+Considerando que o amortecimeto do pneum\'{a}tico \'{e} comumente desprezado
+na obten\c{c}\~{a}o de modelos para o estudo de conforto\cite{Genta} \ e
+visando obter a resposta das massas n\~{a}o suspensas e suspensas devido
+unicamente as irregularidades da pista,ou seja considerando $Fm=Ft=0$, o
+sistema de equa\c{c}\~{o}es diferenciais para o modelo acima pode ser
+reescrito da seguinte forma:
+
+\begin{eqnarray}
+Ms.\frac{dZ^{2}}{d^{2}t}+Cs.(\frac{dZ}{dt}-\frac{dZu}{dt})+Ks.(Z-Zu) &=&0
+\label{14veiculoequa03} \\
+mu.\frac{dZu^{2}}{d^{2}t}+Cs.(\frac{dZu}{dt}-\frac{dZ}{dt})+Ks.(Zu-Z)+Kp.Zu
+&=&Kp.h  \nonumber
+\end{eqnarray}
+
+A solu\c{c}\~{a}o para o sistema de equa\c{c}\~{o}es diferenciais acima
+\'{e} amplamente difundido no estudo de sistemas din\^{a}micos e vibra\c{c}%
+\~{o}es, podem ser citados os seguintes autores\cite{Ewins}\cite{Inman} \cite
+{Pipes}\cite{Thomson} como refer\^{e}ncia \`{a} solu\c{c}\~{a}o de sistemas
+com v\'{a}rios graus de liberdade excitados harmonicamente pela base.
+
+As fun\c{c}\~{o}es de resposta em frequ\^{e}ncia para o deslocamento da
+massa suspensa e da massa n\~{a}o suspensa devido \`{a} varia\c{c}\~{a}o da
+eleva\c{c}\~{a}o do perfil da pista s\~{a}o apresentadas a seguir,com o
+intuito de simplificar a apresenta\c{c}\~{a}o das fun\c{c}\~{o}es de
+resposta em frequ\^{e}ncia, far-se-a a seguinte simplifica\c{c}\~{a}o:
+
+\begin{eqnarray}
+\frac{Z}{h} &=&\frac{Ks.Kp+i.\varpi .Cs.Kp}{(g(\varpi ).\varpi
+.Cs).i+f(\varpi )}  \label{14veiculoequa04} \\
+\frac{Zu}{h} &=&\frac{Ks.Kp-Ms.\varpi ^{2}.Kp+i.\varpi .Cs.Kp}{(g(\varpi
+).\varpi .Cs).i+f(\varpi )}  \label{14veiculoequa05}
+\end{eqnarray}
+
+Onde:
+
+\begin{eqnarray}
+f(\varpi ) &=&Ms.mu.\varpi ^{4}-[(Kp+Ks).Ms+Ks.mu].\varpi ^{2}+Ks.Kp
+\label{14veiculoequa06} \\
+\bigskip g(\varpi ) &=&Kp-[\varpi ^{2}.(Ms+mu)]  \label{14veiculoequa07}
+\end{eqnarray}
+
+O ganho associado ao sistema acima \'{e} representado pela FRF, ou seja pela
+raz\~{a}o entre a amplitude do deslocamento e amplitude da excita\c{c}%
+\~{a}o, seja esta uma for\c{c}a, uma acelera\c{c}\~{a}o ou at\'{e} um
+deslocamento.
+
+\subsection{Resposta da massa suspensa e n\~{a}o suspensa.}
+
+A equa\c{c}\~{a}o \ref{14veiculoequa04} representa a FRF da massa suspensa
+devido a excita\c{c}\~{a}o decorrente da varia\c{c}\~{a}o de eleva\c{c}%
+\~{a}o do perfil da pista e a equa\c{c}\~{a}o \ref{14veiculoequa05}
+representa a FRF da massa n\~{a}o suspensa devido a mesma excita\c{c}\~{a}o.
+A figura a seguir mostra o ganho da carroceria (massa suspensa) e da massa
+n\~{a}o suspensa para um ve\'{i}culo com raz\~{a}o de amortecimento $\zeta
+=0.24$.\ \ 
+
+\FRAME{fhFU}{3.7144in}{3.3797in}{0pt}{\Qcb{Compara\c{c}\~{a}o entre FRF da
+carroceria e da massa n\~{a}o suspensa devido as irregularidades da pista.}}{%
+\Qlb{receptance00}}{2dofgraf01.jpg}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "F";width
+3.7144in;height 3.3797in;depth 0pt;original-width 3.6668in;original-height
+3.333in;cropleft "0";croptop "1";cropright "1";cropbottom "0";filename
+'2dofgraf01.jpg';file-properties "XNPEU";}}
+
+\bigskip Observa-se que a baixas frequ\^{e}ncias o ganho \'{e} unit\'{a}rio
+o que mostra que as massas suspensas e n\~{a}o suspensas tem amplitude de
+deslocamento exatamente igual \`{a} da pista, o autom\'{o}vel ''copia''
+exatamente o perfil da pista.
+
+A frequ\^{e}ncias pr\'{o}ximas de $1Hz$ a massa suspensa entra em
+resson\^{a}ncia, o que corresponde ao primeiro modo de vibrar do sistema de
+2 graus de liberdade, em torno dessa frequ\^{e}ncia as irregularidades da
+pista s\~{a}o amplificadas entre 1.5 e 3 vezes para autom\'{o}veis de
+passeio.\cite{Gillespie and Sayers} De acordo com Gillespie\cite{Gillespie}
+nos projetos classicos de autom\'{o}veis escolhe-se a resson\^{a}ncia da
+carroceira pr\'{o}xima a $1Hz$, o que se reflete claramente no gr\'{a}fico 
+\ref{receptance00}.
+
+O segundo pico na curva de resposta da massa suspensa \'{e} devido a
+resson\^{a}ncia da massa n\~{a}o suspensa que ocorre na faixa de
+frequ\^{e}ncia entre $10$ e$12Hz$, o que corresponde ao segundo modo de
+vibrar do sistema. Pode-se observar no gr\'{a}fico \ref{receptance00} \ que
+a ocorr\^{e}ncia do segundo pico na curva de resposta da massa suspensa
+corresponde ao maior ganho da curva da massa n\~{a}o suspensa.O mesmo ocorre
+para a curva da massa n\~{a}o suspensa pr\~{o}ximo a frequ\^{e}ncia de $1Hz$.
+
+O gr\'{a}fico \ref{Accelerance01} a seguir apresenta a FRF da acelera\c{c}%
+\~{a}o da carroceria que \'{e} obtida multiplicando-se a FRF do
+deslocamento, equa\c{c}\~{a}o\ref{14veiculoequa04}, por $\varpi ^{2}$,
+j\'{a} que a resposta e a exita\c{c}\~{a}o do sistema s\~{a}o considerados
+harmonicos para a solu\c{c}\~{a}o do sistema. Desta forma a resposta em
+frequ\^{e}ncia da acelera\c{c}\~{a}o da carroceria, caracterizada pela
+raz\~{a}o entre a acelera\c{c}\~{a}o da carroceria e a acelera\c{c}\~{a}o
+imposta nos pneus devido a varia\c{c}\~{a}o da eleva\c{c}\~{a}o do perfil da
+pista, pode ser escrita da seguinte forma:
+
+\begin{equation}
+\frac{\frac{dZ^{2}}{d^{2}t}}{\frac{dh^{2}}{d^{2}t}}=\frac{\varpi
+^{2}Ks.Kp+i.\varpi ^{3}.Cs.Kp}{(g(\varpi ).\varpi .Cs).i+f(\varpi )}
+\label{14veiculoequa15}
+\end{equation}
+
+\FRAME{fhFU}{4.0491in}{3.3797in}{0pt}{\Qcb{FRF da acelera\c{c}\~{a}o da
+massa suspensa.}}{\Qlb{Accelerance01}}{2dofgraf02.jpg}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "F";width 4.0491in;height 3.3797in;depth
+0pt;original-width 3.9998in;original-height 3.333in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";filename '2dofgraf02.jpg';file-properties
+"XNPEU";}}
+
+A resposta da carroceira a excita\c{c}\~{o}es provenientes do grupo
+moto-propulsor e de irregularidades e desbalanceamento do conjunto pneu/roda
+tamb\'{e}m s\~{a}o de interesse para o estudo do conforto de ve\'{i}culos.
+Para se obter a resposta da carroceria a excita\c{c}\~{o}es na pr\'{o}pria
+carroceria, por exemplo vibra\c{c}\~{o}es provenientes do sistema
+moto-propulsor, resolve-se novamente o sistema de equa\c{c}\~{o}es
+diferenciais \ref{14veiculoequa02}, considerando agora $Ft=h=0$. Comumente
+utiliza-se uma fun\c{c}\~{a}o de ganho um pouco diferente da obtida na solu%
+\c{c}\~{a}o do sistema de equa\c{c}\~{o}es \ref{14veiculoequa02}, para se\
+obter uma fun\c{c}\~{a}o de ganho adimensional multiplica-se a FRF da acelera%
+\c{c}\~{a}o da massa suspensa pela pr\'{o}pria massa suspensa, o que resulta
+em uma raz\~{a}o de for\c{c}as.Desta forma a fun\c{c}\~{a}o de resposta
+\'{e} equivalente a uma for\c{c}a na massa suspensa necess\'{a}ria para
+produzir as acelere\c{c}\~{o}es a que ela est\'{a} sujeita.
+
+\begin{equation}
+\frac{\frac{dZ^{2}}{d^{2}t}.Ms}{Fm}=\frac{(Ks+Kp-mu.\varpi ^{2}).Ms.\varpi
+^{2}+i.\varpi ^{3}.Cs.Ms}{(g(\varpi ).\varpi .Cs).i+f(\varpi )}
+\label{14veiculoequa13}
+\end{equation}
+
+\bigskip Para a obten\c{c}\~{a}o da resposta devido ao desbalanceamento do
+conjunto pneu/roda, deve-se proceder da mesma forma, solucionado o sistema
+de equa\c{c}\~{o}es diferenciais \ref{14veiculoequa02} para $Fm=h=0$. De
+maneira an\'{a}loga a resposta devido as exita\c{c}\~{o}es provenientes do
+moto-propulsor procura-se a uma fun\c{c}\~{a}o ganho adimensional e portanto
+multiplica-se a FRF da acelera\c{c}\~{a}o da massa suspesnsa pela
+pr\'{o}pria massa suspensa. Obtem-se dessa forma a raz\~{a}o entre a
+amplitude da for\c{c}a necessaria para produzir as acelere\c{c}\~{o}es a que
+est\'{a} sujeita a massa suspensa e a amplitude da for\c{c}a devido ao
+desbalanceamento do conjunto pneu/roda, e pode ser escrito da seguinte
+forma: 
+\begin{equation}
+\frac{\frac{dZ^{2}}{d^{2}t}.Ms}{Ft}=\frac{Ks.Ms.\varpi ^{2}+i.\varpi
+^{3}.Cs.Ms}{(g(\varpi ).\varpi .Cs).i+f(\varpi )}  \label{14veiculoequa14}
+\end{equation}
+
+O gr\'{a}fico \ref{Accelerance02} a seguir mostra a resposta da carroceria
+as excita\c{c}\~{o}es diretamente na carroceria e a excita\c{c}\~{o}es que
+atuam no conjunto roda/pneu. A primeira curva que representa a resposta da
+carroceria as excita\c{c}\~{o}es na pr\'{o}pria carroceria possui ganho nulo
+a frequ\^{e}ncias pr\'{o}ximas de zero. Pr\'{o}ximo de $1Hz$ \ a curva
+apresenta um pico com ganho da ordem de $2.5$ e em seguida a massa suspensa
+responde com ganho aproximadamente igual a 1 o que mostra que para
+frequ\^{e}ncias acima de $1Hz$ o ve\'{i}culo possui uma alta sensibilidade a
+excita\c{c}\~{o}es atuantes diretamente na carroceria, pois os deslocamentos
+produzidos pelas for\c{c}as s\~{a}o t\~{a}o pequenos que o sistema de
+suspens\~{a}o n\~{a}o \'{e} mais capaz de absorv\'{e}-los e a for\c{c}a
+\'{e} quase toda dissipada em acelera\c{c}\~{o}es da massa suspensa\cite
+{Gillespie}.
+
+A segunda curva mostra a resposta da carroceria \`{a} excita\c{c}\~{o}es
+provenientes da massa n\~{a}o suspensa. Para valores de frequ\^{e}ncia
+pr\'{o}ximos de zero o ganho da carroceria \'{e} igual a zero, pois as for\c{%
+c}as na suspens\~{a}o s\~{a}o absorvidas pela rigidez dos pneus. O\ ganho
+aumenta com o aumento da frequ\^{e}ncia e pr\'{o}ximo a $1Hz$ aparece o
+primeiro pico devido a resson\^{a}ncia da massa suspensa, o ganho continua a
+aumentar at\'{e} chegar a unidade em torno da faixa $10$ a $12Hz$.
+
+\FRAME{fhFU}{3.7144in}{3.3797in}{0pt}{\Qcb{FRF da acelera\c{c}\~{a}o da
+carroceria devido a excita\c{c}\~{o}es internas.}}{\Qlb{Accelerance02}}{%
+2dofgraf03.jpg}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "F";width
+3.7144in;height 3.3797in;depth 0pt;original-width 3.6668in;original-height
+3.333in;cropleft "0";croptop "1";cropright "1";cropbottom "0";filename
+'2dofgraf03.jpg';file-properties "XNPEU";}}
+
+\subsection{Influencia do amortecimento na resposta da massa suspensa.}
+
+O gr\'{a}fico \ref{receptance01}, a seguir, apresenta o ganho da carroceria,
+em termos de deslocamento\footnote{%
+As fun\c{c}\~{o}es de resposta em frequ\^{e}ncia podem ser apresentadas como
+a raz\~{a}o de amplitudes de deslocamento ( Receptance), de velocidade
+(Mobility) e acelera\c{c}\~{a}o (Accelerance).\cite{Ewins}}, do modelo de
+1/4 de ve\'{i}culo e dois graus de liberdade \`{a}s excita\c{c}\~{o}es
+devido \`{a}s irregularidades da pista variando o coeficiente de
+amortecimento da suspens\~{a}o.
+
+\FRAME{fhFU}{4.6389in}{4.0534in}{0pt}{\Qcb{FRF da carroceira variando o
+coeficiente de amortecimento da suspens\~{a}o.}}{\Qlb{receptance01}}{%
+2dofgraf.jpg}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "F";width
+4.6389in;height 4.0534in;depth 0pt;original-width 6.3123in;original-height
+5.5106in;cropleft "0";croptop "1";cropright "1";cropbottom "0";filename
+'2dofgraf.jpg';file-properties "XNPEU";}}
+
+Observando o gr\'{a}fico \ref{receptance01} nota-se que para $Cs=0$, um
+sistema de dois graus de liberdade n\~{a}o amortecido, a resposta da massa
+suspensa apresenta dois picos muito amplificados, com o ganho tendendo a
+infinito pr\'{o}ximo as frequ\^{e}ncias de resson\^{a}ncia da carroceria. O
+primeiro pico corresponde ao primeiro modo de vibrar do sistema; esse modo
+corresponde aproximadamente \`{a} resson\^{a}ncia da massa suspensa e sua
+frequ\^{e}ncia natural \'{e} aproximadamente igual a:
+
+\begin{equation}
+f1\cong \frac{1}{2.\pi }.\sqrt{(\frac{Kp}{Kp+Ks}.\frac{Ks}{Ms})}
+\label{14veiculoequa08}
+\end{equation}
+
+Considerando que normalmente $Kp$ \'{e} muito maior que $Ks$ tem-se que a
+raz\~{a}o; 
+\begin{equation}
+(\frac{Kp}{Kp+Ks})\cong 1  \label{14veiculoequa09}
+\end{equation}
+o que faz com que a primeira frequ\^{e}ncia natural do sistema se aproxime
+de:
+
+\begin{equation}
+f1\cong \frac{1}{2.\pi }.\sqrt{\frac{Ks}{Ms}}  \label{14veiculoequa10}
+\end{equation}
+
+\bigskip O segundo pico apresentado no gr\'{a}fico \ref{receptance01},
+est\'{a} relacionado com o segundo modo de vibrar do sistema; esse modo
+corresponde aproximadamente \`{a} resson\^{a}ncia da massa n\~{a}o suspensa
+e sua frequ\^{e}ncia \'{e} dada por:
+
+\begin{equation}
+f3\cong \frac{1}{2.\pi }.\sqrt{\frac{Kp+Ks}{mu}}  \label{14veiculoequa11}
+\end{equation}
+
+Quando $Cs=\infty $, o sistema original se degenera, utilizando as palavras
+de Genta\cite{Genta}, e torna-se um sistema de um grau de liberdade n\~{a}o
+amortecido, composto de uma massa equivalente a $(Ms+mu)$, apoiado em uma
+\'{u}nica mola de constante de rigidez $Kp$. Esse fen\^{o}meno faz com que a
+resson\^{a}ncia, para esse caso, \`{a} frequ\^{e}ncia:
+
+\begin{equation}
+f2=\frac{1}{2.\pi }.\sqrt{\frac{Kp}{Ms+mu}}  \label{14veiculoequa12}
+\end{equation}
+
+\bigskip Observando o gr\'{a}fico\ref{receptance01} com cuidado notam-se 4
+pontos indicados pelas letras A, B, C e D onde a resposta da massa suspensa
+independe do amortecimento Cs. Por esses quatro pontos passam todas as
+curvas para os v\'{a}rios amortecimentos, Jolly\cite{Jolly},Genta\cite{Genta}%
+,Inman\cite{Inman} e Thomson\cite{Thomson}, apresentam com mais detalhes as
+propriedades desse sistema e esses pontos not\'{a}veis.
+
+Nota-se que o amortecimento somente ser\'{a} benefico nas regi\~{o}es
+correspondentes a resson\^{a}ncia da carroceria e a da massa n\~{a}o
+suspensa. Nota-se no gr\'{a}fico\ref{receptance01} que ao aumentar-se o
+coeficiente de amortecimento o ganho somente diminuir\'{a} nas regi\~{o}es
+entre os pontos A e B e C e D. Entre os pontos B e C o aumento do
+amortecimento faz com que o ganho aumente, o mesmo acontece para a
+regi\~{a}o \`{a} direita do ponto D.
+
+Normalmente, segundo Jolly\cite{Jolly}, os coeficientes de amortecimento
+cr\'{i}tico para a resson\^{a}ncia da carroceria e da massa n\~{a}o suspensa
+s\~{a}o muito pr\'{o}ximos. Dessa forma, o coeficiente de amortecimento $Cs$%
+, que \'{e} adotado para os ajustes visando conforto vibracional visando
+reduzir a resposta vertical da carroceria na frequ\^{e}ncia de
+resson\^{a}ncia tamb\'{e}m ser\'{a} eficiente no amortecimento na
+resson\^{a}ncia vertical da massa n\~{a}o suspensa. Por outro lado, esse
+amortecimento ter\'{a} um efeito adverso na faixa de frequ\^{e}ncia entre 3
+e 10 Hz, que abrange uma grande faixa no interesse do estudo do conforto de
+autom\'{o}veis e na faixa acima de 12 Hz.
+
+\ \ Segundo Gillespie \cite{Gillespie} \ para a obten\c{c}\~{a}o de boas
+caracter\'{i}sticas de conforto os autom\'{o}veis modernos possuem
+raz\~{o}es de amortecimento entre 0.2 e 0.4. Considerando um modelo de 1/4
+de ve\'{i}culo onde $Ms=221Kg$, $mu=35kg$, $Kp=1.5\times 10^{5}N/m$, $%
+Ks=1.25\times 10^{4}N/m$ e $Cs=800N.s/m$ \ a sua raz\~{a}o de amortecimento
+ser\'{a} igual a $\zeta =0.241$, j\'{a} que a raz\~{a}o de amortecimento
+para um sistema de dois graus de liberdade amortecido pode ser calculada da
+seguinte maneira \cite{Inman}\cite{Thomson}\cite{Genta}\cite{Gillespie}.
+
+\begin{equation}
+\zeta =\frac{Cs}{\sqrt{4.Ks.Ms}}  \label{razao amortecimento}
+\end{equation}
+
+\subsection{A influ\^{e}ncia da rigidez na resposta da massa suspensa}
+
+A predomin\^{a}ncia da rigidez da suspens\~{a}o no isolamento das vibra\c{c}%
+\~{o}es pode ser observada nas equa\c{c}\~{o}es \ref{14veiculoequa08}\ref
+{14veiculoequa09}\ref{14veiculoequa10}, j\'{a} que normalmente a rigidez do
+penum\'{a}tico \'{e} muito maior que a rigidez das molas da suspens\~{a}o, e
+isso faz com a rigidez da suspens\~{a}o seja a principal determinante da
+frequ\^{e}ncia do modo de ''bounce'' do autom\'{o}vel. Para se obter um bom
+isolamento das vibra\c{c}\~{o}es \'{e} sabido que quanto menor a rigidez do
+sistema de suspens\~{a}o tanto melhor ser\'{a} o isolamento. Por\'{e}m a
+rigidez das molas estar\'{a} limitada devido \`{a} deflex\~{a}o est\'{a}tica
+e as caracteristicas de dirigibilidade ''Handling''. A figura a seguir
+mostra claramente a influ\^{e}ncia da rigidez na resposta da carroceria de
+um autom\'{o}vel, a resposta foi obtida utilizando um modelo de 1/4 de
+ve\'{i}culo semelhante ao da figura \ref{14veiculo}.
+
+\FRAME{fhFU}{3.7542in}{3.1047in}{0pt}{\Qcb{Influ\^{e}ncia da rigidez da
+suspens\~{a}o na resposta da carroceira as acelera\c{c}\~{o}es devido as
+irregularidades da pista.}}{\Qlb{Accelerance03}}{2dofgraf04.jpg}{\special%
+{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "F";width 3.7542in;height 3.1047in;depth
+0pt;original-width 5.3333in;original-height 4.4062in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";filename '2dofgraf04.jpg';file-properties
+"XNPEU";}}
+
+A figura \ref{Accelerance02} mostra a resposta em acelera\c{c}\~{a}o da
+massa n\~{a}o suspensa de um modelo de 1/4 de ve\'{i}culo onde a amplitude
+da excita\c{c}\~{a}o varia com o inverso da frequ\^{e}ncia. Considerando a
+frequ\^{e}ncia de $1.2Hz$ a amplitude da acelera\c{c}\~{a}o da excita\c{c}%
+\~{a}o \'{e} de aproximadamente $0.83m/s^{2}$, para $Ks=12500N/m$ a acelera%
+\c{c}\~{a}o da carroceria ser\'{a} de aproximadamente $18.8m/s^{2}$ enquanto
+para $Ks=16000N/m$ a acelera\c{c}\~{a}o da carroceria ser\'{a} de
+aproximadamente $22m/s^{2}$. Nota-se que a frequ\^{e}ncia de resson\^{a}ncia
+aumenta a medida que o valor de $Ks$ aumenta e a amplifica\c{c}\~{a}o das
+acelera\c{c}\~{o}es alcan\c{c}a o valor de aproximadamente $25m/s^{2}$para $%
+Ks=16000N/m$.
+
+\subsection{A influ\^{e}ncia da resson\^{a}ncia da massa n\~{a}o suspensa na
+resposta da massa suspensa.}
+
+A massa n\~{a}o suspensa \'{e} ajustada nos projetos de autom\'{o}veis de
+maneira que a sua frequ\^{e}ncia de resson\^{a}ncia esteja na faixa entre $%
+10 $ e $12Hz$. Cada conjunto de roda/pneu/montante possui um modo vertical
+de vibrar que \'{e} excitado pelas irregularidades da pista e pelas n\~{a}o
+uniformidades do conjunto, essas vibra\c{c}\~{o}es s\~{a}o transmitidas para
+a carroceria. O segundo pico presente na figura \ref{Accelerance03} mostra
+influ\^{e}ncia da resson\^{a}ncia da massa n\~{a}o suspensa nas acelera\c{c}%
+\~{o}es da massa suspensa devido as irregularidades da pista, enquanto a
+curva pontilhada da figura \ref{Accelerance02} mostra a resposta da
+carroceria devido a for\c{c}as atuando na massa n\~{a}o suspensa. Nota-se,
+na figura \ref{Accelerance02}, que o ganho na faixa entre 10 e 12 Hz e muito
+amplificado mostrando a sensibilidade da carroceria \`{a} massa n\~{a}o
+suspensa nessa faixa de frequ\^{e}ncia.
+
+A figura \ref{Accelerance04} mostra a acelera\c{c}\~{a}o da carroceria \
+devido as irregularidades da pista variando-se a massa n\~{a}o suspensa e
+considerando que a amplitude da acelera\c{c}\~{a}o imposta pela pista varia
+com o inverso da frequ\^{e}ncia da excita\c{c}\~{a}o. Ao aumentar-se a massa
+n\~{a}o suspensa a frequ\^{e}ncia de resson\^{a}ncia da mesma diminui
+aumentando a transmissibilidade de vibra\c{c}\~{o}es na faixa entre 2Hz e 12
+Hz.
+
+Segundo Gillespie \cite{Gillespie}, como \'{e} mais f\'{a}cil isolar vibra\c{%
+c}\~{o}es de alta frequ\^{e}ncia em qualquer parte do chassis, a menor massa
+n\~{a}o suspensa produzir\'{a}, geralmente, melhor comportamento do
+autom\'{o}vel em comforto ( ''Ride'').
+
+\FRAME{fhFU}{3.5855in}{3.3477in}{0pt}{\Qcb{FRF da acelera\c{c}\~{a}o da
+massa suspensa variando o valor da massa n\~{a}o suspensa.}}{\Qlb{%
+Accelerance04}}{2dofgraf06.jpg}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "F";width
+3.5855in;height 3.3477in;depth 0pt;original-width 5.0004in;original-height
+4.6665in;cropleft "0";croptop "1";cropright "1";cropbottom "0";filename
+'2dofgraf06.jpg';file-properties "XNPEU";}}
+
+\subsection{Os modos de ''Bounce'' e ''Pitch''}
+
+\bigskip Um autom\'{o}vel trafegando por uma pista pode ser considerado um
+sistema massa mola com m\'{u}ltiplas entradas de excita\c{c}\~{a}o que
+responde de com movimentos de transla\c{c}\~{a}o e rota\c{c}\~{a}o da
+carroceria. As excita\c{c}\~{o}es devido as irregularidades da pista excitam
+v\'{a}rios modos de vibrar do ve\'{i}culo, sendo os principais modos de vibra%
+\c{c}\~{a}o da carroceria, se considerada como um corpo r\'{i}gido, os
+seguintes:
+
+-A transla\c{c}\~{a}o ao longo do eixo Z (''Bounce'');
+
+-A Rota\c{c}\~{a}o em rela\c{c}\~{a}o ao eixo Z (''Yaw'');
+
+-A Rota\c{c}\~{a}o em rela\c{c}\~{a}o ao eixo X (''Roll'');
+
+-A Rota\c{c}\~{a}o em rela\c{c}\~{a}o ao eixo Y (''Pitch'').
+
+No estudo do conforto vibracional os modos de Bounce e Pitch s\~{a}o os mais
+importantes. Segundo Gillespie \cite{Gillespie} os movimentos de ''pitch''
+s\~{a}o importantes pois geralmente s\~{a}o considerados desagrad\'{a}veis e
+s\~{a}o as fontes b\'{a}sicas de vibra\c{c}\~{o}es longitudinais em pontos
+acima do CG da carroceria.O conhecimento dos movimentos de ''pitch'' e
+''bounce'' \'{e} essencial porque a sua combina\c{c}\~{a}o \'{e} que
+determina as vibra\c{c}\~{o}es verticais e longitudinais em qualquer ponto
+do ve\'{i}culo.
+
+Os modos de ''pitch'' e ''bounce'' s\~{a}o dificilemente percebidos
+separadamente, normalmente os modos de vibrar da carroceria s\~{a}o ou
+predominantemente ''pitch'' ou predominantemente ''bounce''. A excita\c{c}%
+\~{a}o de um modo mais que o outro depende b\'{a}sicamente da velocidade em
+que o autom\'{o}vel trafega, a dist\^{a}ncia entre eixos e o comprimento de
+onda das irregularidades da pista.
+
+Considerando, para efeito de visualiza\c{c}\~{a}o, que os modos de
+''bounce'' e ''pitch'' s\~{a}o desacoplados, tem-se que para um comprimento
+de onda das irregularidades da pista da ordem da dist\^{a}ncia entre eixos
+somente o modo de ''bounce'' ser\'{a} excitado. O mesmo ocorrer\'{a} para
+comprimentos de onda da muito maiores que a dist\^{a}ncia entre eixos e para
+comprimentos de ondas menores que tiverem um m\'{u}ltiplo inteiro igual a
+dist\^{a}ncia entre eixos. Em uma forma similar, somente o modo de ''pitch''
+ser\'{a} excitado se o comprimento de onda for igual a duas vezes a
+dist\^{a}ncia entre eixos do ve\'{i}culo ou for menor e tiver um
+m\'{u}ltiplo inteiro impar igual a duas vezes a dist\^{a}ncia entre eixos. 
+\emph{A figura} abaixo ilustra a chamada ''wheelbase filtering''\cite
+{Gillespie}\cite{Genta}.
+
+Para o estudo dos modos e frequ\^{e}ncias de ''pitch'' e ''bounce'' \'{e}
+necess\'{a}rio utilizar modelos de 1/2 de ve\'{i}culo como o ilustrado na
+figura \ref{12veiculo_figura} a seguir, ou modelos completos.
+
+\FRAME{fhFU}{5.0419in}{2.4197in}{0pt}{\Qcb{Modelo de 1/2 ve\`{i}culo e
+quatro graus de liberdade.}}{\Qlb{12veiculo_figura}}{12veiculo.jpg}{\special%
+{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "F";width 5.0419in;height 2.4197in;depth
+0pt;original-width 7.6666in;original-height 3.6668in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";filename '12veiculo.jpg';file-properties
+"XNPEU";}}
+
+\bigskip Este ponto parece oportuno definir uma grandeza conhecida como
+\'{I}ndice din\^{a}mico da massa suspensa $Id$, como:
+
+\begin{equation}
+Id=\frac{r_{y}^{2}}{l_{1}.l_{2}}  \label{Dynamic Index}
+\end{equation}
+
+\bigskip onde, tem-se:
+
+$r_{y}$ = Raio de gira\c{c}\~{a}o da massa suspensa em rela\c{c}\~{a}o ao
+eixo $y$, que pode ser definido como:$\ \ r_{y}=\sqrt{\frac{Jy}{Ms}}$ ,\ \ [$%
+m$];
+
+$Jy$ = Momento de inercia de massa da massa suspensa.[$kg.m2$];
+
+$l_{1}$ = Dist\^{a}ncia entre o eixo dianteiro e o CG. [$m$];
+
+$l_{2}$ = Dist\^{a}ncia entre o CG e o eixo dianteiro. [$m$];
+
+$L$ = Dist\^{a}ncia entre eixos. [$m$].
+
+\bigskip Se o \'{I}ndice din\^{a}mico for igual a 1, i.e. se $%
+Jy=Ms.l_{1}.l_{2}$ , as suspens\~{o}es dianteria e traseira estar\~{a}o
+localizadas em centros de repercuss\~{a}o conjugados da massa suspensa e o
+modelo da figura \ref{12veiculo_figura} se reduzir\'{a} a dois modelos de
+1/4 de ve\'{i}culo como os da figura \ref{14veiculo}. Os movimentos das
+suspens\~{o}es dianteira e traseira se tornam desacoplados e dessa forma
+pode-se utilizar dois modelos de 1/4 de ve\'{i}culo de dois graus de
+liberdade para o estudo do conforto. Com uma correta manipula\c{c}\~{a}o do
+sistema de equa\c{c}\~{o}es \ref{12veiculo} a influ\^{e}ncia do \'{I}ndice
+din\^{a}mico pode ser demonstrada \cite{Genta}.
+
+Aplicando a 2%
+%TCIMACRO{\UNICODE{0xaa} }%
+%BeginExpansion
+${{}^a}$%
+%EndExpansion
+lei de Newton para o sistema din\^{a}mico representado pelo modelo da figura 
+\ref{12veiculo_figura} de quatro graus de liberdade, obtem-se o seguinte
+sistema de equa\c{c}\~{o}es diferenciais. 
+\[
+\left[ 
+\begin{array}{cccc}
+Ms & 0 & 0 & 0 \\ 
+0 & Jy & 0 & 0 \\ 
+0 & 0 & mu_{1} & 0 \\ 
+0 & 0 & 0 & mu_{2}
+\end{array}
+\right] \left( 
+\begin{array}{c}
+\frac{dZ^{2}}{d^{2}t} \\ 
+\frac{d\theta ^{2}}{d^{2}t} \\ 
+\frac{dZ_{u1}^{2}}{d^{2}t} \\ 
+\frac{dZ_{u2}^{2}}{d^{2}t}
+\end{array}
+\right) +
+\]
+
+\[
++\left[ 
+\begin{array}{cccc}
+Cs_{2}+Cs_{1} & Cs_{2}.l_{2}-Cs_{1}.l_{1} & -Cs_{1} & -Cs_{2} \\ 
+Cs_{2}.l_{2}-Cs_{1}.l_{1} & Cs_{2}.l_{2}^{2}+Cs_{1}.l_{1}^{2} & Cs_{1}.l_{1}
+& -Cs_{2}.l_{2} \\ 
+-Cs_{1} & Cs_{1}.l_{1} & Ct_{1}+Cs_{1} & 0 \\ 
+-Cs_{2} & -Cs_{2}.l_{2} & 0 & Ct_{2}+Cs_{2}
+\end{array}
+\right] \left( 
+\begin{array}{c}
+\frac{dZ}{dt} \\ 
+\frac{d\theta }{dt} \\ 
+\frac{dZ_{u1}}{dt} \\ 
+\frac{dZ_{u2}}{dt}
+\end{array}
+\right) +
+\]
+
+\[
++\left[ 
+\begin{array}{cccc}
+Ks_{2}+Ks_{1} & Ks_{2}.l_{2}-Ks_{1}.l_{1} & -Ks_{1} & -Ks_{2} \\ 
+Ks_{2}.l_{2}-Ks_{1}.l_{1} & Ks_{2}.l_{2}^{2}+Ks_{1}.l_{1}^{2} & Ks_{1}.l_{1}
+& -Ks_{2}.l_{2} \\ 
+-Ks_{1} & Ks_{1}.l_{1} & Kt_{1}+Ks_{1} & 0 \\ 
+-Ks_{2} & -Ks_{2}.l_{2} & 0 & Kt_{1}+Ks_{1}
+\end{array}
+\right] \left( 
+\begin{array}{c}
+Z \\ 
+\theta  \\ 
+Z_{u1} \\ 
+Z_{u2}
+\end{array}
+\right) =
+\]
+
+\begin{equation}
+=\left( 
+\begin{array}{c}
+0 \\ 
+0 \\ 
+Ct_{1}.\frac{dh_{1}}{dt}+Kt_{1}.h_{1} \\ 
+Ct_{2}.\frac{dh_{2}}{dt}+Kt_{2}.h_{2}
+\end{array}
+\right)   \label{12veiculo}
+\end{equation}
+
+\bigskip Para o estudo dos modos de baixas frequ\^{e}ncias da massa
+suspensa, os pneus podem ser considerados corpos r\'{i}gidos e o sistema de
+equa\c{c}\~{o}es diferenciais acima fica reduzido ao seguinte sistema. 
+\begin{equation}
+\left[ 
+\begin{array}{cc}
+Ms & 0 \\ 
+0 & Jy
+\end{array}
+\right] \left( 
+\begin{array}{c}
+\frac{dZ^{2}}{d^{2}t} \\ 
+\frac{d\theta ^{2}}{d^{2}t}
+\end{array}
+\right) +\left[ 
+\begin{array}{cc}
+Cs_{2}+Cs_{1} & Cs_{2}.l_{2}-Cs_{1}.l_{1} \\ 
+Cs_{2}.l_{2}-Cs_{1}.l_{1} & Cs_{2}.l_{2}^{2}+Cs_{1}.l_{1}^{2}
+\end{array}
+\right] \left( 
+\begin{array}{c}
+\frac{dZ}{dt} \\ 
+\frac{d\theta }{dt}
+\end{array}
+\right) +  \label{12veiculo01}
+\end{equation}
+
+$\qquad \qquad \qquad 
+\begin{array}{c}
+\left[ 
+\begin{array}{cc}
+K_{2}+K_{1} & K_{2}.l_{2}-K_{1}.l_{1} \\ 
+K_{2}.l_{2}-K_{1}.l_{1} & K_{2}.l_{2}^{2}+K_{1}.l_{1}^{2}
+\end{array}
+\right] \left( 
+\begin{array}{c}
+Z \\ 
+\theta 
+\end{array}
+\right) =\left( 
+\begin{array}{c}
+K_{1}.h_{1} \\ 
+K_{2}.h_{2}
+\end{array}
+\right) 
+\end{array}
+$
+
+Para o sistema de equa\c{c}\~{o}es diferenciais acima o amortecimento dos
+pneus foi desprezado, $Ct_{1}=Ct_{2}=0$, e os valores de $K_{1}$ e $K_{2}$
+s\~{a}o derivados da associa\c{c}\~{a}o em s\'{e}rie das molas que
+representam as molas da suspens\~{a}o e a rigidez dos pneus, ver equa\c{c}%
+\~{a}o \ref{Ride rate}.
+
+\begin{equation}
+K_{i}=\frac{Ks_{i}.Kt_{i}}{Ks_{i}+Kt_{i}}  \label{Ride rate}
+\end{equation}
+
+Onde o \'{i}ndice $i$ assume valor $1$ para a suspens\~{a}o dianteira e
+valor $2$ para a suspens\~{a}o traseira.
+
+Os modos de vibra\c{c}\~{a}o do sistema de dois graus de liberdade n\~{a}o
+amortecido, $Cs_{2}=Cs_{1}=0$, descrito pelo sistema de equa\c{c}\~{o}es \ref
+{12veiculo01} podem ser obtidos utilizando a solu\c{c}\~{a}o do sistema de
+equa\c{c}\~{o}es diferenciais homogeneas apresentado a seguir. 
+\begin{equation}
+\begin{array}{cc}
+Ms & 0 \\ 
+0 & Jy
+\end{array}
+. 
+\begin{array}{c}
+\frac{dZ^{2}}{d^{2}t} \\ 
+\frac{d\theta ^{2}}{d^{2}t}
+\end{array}
++ 
+\begin{array}{cc}
+K_{2}+K_{1} & K_{2}.l_{2}-K_{1}.l_{1} \\ 
+K_{2}.l_{2}-K_{1}.l_{1} & K_{2}.l_{2}^{2}+K_{1}.l_{1}^{2}
+\end{array}
+. 
+\begin{array}{c}
+Z \\ 
+\theta
+\end{array}
+= 
+\begin{array}{c}
+0 \\ 
+0
+\end{array}
+\label{12veiculo02}
+\end{equation}
+
+Do sistema de equa\c{c}\~{o}es \ref{12veiculo02} acima nota-se que quando\ $%
+K_{2}.l_{2}-K_{1}.l_{1}=0$\ as duas equa\c{c}\~{o}es do sistema se tornam
+independentes,ou seja os modos de ''bounce'' e ''pitch'' se desacoplam
+completamente.
+
+O sistema de equa\c{c}\~{o}es diferenciais \ref{12veiculo02} \ possui quatro
+raizes sendo duas delas imagin\'{a}rias e duas reais, as raizes reais
+representam as frequ\^{e}ncias naturais do sistema. Resolvendo o sistema de
+equa\c{c}\~{o}es \ref{12veiculo02}, obtem-se as seguintes frequ\^{e}ncias
+naturais.
+
+\begin{eqnarray}
+\varpi _{1} &=&\sqrt{\frac{\left( \frac{K_{2}+K_{1}}{Ms}+\frac{%
+K_{2}.l_{2}^{2}+K_{1}.l_{1}^{2}}{Jy}\right) }{2}+\sqrt{\frac{\left( \frac{%
+K_{2}+K_{1}}{Ms}-\frac{K_{2}.l_{2}^{2}+K_{1}.l_{1}^{2}}{Jy}\right) ^{2}}{4}+%
+\frac{\left( \frac{K_{2}.l_{2}-K_{1}.l_{1}}{Ms}\right) ^{2}.Ms}{Jy}}} 
+\nonumber \\
+\varpi _{2} &=&\sqrt{\frac{\left( \frac{K_{2}+K_{1}}{Ms}+\frac{%
+K_{2}.l_{2}^{2}+K_{1}.l_{1}^{2}}{Jy}\right) }{2}-\sqrt{\frac{\left( \frac{%
+K_{2}+K_{1}}{Ms}-\frac{K_{2}.l_{2}^{2}+K_{1}.l_{1}^{2}}{Jy}\right) ^{2}}{4}+%
+\frac{\left( \frac{K_{2}.l_{2}-K_{1}.l_{1}}{Ms}\right) ^{2}.Ms}{Jy}}}
+\label{12naturalfreq}
+\end{eqnarray}
+
+\bigskip Para determinar a posi\c{c}\~{a}o dos centros de repercuss\~{a}o da
+carroceira em rela\c{c}\~{a}o ao CG \'{e} necess\'{a}rio determinar para
+cada uma das frequ\^{e}ncias naturais a raz\~{a}o $\frac{Z}{\theta }$. Da
+solu\c{c}\~{a}o do sistema de equa\c{c}\~{o}es diferenciais \ref{12veiculo02}%
+, tem-se:
+
+\begin{eqnarray}
+\left( \frac{Z}{\theta }\right) _{\varpi _{1}} &=&-\frac{\left(
+K_{2}.l_{2}-K_{1}.l_{1}\right) }{\left( K_{2}+K_{1}-\varpi
+_{1}^{2}.Ms\right) }  \nonumber \\
+\left( \frac{Z}{\theta }\right) _{\varpi _{2}} &=&-\frac{\left(
+K_{2}.l_{2}^{2}+K_{1}.l_{1}^{2}-\varpi _{2}^{2}.Jy\right) }{\left(
+K_{2}.l_{2}-K_{1}.l_{1}\right) }  \label{12veiculo centros}
+\end{eqnarray}
+
+\bigskip A dist\^{a}ncia de um dos dois centros de repercuss\~{a}o ser\'{a}
+maior que a dist\^{a}ncia entre eixos, fazendo com que o centro de
+repercuss\~{a}o se encontre fora do ve\'{i}culo e caracterizando
+predominantemente o modo de ''bounce'', o outro centro se encontrar\'{a}
+entre os dois pontos de fixa\c{c}\~{a}o da suspens\~{a}o \`{a} carroceria e
+caracterizar\'{a} predominantemente o modo de ''pitch''. A figura \ref
+{modes_bounce and Pitch} mostra de uma forma esquem\'{a}tica a localiza\c{c}%
+\~{a}o dos centros de repercuss\~{a}o e os modos de ''bounce'' e\ ''pitch''.
+
+\FRAME{fhFU}{3.2474in}{2.3237in}{0pt}{\Qcb{Modos de vibrar de um modelo 1/2
+ve\'{i}culo com dois graus de liberdade.}}{\Qlb{modes_bounce and Pitch}}{%
+12mode01.jpg}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "F";width
+3.2474in;height 2.3237in;depth 0pt;original-width 9.3331in;original-height
+6.6668in;cropleft "0";croptop "1";cropright "1";cropbottom "0";filename
+'12mode01.jpg';file-properties "XNPEU";}}
+
+\bigskip Os par\^{a}metros sugeridos por Maurice Olley, que datam da
+d\^{e}cada de 30, para o projeto de autom\'{o}veis com boas
+caracter\'{i}sticas de ''ride'' n\~{a}o poderiam deixar de ser citados.
+Segundo Gillespie \cite{Gillespie} , embora os m\'{e}todos utilizados para
+determinar o n\'{i}vel conforto do autom\'{o}vel utilizado nos experimentos
+tenham sido estrictamente subjetivos, as recomenda\c{c}\~{o}es de Olley
+ainda hoje s\~{a}o utilizadas nos projetos de autom\'{o}veis. Os
+crit\'{e}rios de Olley s\~{a}o:\footnote{%
+Os crit\'{e}rios de Olley apresentados neste trabalho foram extraidos do
+livro '' Fundamentals of Vehicle Dynamics '' de Thomas D. Gillespie.}
+
+1)A rigidez da suspens\~{a}o dianteira deve ser $30\%$ menor que a rigidez
+da suspens\~{a}o traseira, ou o centro da mola deve estar no m\'{i}nimo $%
+6,5\%$ da dist\^{a}ncia entre eixos al\'{e}m do C.G.
+
+De acordo com Gillespie \cite{Gillespie}, como a distribui\c{c}\~{a}o de
+massa entre os eixos dos autom\'{o}veis \'{e} praticamente igual, este
+primeiro crit\'{e}iro de Olley incorrer\'{a} em uma maior frequ\^{e}ncia de
+resson\^{a}ncia para a suspens\~{a}o traseira. Como os movimentos de pitch
+s\~{a}o considerados mais desagrad\'{a}veis que os de bounce, \'{e} at\'{e}
+intuitivo concluir porque a primeira recomenda\c{c}\~{a}o de Olley \'{e}
+seguida at\'{e} hoje. Para ilustrar o conceito utilizaremos um exemplo
+apresentado por Gillespie \cite{Gillespie}.
+
+Considerando um ve\'{i}culo que se encontra com uma eleva\c{c}\~{a}o,\
+''lombada'', na pista. O tempo decorrido entre a perturba\c{c}\~{a}o da
+suspens\~{a}o dianteira e a traseira, considerando que o autom\'{o}vel se
+movimenta com uma velocidade constante $V$ para a frente e que a
+dist\^{a}ncia entre eixos do autom\'{o}vel \'{e} $L$, ser\'{a}:
+
+\[
+t=\frac{L}{V} 
+\]
+
+A figura \ref{12velsusp} mostra as oscila\c{c}\~{o}es das suspens\~{o}es
+dianteiras e traseiras devido a uma excita\c{c}\~{a}o do tipo descrito
+acima. Pode-se notar que logo depois que a suspens\~{a}o dianteira passa
+sobre a eleva\c{c}\~{a}o o ve\'{i}culo est\'{a} na pior condi\c{c}\~{a}o de
+''pitching'', indicado pelos pontos A\ e B\ da figura \ref{12velsusp}.
+
+\FRAME{fhFU}{3.2785in}{2.4647in}{0pt}{\Qcb{Ocila\c{c}\~{o}es de um
+ve\'{i}culo passando por um lombada.}}{\Qlb{12velsusp}}{12velsusp.jpg}{%
+\special{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "F";width 3.2785in;height 2.4647in;depth
+0pt;original-width 3.9998in;original-height 3in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";filename '12velsusp.jpg';file-properties
+"XNPEU";}}
+
+Com uma maior rigidez da suspens\~{a}o traseira, maior frequ\^{e}ncia,
+depois de uma ocila\c{c}\~{a}o e meia aproximadamente as suspens\~{o}es
+dianteiras e traseiras estar\~{a}o se movimentando em fase, ou seja, a
+carroceria estar\'{a} se movimentado em ''bounce'' at\'{e} que o movimento
+seja totalmente amortecido.
+
+2)As frequ\^{e}ncias de ''pitch e bounce'' devem ser pr\'{o}ximas: a
+frequ\^{e}ncia de ''bounce'' deve ser menor que $1,2$ vezes a frequ\^{e}ncia
+de ''pitch''.
+
+De acordo com Genta \cite{Genta}, este segundo crit\'{e}rio \'{e} facilmente
+preenchido pelos autom\'{o}veis modernos, por\'{e}m um problema pode
+aparecer se a frequ\^{e}ncia de ''pitch'' for muito maior que a
+frequ\^{e}ncia de ''bounce'', como pode acontecer quando o \'{I}ndice
+din\^{a}mico for menor que 1 (geralmente ocorre em ve\'{i}culos com grandes
+dist\^{a}ncias entre eixos e com as rodas bem pr\'{o}ximas dos extremos da
+carroceria)
+
+3)Nenhuma das frequ\^{e}ncias deve ser maior que $1,3Hz$.
+
+4)A frequ\^{e}ncia de ''roll'' \ deve ser aproximadamente igual \`{a}s
+frequ\^{e}ncias de ''pitch'' e de ''bounce''.
+
+De uma forma geral , um autom\'{o}vel com o \'{I}ndice din\^{a}mico \
+pr\'{o}ximo da unidade \ e cumprindo as recomenda\c{c}\~{o}es de Olley \'{e}
+considerado um autom\'{o}vel com boas propriedades de ''ride comfort''. O
+completo desacoplamento dos modos de ''pitch e Bounce'', $%
+K_{2}.l_{2}-K_{1}.l_{1}=0$ (ver equa\c{c}\~{a}o \ref{12veiculo01}),\'{e}
+indesej\'{a}vel pois as oscila\c{c}\~{o}es podem ser bastante irregulares.
+Em contrapartida, o acoplamento entre esses dois modos de vibra\c{c}\~{a}o
+\'{e} desej\'{a}vel j\'{a} que este evita grandes oscila\c{c}\~{o}es no modo
+de ''pitch''\cite{Genta}.
+
+Em casos onde a frequ\^{e}ncia natural de ''pitch'' \'{e} muito maior que a
+frequ\^{e}ncia natural de ''bounce'' o conforto vibracional pode ser
+afetado.Para controlar as frequ\^{e}ncias de ''bounce'' e ''pitch''
+independentemente, sem mudar a posi\c{c}\~{a}o das rodas, as propriedades de
+in\'{e}rcia da carroceria e sem utilizar sistemas de suspens\~{a}o ativa, as
+suspens\~{o}es dianteiras e traseiras devem ser interconectadas. Se as
+suspens\~{o}es forem interconectadas por um sistema com mola e amortecedor
+que se opoem aos movimentos de ''pitch'' esse modo pode ser controlado
+independentemente do modo de bounce. A figura \ref{2CV_figure} mostra um
+exemplo da utiliza\c{c}\~{a}o de um sistema de suspens\~{o}es
+interconectadas \cite{Genta}.
+
+\FRAME{fhFU}{3.3849in}{0.9063in}{0pt}{\Qcb{Esquema da suspens\~{a}o
+utilizada no Citro\"{e}n 2CV.}}{\Qlb{2CV_figure}}{slo2cvsusp.gif}{\special%
+{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "F";width 3.3849in;height 0.9063in;depth
+0pt;original-width 8.2079in;original-height 2.1767in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";filename 'slo2CVsusp.gif';file-properties
+"XNPEU";}}
+
+\section{A percep\c{c}\~{a}o do conforto}
+
+Ao definir um autom\'{o}vel como sendo um autom\'{o}vel confot\'{a}vel os
+par\^{a}metros utilizados para esse veredicto s\~{a}o muito mais subjetivos
+do que se possa imaginar. De maneira geral pode-se dizer que a percep\c{c}%
+\~{a}o do conforto de um autom\'{o}vel passa por um conjunto de
+par\^{a}metros tacteis, visuais e aud\'{i}veis.Par\^{a}metros esses que
+muitas vezes n\~{a}o se percebem separadamente e que se separados talvez
+n\~{a}o causem desconforto, ou n\~{a}o produzam o mesma sensa\c{c}\~{a}o
+agrad\'{a}vel.
+
+Segundo Gillespie \cite{Gillespie}, um n\'{i}vel geral de conforto pode ser
+influenciado pelo projeto dos bancos e a sua adapta\c{c}\~{a}o aos
+ocupantes, a temperatura interna da cabine, a ventila\c{c}\~{a}o, o espa\c{c}%
+o interno e muitos outros fatores. Alguns desses fatores, vibra\c{c}\~{o}es
+e ru\'{i}dos por exemplo, podem ser medidos objetivamente, enquanto outros,
+como a adapta\c{c}\~{a}o dos ocupantes \`{a} textura dos tecidos dos bancos,
+est\'{a} fortemente ligada a an\'{a}lises subjetivas.
+
+Do ponto de vista dos fatores (grandezas) mensur\'{a}veis que comp\~{o}e o
+conforto de um autom\'{o}vel, o chamado conforto vibracional \'{e} um dos
+mais explorados. Alguns tipos de movimento podem ser fontes de prazer ou
+satisfa\c{c}\~{a}o e propiciam um sensa\c{c}\~{a}o de bem-estar e conforto,
+entretanto o estudo do conforto vibracional est\'{a} focado nos movimentos
+que causam desprazer, incomodo e desconforto.
+
+A toler\^{a}ncia do ser humano \`{a}s vibra\c{c}\~{o}es foi e continua sendo
+objeto de v\'{a}rios estudos, estudos esses conduzidos por profissionais de
+diversas especialidades e com focos bastante diversos.
+
+\subsection{Toler\^{a}ncia humana \`{a}s vibra\c{c}\~{o}es}
+
+Inicialmente os estudos da sensibilidade humana a vibra\c{c}\~{o}es foram
+relacionados ao ato de caminhar, nesta condi\c{c}\~{a}o um adulto que
+desenvolve entre 70 e 90 passos por minuto (aproximadamente 1Hz.), e o
+tronco desloca-se verticalmente aproximadamente 25 mm. Acreditava-se
+ent\~{a}o que as oscila\c{c}\~{o}es do ve\'{i}culo deveriam ser mantidas
+segundo estes par\^{a}metros.
+
+Atualmente existem estudos mais aprofundados e espec\'{i}ficos da
+sensibilidade humana \`{a} vibra\c{c}\~{o}es na posi\c{c}\~{a}o
+sentada.Algumas normas foram elaboradas como a ISO2631 [ citar] e estudos
+como os de Griffin \cite{Griffin} e outros indicam que a nossa sensibilidade
+est\'{a} relacionada \`{a} frequ\^{e}ncia de vibra\c{c}\~{a}o,a amplitude\ e
+tempo de exposi\c{c}\~{a}o.
+
+A toler\^{a}ncia a determindas formas, e dire\c{c}\~{o}es de vibra\c{c}%
+\~{o}es tamb\'{e}m est\~{a}o relacionadas a posi\c{c}\~{a}o do corpo (em
+p\'{e}, sentado ou deitado), a parte do corpo que recebe a vibra\c{c}\~{a}o
+e a v\'{a}rios outros par\^{a}metros. De acordo com Griffin \cite{Griffin},
+a postura de uma pessoa sentada ou em p\'{e} pode determinar grandes mudan\c{%
+c}as na toler\^{a}ncia a vibra\c{c}\~{o}es, uma pequena mudan\c{c}a na
+orienta\c{c}\~{a}o das costas ou na inclina\c{c}\~{a}o da cabe\c{c}a pode
+causar mudan\c{c}as substanciais nas vibra\c{c}\~{o}es transmitidas
+atrav\'{e}s da coluna para a cabe\c{c}a.
+
+\'{E} conveniente considerar a resposta humana a vibra\c{c}\~{o}es do corpo
+envolvendo cinco efeitos separados: degrada\c{c}\~{a}o do conforto,
+interfer\^{e}ncia com atividades, \emph{impaired helth}, percep\c{c}\~{a}o
+de vibra\c{c}\~{o}es de baixa magnitude e a ocorr\^{e}ncia de \emph{motion
+sickness}.
+
+Ao se realizarem ensaios para estudos da toler\^{a}ncia do corpo humano a
+vibra\c{c}\~{o}es na posi\c{c}\~{a}o sentada muitos estudiosos utilizaram os
+bancos (deform\'{a}veis, complacentes, n\~{a}o r\'{i}gidos) que afetam as
+vibra\c{c}\~{o}es que alcan\c{c}am o corpo. Como cada banco possui
+propriedades din\^{a}micas diferentes estabeleceu-se que \'{e} preferivel a
+utiliza\c{c}\~{a}o de bancos r\'{i}gidos sem encosto para a determina\c{c}%
+\~{a}o experimental dos contornos do conforto vibracional.\cite{Griffin} Em
+outros casos recomenda-se fazer a medi\c{c}\~{a}o pr\'{o}ximo da fixa\c{c}%
+\~{a}o do banco ao assoalho e utilizar a transmissibilidade do banco para
+avaliar a vibra\c{c}\~{a}o que poderia estar chegando ao ocupante do
+ve\'{i}culo, embora esse procedimento n\~{a}o leve em considera\c{c}\~{a}o a
+itera\c{c}\~{a}o entre a resposta do banco e do passageriro, j\'{a} que o
+comportamento din\^{a}mico do banco \'{e} influenciado pela resposta do
+ocupante.
+
+A baixas frequ\^{e}ncias, abaixo de 1Hz ou 2 Hz dependendo da dire\c{c}%
+\~{a}o da vibra\c{c}\~{a}o e da orienta\c{c}\~{a}o do corpo, as for\c{c}as
+que atuam no corpo s\~{a}o praticamente proporcionais as acelera\c{c}\~{o}es
+a que o corpo est\'{a} sujeito e o movimento do corpo todo est\'{a} em fase
+com o movimento da fonte de vibra\c{c}\~{a}o. Com o aumento da
+frequ\^{e}ncia de excita\c{c}\~{a}o o disconforto ficar\'{a} caracterizado
+pela resson\^{a}ncia de de diferentes partes do corpo (abd\^{o}men, cabe\c{c}%
+a, ombros, t\'{o}rax, etc.).
+
+Em experimentos realizados por Griffin em pessoas sentadas em assentos
+rigidos e sem encosto, vibra\c{c}\~{o}es horizontais em frequ\^{e}ncias na
+faixa entre 1 e 2Hz foram apontadas como as mais desconfort\'{a}veis. Nesses
+experimentos constatou-se que nessa faixa de frequ\^{e}ncia a vibra\c{c}%
+\~{a}o do assento \'{e} mais facilmente transmitida para as partes
+superiores do corpo. A presen\c{c}a do encosto, de forma a apoiar as costas
+do ocupante do assento, aumenta a sensa\c{c}\~{a}o de desconforto na faixa
+de 3 a 6 Hz para vibra\c{c}\~{o}es na dire\c{c}\~{a}o x.
+
+Os movimentos induzidos em ve\`{i}culos n\~{a}o podem ser considerados como
+vibra\c{c}\~{o}es puramente rotacionais da bacia do ocupante. A posi\c{c}%
+\~{a}o do centro de rota\c{c}\~{a}o n\~{a}o pode ser definida facilmente,
+mas s\~{a}o comumente abaixo do plano do assento. Isso significa que o
+ocupante n\~{a}o estar\'{a} somente sujeito a vibra\c{c}\~{o}es de rota\c{c}%
+\~{a}o, mas tamb\'{e}m estar\'{a} sujeito a movimentos de transla\c{c}\~{a}o.
+
+Os estudos de Parsons and Griffin (1982)\cite{Griffin} mostram que
+movimentos de ''roll'' puro causam mais desconforto do que movimentos de
+puro ''pitch'' e que por sua vez causam mais desconforto do que puro ''yaw''.
+
+Em movimentos de ''pitch'' o sujeito que tem as coxas apoiada sobre o banco
+se sente menos confort\'{a}vel do que aquele que as tem os p\'{e}s apoiados
+no assoalho e as coxas levantadas em consequ\^{e}ncia.
+
+A vibra\c{c}\~{a}o do encosto para as costas dos bancos dos autom\'{o}veis
+na horizontal pode ser, em determinadas frequ\^{e}ncias, a causa dooinante
+do desconforto causado pela transmiss\~{a}o de vibra\c{c}\~{o}es para o
+corpo do ocupante.
+
+Ocupantes de assentos de autom\'{o}veis que possuem boa capacidade de isolar
+as vibra\c{c}\~{o}es de alta frequ\^{e}ncia indicam que as vibra\c{c}\~{o}es
+dos apoios dos p\'{e}s dominam a sensa\c{c}\~{a}o de desconforto a essas
+frequ\^{e}ncias.
+
+De acordo com Griffin\cite{Griffin}, uma s\'{e}rie de estudos sobre conforto
+vibracional (ride comfort) foram realizados pela MIRA (Motor Industry
+Research Association) entre os anos de 1960 e 1970. Em estudos inciais foram
+utilizados 7 ve\'{i}culos e 12 condutores e as opini\~{o}es dos condutores
+foram comparadas com medidas de vibra\c{c}\~{o}es feitas na dire\c{c}\~{a}o
+vertical do assento e na cabe\c{c}a dos condutores. As vibra\c{c}\~{o}es da
+cabe\c{c}a n\~{a}o foram consideradas como um bom par\^{a}metro para avaliar
+o conforto vibracional de um autom\'{o}vel, mas as vibra\c{c}\~{o}es no
+assento, o tamanho do ve\'{i}culo, o peso do ve\'{i}culo e o seu pre\c{c}o
+foram os fatores subjetivos considerados como determinantes para um
+autom\'{o}vel ser confort\'{a}vel.
+
+A otimiza\c{c}\~{a}o dos assentos envolve a minimiza\c{c}\~{a}o da
+transmissibilidade \ de vibra\c{c}\~{o}es atrav\'{e}s dos mesmos e ao mesmo
+tempo a maximiza\c{c}\~{a}o do conforto est\'{a}tico, ou seja que a sua
+deflex\~{a}o ao sentar-se n\~{a}o seja t\~{a}o grande.
+
+A resposta em frequ\^{e}ncia da maioria dos assentos dos autom\'{o}veis
+mostra uma frequ\^{e}ncia de resson\^{a}ncia pr\'{o}xima a 4Hz. Essa
+frequ\^{e}ncia \'{e} influenciada pela imped\^{a}ncia do ocupante, e depende
+da magnitude da excita\c{c}\~{a}o e de outros fatores\cite{Griffin}. Alguns
+assentos possuem mecanismos de suspens\~{a}o com baixa rigidez que
+geralmente possuem frequ\^{e}ncias de resson\^{a}ncia da ordem de 2Hz e
+podem isolar vibra\c{c}\~{o}es verticais na faixa de 4 Hz.
+
+Dos \ v\'{a}rios experimentos realizados ao longo de v\'{a}rios anos e
+utilizando-se um sem n\'{u}mero de m\'{e}todos para a an\'{a}lise dos dados
+de ensaio, a faixa entre 4 e 12 Hz \'{e} tida considerada a mais cr\'{i}tica
+na toler\^{a}ncia vibracional vertical para o corpo humano. Isto ocorre em
+grande parte devido a resson\^{a}ncia da cavidade abdominal que situa-se
+pr\'{o}ximo a 5Hz.
+
+A norma ISO2631 [citar] sugere uma s\'{e}rie de gr\'{a}ficos que apresentam
+a r.m.s da acelera\c{c}\~{a}o que causa, em um determinado intervalo de
+tempo, uma redu\c{c}\~{a}o da efici\^{e}ncia f\'{i}sica, a figura \ref
+{ISO2631-01} a seguir \'{e} um exemplo desse tipo de gr\'{a}fico. Do
+gr\'{a}fico apresentado na figura \ref{ISO2631-01} nota-se que a faixa de
+frequ\^{e}ncia que mais afeta um ser humano sentado \'{e} a faixa entre 4 e
+8 Hz segundo a norma ISO2631[citar].
+
+\FRAME{fhFU}{8.5932cm}{6.8842cm}{0pt}{\Qcb{R.m.s da acelera\c{c}\~{a}o em
+rela\c{c}\~{a}o a frequ\^{e}ncia, que causa redu\c{c}\~{a}o da
+efici\^{e}ncia f\'{i}sica para uma pessoa sentada (ISO 2631).}}{\Qlb{%
+ISO2631-01}}{graph03_genta.jpg}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "F";width
+8.5932cm;height 6.8842cm;depth 0pt;original-width 8.3333in;original-height
+6.6668in;cropleft "0";croptop "1.0002";cropright "1";cropbottom "0";filename
+'graph03_genta.jpg';file-properties "XNPEU";}}
+
+\chapter{An\'{a}lise de Sensibilidade}
+
+A chamada an\'{a}lise de sensibilidade surgiu, recentemente, como um
+poderoso procedimento para a otimiza\c{c}\~{a}o de sistemas; \'{e} o estudo
+do grau de influ\^{e}ncia da altera\c{c}\~{a}o de determinados
+par\^{a}metros de projeto nas caracter\'{i}sticas do mesmo que \'{e}
+caracterizado por um funcional.
+
+A an\'{a}lise de sensibilidade, atrav\'{e}s de formula\c{c}\~{o}es
+matem\'{a}ticas, apresenta a depend\^{e}ncia entre a varia\c{c}\~{a}o dos
+par\^{a}metros de projeto (propriedades do material, geometria, etc.) e as
+respostas do sistema projetado medidas em termos de deslocamentos, acelera\c{%
+c}\~{o}es, peso pr\'{o}prio, custo, etc..
+
+O principal objetivo da an\'{a}lise de sensibilidade \'{e} o c\'{a}lculo do
+gradiente de fun\c{c}\~{o}es ou de um funcional em rela\c{c}\~{a}o aos
+par\^{a}metros que determinam as caracter\'{i}sticas do sistema.
+
+\section{O problema de otimiza\c{c}\~{a}o de sistemas}
+
+Em qualquer formula\c{c}\~{a}o para a sele\c{c}\~{a}o de par\^{a}metros
+\'{o}timos de um sistema , \'{e} necess\'{a}rio identificar adequadamente:
+
+1. as vari\'{a}veis de projeto(par\^{a}metros) que descrevem o sistema;
+
+2. a fun\c{c}\~{a}o custo ou fun\c{c}\~{a}o objetivo que ser\'{a} otimizada;
+e
+
+3. as restri\c{c}\~{o}es que garantam uma performance segura do sistema.
+
+As vari\'{a}veis de projeto sujeitas a altera\c{c}\~{o}es s\~{a}o definidas
+como um vetor $p=\{p_{e}\}$, onde $e=1,2,3...,D$ e $D$ \'{e} o n\'{u}mero
+total dessas vari\'{a}veis; atrav\'{e}s da mudan\c{c}a dos valores dos
+componentes deste vetor podem ser definidos diferentes sistemas e dentre
+eles o \'{o}timo.
+
+A chamada fun\c{c}\~{a}o custo ou fun\c{c}\~{a}o objetivo, $G(p)$, \'{e}
+utilizada para definir as grandezas a serem otimizadas, podendo ser um
+escalar ou uma fun\c{c}\~{a}o vetorial.
+
+Normalmente as vari\'{a}veis de projeto $p$ est\~{a}o limitadas inferior e
+superiormente, por restri\c{c}\~{o}es de desigualdade. Outros tipos de restri%
+\c{c}\~{a}o tamb\'{e}m s\~{a}o utilizadas, as chamadas restri\c{c}\~{o}es de
+igualdade, como exemplo, podem ser citadas as equa\c{c}\~{o}es de
+equil\'{i}brio.
+
+De posse de todos os dados que caracterizam o problema, as vari\'{a}veis de
+projeto $p$, bem definidas, a fun\c{c}\~{a}o objetivo $G(p)$, o n\'{u}mero
+de restri\c{c}\~{o}es de igualdade $Gc(p)=0,c=1,2,3...,C^{e}$, e o
+n\'{u}mero de restri\c{c}\~{o}es de desigualdade $Gc(p)\leqslant 0$, $%
+c=C^{e}+1,...,C$ caracteriza-se o problema de otimiza\c{c}\~{a}o por:
+
+\begin{center}
+Encontrar o vetor vari\'{a}vel de projeto $p=\{p_{e}\}$ , onde $e=1,2,3...,D$%
+, que minimiza a fun\c{c}\~{a}o objetivo $G(p)$ de tal\textbf{\ }maneira que
+p satisfa\c{c}a as restri\c{c}\~{o}es $Gc(p)=0,c=1,2,3...,C^{e}$, e $%
+Gc(p)\leqslant 0$, $c=C^{e}+1,...,C$.
+\end{center}
+
+Para a solu\c{c}\~{a}o deste tipo de problema t\^{e}m-se que considerar que:
+
+1. todas as fun\c{c}\~{o}es s\~{a}o cont\'{i}nuas e diferenciaveis segundo
+Gateaux ou Fr\'{e}chet;
+
+2. as fun\c{c}\~{o}es objetivo e de restri\c{c}\~{o}es (tipicamente
+apresentadas implicita ou explicitamente em termos das vari\'{a}veis de
+projeto $p$) podem ser calculadas uma vez que o vetor vari\'{a}veis de
+projeto \'{e} especificado.
+
+\textit{Como exemplo, seja uma estrutura cuja resposta \'{e} governada por
+um n\'{u}mero finito de vari\'{a}veis denominadas graus de liberdade.
+Considerando um comportamento linear el\'{a}stico do material e que a
+estrutura trabalha dentro do campo dos pequenos deslocamentos, tem-se que:}
+
+\textit{1. a configura\c{c}\~{a}o deformada da estrutura se confunde com a
+configura\c{c}\~{a}o inicial;}
+
+\textit{2. a resposta \'{e} dada por um sistema linear de equa\c{c}\~{o}es;}
+
+\textit{3. o princ\'{i}pio de superposi\c{c}\~{a}o \'{e} v\'{a}lido. \ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ O modelo mec\^{a}nico com o qual analisamos as estruturas
+reticuladas e as estruturas aporticadas \'{e} por sua natureza discreto, ou
+seja, depende de um n\'{u}mero finito de graus de liberdade. N\~{a}o \'{e} o
+que acontece nos modelos mec\^{a}nicos aplicados a cascas, placas e
+s\'{o}lidos tridimensionais que s\~{a}o meios cont\'{i}nuos.}
+
+\textit{Neste \'{u}ltimo caso, utilizam-se m\'{e}todos aproximados tais como
+o M\'{e}todo dos Elementos Finitos e transforma-se a estrutura inicialmente
+cont\'{i}nua em uma discreta, cujos graus de liberdade est\~{a}o associados
+a deslocamentos nodais generalizados. Dessa maneira, a partir dessa aproxima%
+\c{c}\~{a}o, a an\'{a}lise da resposta da estrutura pode ser tratada como a
+das estruturas discretas.}
+
+\textit{Considerando que somente cargas est\'{a}ticas s\~{a}o aplicadas,
+aqui designadas por }$F\in \Re ^{N}$\textit{, diz-se que }$u$\textit{\
+equilibra }$F$\textit{\ se o seguinte sistema de equa\c{c}\~{o}es for
+satisfeito: } 
+\begin{equation}
+\medskip Ku=F  \label{eq1}
+\end{equation}
+\textit{Em an\'{a}lise estrutural, }$K$\textit{\ \'{e} chamada de matriz
+rigidez global, }$F$\textit{\ \'{e} o vetor de cargas nodais equivalentes e }%
+$u$\textit{\ \'{e} o vetor de deslocamentos nodais.}
+
+\textit{A matriz de rigidez depende das caracter\'{i}sticas do material e de
+par\^{a}metros geom\'{e}tricos que definem a forma dos corpos tais como:
+espessura para as placas e cascas e se\c{c}\~{a}o transversal para o caso de
+vigas, arcos, etc..}
+
+\textit{Os projetistas trabalham com este conjunto de par\^{a}metros,
+escolhendo alguns deles como vari\'{a}veis de projeto que s\~{a}o
+representados por }$p\in \Re ^{m}$\textit{, onde }$m$\textit{\ \'{e} o
+n\'{u}mero de vari\'{a}veis de projeto adotado pelos projetistas.}
+
+\textit{Geralmente as for\c{c}as nodais equivalentes s\~{a}o fun\c{c}\~{a}o
+de }$p$\textit{\ (por exemplo, quando se considera o peso pr\'{o}prio de uma
+viga, }$F$\textit{\ depender\'{a} da densidade do material e das
+caracter\'{i}sticas geom\'{e}tricas da viga.) Portanto, a Eq.\ref{eq1} pode
+ser reescrita da seguinte maneira: } 
+\begin{equation}
+\medskip K(p)u=F(p)  \label{eq2}
+\end{equation}
+\textit{A partir da equa\c{c}\~{a}o acima, os projetistas podem calcular u
+para cada valor das vari\'{a}veis de projeto }$p$\textit{\ resolvendo o
+sistema de equa\c{c}\~{o}es lineares.}
+
+\textit{Com base nos dados obtidos os projetistas podem definir o valor das
+vari\'{a}veis de projeto para obter o melhor desempenho. Para isto,
+definem-se crit\'{e}rios que permitem comparar os diferentes projetos.
+Geralmente s\~{a}o definidas fun\c{c}\~{o}es de custo, ou fun\c{c}\~{o}es
+objetivo, que designaremos por }$G(p,u)$\textit{. Se tomarmos como fun\c{c}%
+\~{a}o objetivo o peso total da estrutura, o melhor projeto consiste em
+determinar }$p$\textit{\ de tal maneira que minimize o peso da estrutura e
+que satisfa\c{c}a o sistema de equa\c{c}\~{o}es Eq.\ref{eq2}. Al\'{e}m das
+restri\c{c}\~{o}es impostas pela Eq.\ref{eq2} existir\~{a}o outras restri\c{c%
+}\~{o}es tais como normas, c\'{o}digos de projeto, processos de fabrica\c{c}%
+\~{a}o, custo, etc.. Normalmente as vari\'{a}veis de projeto }$p$\textit{\
+est\~{a}o limitadas inferior e superiormente, de tal maneira que: } 
+\[
+p_{i}\leqslant p\leqslant p^{s} 
+\]
+\textit{onde } 
+\[
+\medskip p_{i},p^{s}\in \Re ^{m} 
+\]
+\textit{Existir\~{a}o, tamb\'{e}m, restri\c{c}\~{o}es provenientes de limita%
+\c{c}\~{o}es nos deslocamentos, nas deforma\c{c}\~{o}es, nas tens\~{o}es,
+etc.. Desta maneira , tem-se que }$C(p,u)\leqslant 0$\textit{\ , }$C\in \Re
+^{q}$\textit{, onde }$q$\textit{\ representa o n\'{u}mero total de restri\c{c%
+}\~{o}es.}
+
+\textit{Resumindo, o problema de otimiza\c{c}\~{a}o estrutural pode ser
+descrito da seguinte maneira:}
+
+\textit{Determinar }$p\in X_{ad}$\textit{\ tal que }$P:=\arg
+\inf_{X_{ad}}G(p,u)$\textit{,}
+
+\textit{onde }$X_{ad}=\{p\in \Re ^{m};p_{i}\leqslant p\leqslant
+p^{s};C(p,u)\leqslant 0;K(p).u=F(p)\}$
+
+\subsection{A an\'{a}lise de sensibilidade}
+
+\textit{Da mesma maneira que foi visto na parte introdut\'{o}ria, a formula%
+\c{c}\~{a}o matem\'{a}tica da an\'{a}lise de sensibilidade ser\'{a} tratada
+do ponto de vista da otimiza\c{c}\~{a}o estrutural, j\'{a} que \'{e} um
+assunto de pressuposto conhecimento.}
+
+\textit{Considerando que a geometria e as caracter\'{i}sticas da estrutura
+est\~{a}o descritas em termos dos par\^{a}metros de projeto, a matriz
+rigidez generalizada global e o vetor carregamento s\~{a}o fun\c{c}\~{o}es
+dos par\^{a}metros de projeto, ou seja:}
+
+\[
+\mathit{K}_{g}\mathit{=K}_{g}\mathit{(p)} 
+\]
+
+\[
+\mathit{\medskip F}_{g}\mathit{=F}_{g}\mathit{(p)} 
+\]
+
+\textit{Reescrevendo a Eq.\ref{eq2} em fun\c{c}\~{a}o dos par\^{a}metros
+globais, tem-se:}
+
+\begin{equation}
+\mathit{\medskip K}_{g}\mathit{(p)u}_{g}\mathit{=F}_{g}\mathit{(p)}
+\label{eq3}
+\end{equation}
+
+\textit{onde o vetor }$p=[p_{1},...,p_{m}]^{T}$\textit{\ \'{e} o vetor das
+vari\'{a}veis de projeto e vari\'{a}veis que localizam n\'{o}s selecionados
+na estrutura e }$u_{g}$\textit{\ \'{e} o vetor dos deslocamentos nodais.
+\'{E} pressuposto que as condi\c{c}\~{o}es cinematicamente admiss\'{i}veis
+(condi\c{c}\~{o}es de contorno e condi\c{c}\~{o}es de interface) n\~{a}o
+s\~{a}o fun\c{c}\~{o}es expl\'{i}citas de projeto.}
+
+\textit{Uma vez que a matriz rigidez generalizada global e o vetor
+carregamento s\~{a}o dependentes das vari\'{a}veis de projeto, as formas
+bilinear de energia e linear do carregamento da equa\c{c}\~{a}o de
+equil\'{i}brio variacional \cite{choi} podem ser escritas como:}
+
+\begin{center}
+$a_{p}(u_{g},\overline{v}_{g})=\overline{v}_{g}^{T}K_{g}(p)u_{g}\hspace{0.5in%
+}$\textit{ou\hspace{0.5in} }$a_{p}(u_{g},\overline{v}_{g})=K_{g}(p)u_{g}%
+\cdot \overline{v}_{g}$
+
+$l_{p}(\overline{v}_{g})=\overline{v}_{p}^{T}F_{g}(p)\hspace*{0.5in}$\textit{%
+ou}$\hspace{0.5in}l_{p}(\overline{v}_{g})=F_{g}(p)\cdot \overline{v}_{g}$
+\end{center}
+
+\textit{reescrevendo a Eq.\ref{eq3} utilizando a nota\c{c}\~{a}o acima,
+chega-se a: } 
+\begin{eqnarray}
+\overline{v}_{g}^{T}K_{g}(p)u_{g} &=&\overline{v}_{p}^{T}F_{p}(p)
+\label{eq4} \\
+\medskip a_{p}(u_{g},\overline{v}_{g}) &=&l_{p}(\overline{v}_{g})  \nonumber
+\end{eqnarray}
+
+\textit{Deve-se lembrar que existe uma \'{u}nica solu\c{c}\~{a}o }$u_{g}$%
+\textit{\ para a Eq.\ref{eq4}. Uma vez que essa equa\c{c}\~{a}o depende
+explicitamente das vari\'{a}veis de projeto, \'{e} \'{o}bvio que as solu\c{c}%
+\~{a}o ug tamb\'{e}m \'{e} dependente dessas vari\'{a}veis, ou seja:}
+
+\begin{equation}
+\mathit{\medskip u}_{g}\mathit{=u}_{g}\mathit{(p)}  \label{eq5}
+\end{equation}
+
+\textit{Na maioria dos problemas de projeto estrutural, as fun\c{c}\~{o}es
+objetivo devem ser minimizadas, sujeitas \`{a}s restri\c{c}\~{o}es de
+tens\~{a}o, deslocamento e outras vari\'{a}veis de projeto. Considere agora
+uma fun\c{c}\~{a}o geral que possa representar qualquer uma das altera\c{c}%
+\~{o}es no comportamento da estrutura, escrita na seguinte forma:}
+
+\begin{equation}
+\mathit{\medskip \psi =\psi (p,u}_{g}\mathit{(p))}  \label{eq6}
+\end{equation}
+
+\textit{A depend\^{e}ncia dessa fun\c{c}\~{a}o em rela\c{c}\~{a}o ao projeto
+d\'{a}-se de dois modos: (1) uma depend\^{e}ncia expl\'{i}cita das
+vari\'{a}veis de projeto; e (2) uma depend\^{e}ncia impl\'{i}cita
+atrav\'{e}s da solu\c{c}\~{a}o de }$u_{g}$\textit{\ das equa\c{c}\~{o}es de
+estado. O objetivo da an\'{a}lise de sensibilidade \'{e} determinar a total
+influ\^{e}ncia de tais fun\c{c}\~{o}es no projeto, ou seja, determinar }$%
+d\psi /dp$\textit{.}
+
+\textit{A quest\~{a}o que surge no momento \'{e}: dado que a fun\c{c}\~{a}o }%
+$\psi $\textit{\ \'{e} diferenci\'{a}vel em todos os seus argumentos, a sua
+influ\^{e}ncia nos par\^{a}metros de projeto }$d\psi /dp$\textit{\
+tamb\'{e}m o \'{e}? Se a solu\c{c}\~{a}o }$u_{g}$\textit{\ das equa\c{c}%
+\~{o}es de estado \'{e} diferenci\'{a}vel em rela\c{c}\~{a}o \`{a}s
+vari\'{a}veis de projeto, como pode ser calculada a derivada de }$\psi $%
+\textit{\ em rela\c{c}\~{a}o \`{a}s vari\'{a}veis de projeto?}
+
+\textit{\bigskip }
+
+\subsection{Diferenciabilidade da vari\'{a}vel dependente.}
+
+Considerando que as condi\c{c}\~{o}es de contorno foram aplicadas
+inicialmente de forma a eliminar as vari\'{a}veis de estado dependentes, ou
+seja, impedem os deslocamentos de corpo r\'{i}gido, pode-se reescrever a equa%
+\c{c}\~{a}o Eq.\ref{eq3} na forma a seguir:
+
+\begin{equation}
+\medskip K(p)u=F(p)  \label{eq7}
+\end{equation}
+onde $K(p)$ \'{e} a matriz rigidez global modificada pelas condi\c{c}\~{o}es
+de contorno e $F(p)$ a carga modificada pelas condi\c{c}\~{o}es de contorno.
+Sendo a matriz global reduzida positiva definida por defini\c{c}\~{a}o,
+considerando que todos os par\^{a}metros das matrizes $K(p)$ e $F(p)$
+s\~{a}o $n$ vezes continuamente diferenci\'{a}veis em rela\c{c}\~{a}o aos
+respectivos par\^{a}metros de projeto. O teorema da fun\c{c}\~{a}o
+impl\'{i}cita garante que a solu\c{c}\~{a}o $u=u(p)$ tamb\'{e}m \'{e} $n$
+vezes continuamente diferenci\'{a}vel. Portanto a quest\~{a}o anterior a
+respeito da diferenciabilidade de $u$ em rela\c{c}\~{a}o \`{a}s
+vari\'{a}veis de projeto est\'{a} solucionada. Entretanto, o problema do
+c\'{a}lculo das derivadas totais da fun\c{c}\~{a}o $\psi $ da Eq.\ref{eq6}
+em rela\c{c}\~{a}o \`{a}s vari\'{a}veis de projeto ainda deve ser
+solucionado. A seguir, apresenta-se dois m\'{e}todos para o c\'{a}lculo
+dessas derivadas.
+
+\subsection{M\'{e}todo de diferencia\c{c}\~{a}o direta}
+
+Utilizando a regra da cadeia para a diferencia\c{c}\~{a}o e a nota\c{c}%
+\~{a}o matricial para representar as derivadas, a derivada total de $\psi $
+em rela\c{c}\~{a}o a $p$ pode ser calculada como:
+
+\begin{equation}
+\medskip \frac{d\psi }{dp}=\frac{\partial \psi }{\partial p}+\frac{\partial
+\psi }{\partial u}\frac{du}{dp}  \label{eq8}
+\end{equation}
+
+Derivando ambos os lados da Eq.\ref{eq7} em rela\c{c}\~{a}o a $p$, tem-se:
+
+\begin{equation}
+\medskip K(p)\frac{du}{dp}=-\frac{\partial }{\partial p}(K(p)\widetilde{u})+%
+\frac{\partial F(p)}{\partial p}  \label{eq9}
+\end{equation}
+
+onde o s\'{i}mbolo ($\symbol{126}$) indica que a vari\'{a}vel deve ser
+mantida constante durante o processo de diferencia\c{c}\~{a}o. Uma vez que a
+matriz $K(p)$ \'{e} n\~{a}o-singular, a Eq.\ref{eq9} pode ser resolvida para 
+$du/dp$ de forma que:
+
+\begin{equation}
+\medskip \frac{du}{dp}=K^{-1}(p)[\frac{\partial F(p)}{\partial p}-\frac{%
+\partial }{\partial p}(K(p)\widetilde{u})]  \label{eq10}
+\end{equation}
+
+Esse resultado pode ser ent\~{a}o substitu\'{i}do na Eq.\ref{eq8}, obtendo:
+
+\begin{equation}
+\medskip \frac{d\psi }{dp}=\frac{\partial \psi }{\partial p}+\frac{\partial
+\psi }{\partial u}K^{-1}(p)\frac{\partial }{\partial p}[F(p)-K(p)\widetilde{u%
+})]  \label{eq11}
+\end{equation}
+
+A utilidade da Eq.\ref{eq11} \'{e} question\'{a}vel dado que em aplica\c{c}%
+\~{o}es real\'{i}sticas o c\'{a}lculo direto de $K^{-1}(p)$ \'{e}
+impratic\'{a}vel. Duas alternativas podem ser utilizadas para superar essa
+dificuldade. Na primeira, a Eq.\ref{eq9} pode ser resolvida numericamente
+para $du/dp$ e substitu\'{i}da na Eq.\ref{eq8} para obter-se o resultado
+desejado. Isso \'{e} conhecido como o M\'{e}todo da Diferencia\c{c}\~{a}o
+Direta, que tem sido largamente empregado em otimiza\c{c}\~{a}o estrutural.
+A outra alternativa \'{e} conhecida como M\'{e}todo Adjunto, que ser\'{a}
+discutido a seguir.
+
+\subsection{M\'{e}todo Adjunto (M\'{e}todo da vari\'{a}vel adjunta)}
+
+Um enfoque alternativo \'{e} definir uma vari\'{a}vel adjunta $\lambda $
+sendo:
+
+\begin{equation}
+\medskip \lambda \equiv [\frac{\partial \psi }{\partial u}%
+K^{-1}(p)]^{T}=K^{-1}(p)\frac{\partial \psi ^{T}}{\partial u}  \label{eq12}
+\end{equation}
+
+onde a simetria da matriz $K$ foi empregada. Ao inv\'{e}s de avaliar $%
+\lambda $ diretamente a partir da Eq.\ref{eq12}, que envolve $K^{-1}(p)$,
+ambos os lados da Eq.\ref{eq12} podem ser multiplicados pela matriz $K(p)$ e
+obter assim a seguinte equa\c{c}\~{a}o adjunta em $\lambda $ :
+
+\begin{equation}
+\medskip K(p)\lambda =\frac{\partial \psi ^{T}}{\partial u}  \label{eq13}
+\end{equation}
+
+Essa \'{u}ltima equa\c{c}\~{a}o pode ser resolvida para $\lambda $ e o seu
+resultado substitu\'{i}do, utilizando a Eq.\ref{eq12} , na Eq.\ref{eq11} a
+fim de obter-se:
+
+\begin{equation}
+\medskip \frac{d\psi }{dp}=\frac{\partial \psi }{\partial p}+\lambda ^{T}[%
+\frac{\partial F(p)}{\partial p}-\frac{\partial }{\partial p}(K(p)\widetilde{%
+u})]  \label{eq14}
+\end{equation}
+
+Uma forma muito mais conveniente para o c\'{a}lculo derivativo \'{e}:
+
+\begin{equation}
+\medskip \frac{d\psi }{dp}=\frac{\partial \psi }{\partial p}+\frac{\partial 
+}{\partial p}[\widetilde{\lambda }^{T}F(p)-\widetilde{\lambda }^{T}K(p)%
+\widetilde{u}]  \label{eq15}
+\end{equation}
+
+\subsection{T\'{i}tulo da sub se\c{c}\~{a}o}
+
+Texto da sub se\c{c}\~{a}o\newpage
+
+\chapter{\protect\bigskip Implementa\c{c}\~{a}o do Modelo}
+
+\chapter{Apresenta\c{c}\~{a}o e An\'{a}lise dos Resultados}
+
+Para a an\'{a}lise dos resultados obtidos no estudo realizado, a an\'{a}lise
+das respostas em frequ\^{e}ncia das acelera\c{c}\~{o}es verticais da
+carroceira do autom\'{o}vel foi a escolhida por se tratar de um dos
+par\^{a}metros mais importantes no estudo do conforto vibracional de um
+autom\'{o}vel. Especialmente a an\'{a}lise no dom\'{i}nio da frequ\^{e}ncia
+por facilitar a an\'{a}lise dos resultados e por ser largamente utilizada
+para o estudo de sistemas din\^{a}micos.
+
+A an\'{a}lise espectral foi utilizada para reprsentar a resposta em
+frequ\^{e}ncia da acelera\c{c}\~{a}o vertical no C.G. da carroceria do
+ve\'{i}culo modelado. As PSDs foram obtidas utilizando o Software Microcal
+Origin. A PSD foi filtrada com um filtro retangular\footnote{%
+Conhecido na literatura como '' Rectangular Window Function''.} que
+geralmente representa de forma mais precisa as amplitudes se comparado com
+os demais filtros \cite{ADAMS Manual}.
+
+\bigskip O Software ADAMS, que foi utilizado para a simula\c{c}\~{a}o,
+
+\section{\protect\bigskip An\'{a}lise Modal}
+
+A an\'{a}lise modal permite que se identifiquem bem os modos de vibrar e as
+frequ\^{e}ncias correspondentes a esses modos, e complementa e auxilia a
+an\'{a}lise espectral uma vez que se sabe qual \'{e} o modo excitado a em
+cada frequ\^{e}ncia.\ A an\'{a}lise modal foi de grande utilidade para
+ajustar e corrigir alguns par\^{a}metros do modelo, como posi\c{c}\~{o}es e
+tipos de restri\c{c}\~{o}es, para fazer com que o modelo fosse capaz de
+representar os modos de interesse para o estudo. A falta de um modelamento
+mais completo para o pneu fez com que o ajuste para a representa\c{c}\~{a}o
+de alguns do modos naturais fosse muito trabalhosa.
+
+Os modos naturais do modelo mostram um primeiro panorama do que se observou
+posteriormente na an\'{a}lise espectral. A tabela \ref{ResultsModos} mostra
+a varia\c{c}\~{a}o das frequ\^{e}ncias naturais dos principais modos de
+interesse do modelo em fun\c{c}\~{a}o da varia\c{c}\~{a}o do di\^{a}metro da
+barra estabilizadora.
+
+Observa-se que a medida que aumenta o di\^{a}metro da barra estabilizadora \
+dianteira as frequ\^{e}ncias dos modos relacionados ou dependentes da
+suspens\~{a}o dianteira aumentam.
+
+As figuras a seguir apresentam os principais modos de vibrar do modelo.
+
+\begin{equation}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+Modo/Di\^{a}m. & $16[mm]$ & $18[mm]$ & $20[mm]$ & $22[mm]$ & $24[mm]$ \\ 
+\hline
+\textit{Pitch} & $1,0693Hz$ & $1,0775Hz$ & $1,0830Hz$ & $1,0865Hz$ & $%
+1,0888Hz$ \\ \hline
+\textit{Bounce} & $1,4241Hz$ & $1,5610Hz$ & $1,7112Hz$ & $1,8660Hz$ & $%
+2,0183Hz$ \\ \hline
+\textit{Wheel Hop} (Diant. em fase) & $10,3405Hz$ & $10,7131Hz$ & $11,1891Hz$
+& $11,7768Hz$ & $12,4831Hz$ \\ \hline
+\textit{Wheel Hop} (Diant. fora de fase) & $10,8385Hz$ & $11,1740Hz$ & $%
+11,5998Hz$ & $12,1243Hz$ & $12,7562Hz$ \\ \hline
+\textit{Wheel Hop} (Tras. em fase) & $11,0120Hz$ & $11,0194Hz$ & $11,0254Hz$
+& $11,0302Hz$ & $11,0339Hz$ \\ \hline
+\textit{Wheel Hop} (Tras. fora de fase) & $38,6924Hz$ & $38,7228Hz$ & $%
+38,7479Hz$ & $38,7675Hz$ & $38,7827Hz$ \\ \hline
+\end{tabular}
+\label{ResultsModos}
+\end{equation}
+\bigskip \FRAME{fhFU}{13.9705cm}{10.3549cm}{0pt}{\Qcb{1%
+%TCIMACRO{\UNICODE{0xba} }%
+%BeginExpansion
+${{}^o}$%
+%EndExpansion
+modo da carroceria, apresenta-se predominantemente como o modo de\textit{\
+Pitch}, com centro de repercuss\~{a}o localizado na suspens\~{a}o dianteira.}%
+}{\Qlb{Result:pitchmode}}{pitch_mode.bmp}{\special{language "Scientific
+Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
+"F";width 13.9705cm;height 10.3549cm;depth 0pt;original-width
+10.6666in;original-height 8.0004in;cropleft "0";croptop "0.9865";cropright
+"0.9998";cropbottom "0";filename 'pitch_mode.bmp';file-properties "XNPEU";}}
+
+\FRAME{fbhFU}{5.4907in}{4.1243in}{0pt}{\Qcb{2%
+%TCIMACRO{\UNICODE{0xba} }%
+%BeginExpansion
+${{}^o}$%
+%EndExpansion
+modo da carroceria apresenta-se predominantemente como modo de \textit{Bounce%
+}, com centro de repercuss\~{a}o atr\'{a}s da suspens\~{a}o dianteira. }}{%
+\Qlb{Result:bouncemode}}{bounce_mode.bmp}{\special{language "Scientific
+Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
+"F";width 5.4907in;height 4.1243in;depth 0pt;original-width
+10.6666in;original-height 8.0004in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";filename 'Bounce_mode.bmp';file-properties "XNPEU";}}
+
+\FRAME{ftbpFU}{5.5737in}{4.1866in}{0pt}{\Qcb{Modo de vibra\c{c}\~{a}o das
+massas n\~{a}o suspensas dianteiras oscilando em fase sobre as molas da
+suspens\~{a}o dianteira. (\textit{Wheel Hop})}}{\Qlb{Result:WHFFemode}}{%
+front_wheelhope_fase.bmp}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "F";width
+5.5737in;height 4.1866in;depth 0pt;original-width 10.6666in;original-height
+8.0004in;cropleft "0";croptop "1";cropright "1";cropbottom "0";filename
+'front_WheelHope_fase.bmp';file-properties "XNPEU";}}
+
+\FRAME{fhFU}{5.6152in}{4.2177in}{0pt}{\Qcb{Modo de vibra\c{c}\~{a}o das
+massas n\~{a}o suspensas dianteiras oscilando fora de fase sobre as molas da
+suspens\~{a}o dianteira. (\textit{Wheel Hop})}}{\Qlb{Result:WHFOFemode}}{%
+front_wheelhope_outfase01.bmp}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "F";width
+5.6152in;height 4.2177in;depth 0pt;original-width 10.6666in;original-height
+8.0004in;cropleft "0";croptop "1";cropright "1";cropbottom "0";filename
+'front_WheelHope_outfase01.bmp';file-properties "XNPEU";}}
+
+\FRAME{fhFU}{5.5322in}{4.1554in}{0pt}{\Qcb{Modo de vibra\c{c}\~{a}o das
+massas n\~{a}o suspensas traseiras oscilando em fase sobre as molas da
+suspens\~{a}o traseira. (\textit{Wheel Hop}). }}{\Qlb{Result:WHRFemode}}{%
+rear_wheelhope_fase.bmp}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "F";width
+5.5322in;height 4.1554in;depth 0pt;original-width 10.6666in;original-height
+8.0004in;cropleft "0";croptop "1";cropright "1";cropbottom "0";filename
+'Rear_WheelHope_fase.bmp';file-properties "XNPEU";}}
+
+\FRAME{fhFU}{5.5737in}{4.1866in}{0pt}{\Qcb{Modo de vibra\c{c}\~{a}o das
+massas n\~{a}o suspensas traseiras oscilando fora de fase sobre as molas da
+suspens\~{a}o traseira. (\textit{Wheel Hop})}}{\Qlb{Result:WHROFemode}}{%
+rear_wheelhope_outfase1.bmp}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "F";width
+5.5737in;height 4.1866in;depth 0pt;original-width 10.6666in;original-height
+8.0004in;cropleft "0";croptop "1";cropright "1";cropbottom "0";filename
+'Rear_WheelHope_outfase1.bmp';file-properties "XNPEU";}}
+
+\section{\protect\bigskip}
+
+\bigskip
+
+\bigskip
+
+\section{An\'{a}lise Espectral}
+
+A seguir s\~{a}o apresentados os gr\'{a}ficos das PSDs da acelera\c{c}\~{a}o
+vertical da carroceria para as seis configur\c{c}\~{o}es ensaiadas
+utilizando o sinais de pista de asfalto lisa e irregular. Os gr\'{a}ficos 
+\ref{ResultsLisaPSDtodos} e \ref{ResultsLisaPSDtodos01} mostram de forma
+geral o comportamento da resposta da carroceria \`{a}s excita\c{c}\~{o}es
+provenientes das irregularidades de uma pista de asfalto liso, com o
+autom\'{o}vel trafegando a 100 km/h.
+
+Em primeira an\'{a}lise, observa-se um aumento da transmissibilidade das
+vibra\c{c}\~{o}es para a carroceria com o aumento do di\^{a}metro da barra
+estabilizadora dianteira. Esse comportamento j\'{a} era previsto uma vez que
+a an\'{a}lise modal mostrou o aumeto das frequ\^{e}ncias de resson\^{a}ncia
+dos modos de \textit{bounce} e \textit{wheel hop} da suspens\~{a}o
+dianteira, ver tabela \ref{ResultsModos}.
+
+Pode-se observar nos gr\'{a}ficos \ref{ResultsLisaPSDtodos} e \ref
+{ResultsLisaPSDtodos01} que al\'{e}m do aumento da amplitude das acelera\c{c}%
+\~{o}es h\'{a} um sens\'{i}vel deslocamento das frequ\^{e}ncias de
+resson\^{a}ncia com o aumento do di\^{a}metro da barra estabilizadora. Entre 
+$1,3Hz $ e $3Hz$ observa-se um consider\'{a}vel aumento das acelera\c{c}%
+\~{o}es da carroceria com aumento do di\^{a}metro da barra estabilizadora,
+essa regi\~{a}o compreende a faixa de frequ\^{e}ncia do modo de\textit{\
+bounce}.
+
+\FRAME{fhFU}{6.0079in}{4.3846in}{0pt}{\Qcb{PSDs da acelera\c{c}\~{a}o
+vertical da carroceria variando o di\^{a}metro da barra estabilizadora da
+suspens\~{a}o dianteira. Pista de asfalto liso - 100 km/h.}}{\Qlb{%
+ResultsLisaPSDtodos}}{psdlisa01.bmp}{\special{language "Scientific
+Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
+"F";width 6.0079in;height 4.3846in;depth 0pt;original-width
+5.9482in;original-height 4.3336in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";filename 'PSDlisa01.bmp';file-properties "XNPEU";}}
+
+\bigskip \FRAME{fhFU}{6.0079in}{4.3846in}{0pt}{\Qcb{PSDs da acelera\c{c}%
+\~{a}o vertical da carroceria variando o di\^{a}metro da barra
+estabilizadora da suspens\~{a}o dianteira. Pista de asfalto liso - 100 km/h.}%
+}{\Qlb{ResultsLisaPSDtodos01}}{psdlisa02.bmp}{\special{language "Scientific
+Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
+"F";width 6.0079in;height 4.3846in;depth 0pt;original-width
+5.9482in;original-height 4.3336in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";filename 'PSDlisa02.bmp';file-properties "XNPEU";}}
+
+\FRAME{fhFU}{6.0079in}{4.3846in}{0pt}{\Qcb{PSDs da acelera\c{c}\~{a}o
+vertical da carroceria variando o di\^{a}metro da barra estabilizadora da
+suspens\~{a}o dianteira. Pista de asfalto liso - 100 km/h.}}{\Qlb{%
+ResultsLisaPSDtodos02}}{psdlisa03.bmp}{\special{language "Scientific
+Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file
+"F";width 6.0079in;height 4.3846in;depth 0pt;original-width
+5.9482in;original-height 4.3336in;cropleft "0";croptop "1";cropright
+"1";cropbottom "0";filename 'PSDlisa03.bmp';file-properties "NPEU";}}
+
+\bigskip \FRAME{fhFU}{6.186in}{4.3846in}{0pt}{\Qcb{PSDs da acelera\c{c}%
+\~{a}o vertical da carroceria variando o di\^{a}metro da barra
+estabilizadora da suspens\~{a}o dianteira.}}{\Qlb{ResultsIrregPSDtodos}}{%
+psdirreg01.bmp}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "F";width
+6.186in;height 4.3846in;depth 0pt;original-width 6.1246in;original-height
+4.3336in;cropleft "0";croptop "1";cropright "1";cropbottom "0";filename
+'PSDIrreg01.bmp';file-properties "XNPEU";}}
+
+\section{\protect\bigskip An\'{a}lise de Sensibilidade}
+
+\bigskip
+
+\chapter{Conclus\~{o}es e Recomenda\c{c}\~{o}es}
+
+\bigskip
+
+\QTP{appendix}
+Rotinas para gera\c{c}\~{a}o do sinal de pista.
+
+%TCIMACRO{
+%\TeXButton{indent}{\parindent=10mm%
+%}}%
+%BeginExpansion
+\parindent=10mm%
+%
+%EndExpansion
+
+O sinais utilizados para a simula\c{c}\~{a}o do modelo foram gerados
+utilizando o software Visual Basic. A seguir s\~{a}o apresentadas as rotinas
+geradas para os dois sinais de pista utlizados neste trabalho.
+
+\section{Perfis de Pista}
+
+\subsection{Perf\'{i}l para pista de asfalto liso}
+
+Sub pista01()
+
+'Mauro B Biasizzo - 22.08.2001 - S\~{a}o Jos\'{e} dos Campos
+
+'Rotina para a gera\c{c}\~{a}o de sinal de pista.
+
+'Gera um Time History da eleva\c{c}\~{a}o do perfil da pista com fases
+aleat\'{o}rias.
+
+'A vari\'{a}veis para a obten\c{c}\~{a}o da PSD da pista seguem a classifica%
+\c{c}\~{a}o do MIRA.
+
+'Rotina utilizada para a gera\c{c}\~{a}o do sinal de pista lisa com
+ve\'{i}culo a 100 km/h.
+
+Dim Wf() As Double ' Vetor das frequencias que o sinal da pista
+
+Dim v1() As Double ' Vetor dos numeros de onda
+
+Dim Gh1() As Double ' Vetor da PSD da elevacao das irregularidades da pista
+
+Dim Amp1() As Double ' Vetor das amplitudes da PSD
+
+Dim T1() As Double ' Vetor do tempo para a construcao do sinal
+
+Dim Hdd() As Double ' Vetor do sinal da pista para a roda dianteira direita
+
+Dim Hde() As Double ' Vetor do sinal da pista para a roda dianteira esquerda
+
+Dim Htd() As Double ' Vetor do sinal da pista para a roda traseira direita
+
+Dim Hte() As Double ' Vetor do sinal da pista para a roda traseira esquerda
+
+Dim FaseE() As Double ' Vetor do sinal da pista t = 0
+
+Dim FaseD() As Double ' Vetor do sinal da pista t = 0
+
+Pi = 3.1416
+
+L = 2.36 ' Distancia entre eixos
+
+V = 100 ' Velocidade do automovel em km/h
+
+V = V / 3.6 ' Velocidade do automovel em m/s
+
+T = 40 ' Tempo em segundos
+
+Hf = 126 ' Frequencia mais alta que compoe o sinal da pista em rad/s (20Hz)
+
+n = Round((Hf * T) / (2 * Pi)) ' Numero de termos da serie
+
+' Gerador do vetor das frequencias que compoe o sinal da pista
+
+For i = 1 To n
+
+ReDim Preserve Wf(i)
+
+Wf(i) = 2 * Pi * i / T
+
+ReDim Preserve v1(i) 'Convertendo o vetor Wf de rad/seg para numero de onda
+v1(ciclos/m)
+
+v1(i) = Wf(i) / (2 * Pi * V)
+
+Next i
+
+' Dados para a PSD da pista
+
+G0 = 0.000014 ' Coeficiente de Rugosidade da pista para v0 (m\symbol{94}%
+3/Ciclos)
+
+w1 = 1.945 ' Fator de ajuste da PSD
+
+w2 = 1.36 ' Fator de ajuste da PSD
+
+v0 = 1 / (2 * Pi) ' Numero de onda que marca o ponto de descontinuidade da
+PSD
+
+' Geracao da PSD da elevacao da pista
+
+For i = 1 To n
+
+ReDim Preserve Gh1(i)
+
+If v1(i) \TEXTsymbol{<}= v0 Then
+
+Gh1(i) = G0 * ((v1(i) / v0) \symbol{94}(-w1))
+
+Else
+
+Gh1(i) = G0 * ((v1(i) / v0) \symbol{94}(-w2))
+
+End If
+
+Next i
+
+d1 = ((1 / T) / V)
+
+' Calculo da amplitude do sinal aleatorio
+
+For i = 1 To n
+
+ReDim Preserve Amp1(i)
+
+Amp1(i) = Sqr(2 * Gh1(i) * d1)
+
+Next i
+
+dt = 1 / (4 * n / T) ' Passo de Tempo (segundos)
+
+j = Round(T / dt) ' Determinacao do numero de elementos do vetor do tempo
+
+' Construcao do vetor do tempo para a geracao do sinal
+
+For i = 1 To j
+
+ReDim Preserve T1(i)
+
+T1(i) = i * dt
+
+Next i
+
+' Criando dois vetores de Zeros
+
+For i = 1 To j
+
+ReDim Preserve Hdd(i)
+
+ReDim Preserve Hde(i)
+
+Hdd(i) = 0
+
+Hde(i) = 0
+
+Next i
+
+For r = 1 To j
+
+For g = 1 To n
+
+ReDim Preserve Hdd(r)
+
+ReDim Preserve Hde(r)
+
+ReDim Preserve FaseE(r)
+
+ReDim Preserve FaseD(r)
+
+FaseE(r) = Rnd(2 * Pi) ' Gerador de fases aleat\'{o}rias para o lado
+esquerdo da pista
+
+FaseD(r) = Rnd(2 * Pi) ' Gerador de fases aleat\'{o}rias para o lado direito
+da pista
+
+Hdd(r) = Hdd(r) + (Amp1(g) * 1000 * Sin(Wf(g) * T1(r) + FaseD(r)))
+
+Hde(r) = Hde(r) + (Amp1(g) * 1000 * Sin(Wf(g) * T1(r) + FaseE(r)))
+
+Next g
+
+Next r
+
+'Constru\c{c}\~{a}o do sinal para as rodas traseiras
+
+Te = L / V 'Tempo entre a passagem do eixo dinateiro e traseiro pelo mesmo
+ponto da pista
+
+np = Round(Te / dt)
+
+For i = np + 1 To j
+
+ReDim Preserve Htd(i)
+
+ReDim Preserve Hte(i)
+
+Htd(i) = Hdd(i - np)
+
+Hte(i) = Hde(i - np)
+
+Next i
+
+' Check do gerador do vetor de frequencias,numeros de onda, amplitude etc
+
+For i = 1 To n
+
+Range(''C'' + CStr(i + 1)).Value = Wf(i)
+
+Range(''D'' + CStr(i + 1)).Value = v1(i)
+
+Range(''E'' + CStr(i + 1)).Value = Gh1(i)
+
+Range(''F'' + CStr(i + 1)).Value = Amp1(i)
+
+Next i
+
+' Check do gerador do vetor do tempo
+
+For i = 1 To j
+
+Range(''G'' + CStr(i + 1)).Value = T1(i)
+
+Range(''H'' + CStr(i + 1)).Value = Hdd(i)
+
+Range(''I'' + CStr(i + 1)).Value = Hde(i)
+
+Range(''J'' + CStr(i + 1)).Value = Htd(i)
+
+Range(''K'' + CStr(i + 1)).Value = Hte(i)
+
+Next i
+
+Range(''C1'').Value = ''Freq''
+
+Range(''D1'').Value = ''\# Onda''
+
+Range(''E1'').Value = ''PSD''
+
+Range(''F1'').Value = ''Ampl''
+
+Range(''G1'').Value = ''Tempo''
+
+Range(''H1'').Value = ''ElevDD\_''
+
+Range(''I1'').Value = ''ElevDE\_''
+
+Range(''J1'').Value = ''ElevTD\_''
+
+Range(''K1'').Value = ''ElevTE\_''
+
+' Check dos valores entrados no programa
+
+Range(''A1'').Value = n
+
+Range(''A2'').Value = T
+
+Range(''A3'').Value = Hf
+
+Range(''A4'').Value = V
+
+Range(''A5'').Value = d1
+
+Range(''A6'').Value = dt
+
+Range(''A7'').Value = j
+
+Range(''A8'').Value = v0
+
+Range(''A9'').Value = np
+
+Range(''A10'').Value = G0
+
+Range(''A11'').Value = w1
+
+Range(''A12'').Value = w2
+
+End Sub
+
+\subsection{Perfil da pista para asfalto irregular}
+
+Sub pista02()
+
+'Mauro B Biasizzo - 22.08.2001 - S\~{a}o Jos\'{e} dos Campos
+
+'Rotina para a gera\c{c}\~{a}o de sinal de pista.
+
+'Gera um Time History da eleva\c{c}\~{a}o do perfil da pista com fases
+aleat\'{o}rias.
+
+'A vari\'{a}veis para a obten\c{c}\~{a}o da PSD da pista seguem a classifica%
+\c{c}\~{a}o do MIRA.
+
+'Rotina utilizada para a gera\c{c}\~{a}o do sinal de pista irregular com
+ve\'{i}culo a 40 km/h.
+
+Dim Wf() As Double ' Vetor das frequencias que o sinal da pista
+
+Dim v1() As Double ' Vetor dos numeros de onda
+
+Dim Gh1() As Double ' Vetor da PSD da elevacao das irregularidades da pista
+
+Dim Amp1() As Double ' Vetor das amplitudes da PSD
+
+Dim T1() As Double ' Vetor do tempo para a construcao do sinal
+
+Dim Hdd() As Double ' Vetor do sinal da pista para a roda dianteira direita
+
+Dim Hde() As Double ' Vetor do sinal da pista para a roda dianteira esquerda
+
+Dim Htd() As Double ' Vetor do sinal da pista para a roda traseira direita
+
+Dim Hte() As Double ' Vetor do sinal da pista para a roda traseira esquerda
+
+Dim FaseE() As Double ' Vetor do sinal da pista t = 0
+
+Dim FaseD() As Double ' Vetor do sinal da pista t = 0
+
+Pi = 3.1416
+
+L = 2.36 ' Distancia entre eixos
+
+V = 40 ' Velocidade do automovel em km/h
+
+V = V / 3.6 ' Velocidade do automovel em m/s
+
+T = 40 ' Tempo em segundos
+
+Hf = 126 ' Frequencia mais alta que compoe o sinal da pista em rad/s (20Hz)
+
+n = Round((Hf * T) / (2 * Pi)) ' Numero de termos da serie
+
+' Gerador do vetor das frequencias que compoe o sinal da pista
+
+For i = 1 To n
+
+ReDim Preserve Wf(i)
+
+Wf(i) = 2 * Pi * i / T
+
+ReDim Preserve v1(i) 'Convertendo o vetor Wf de rad/seg para numero de onda
+v1(ciclos/m)
+
+v1(i) = Wf(i) / (2 * Pi * V)
+
+Next i
+
+' Dados para a PSD da pista
+
+G0 = 0.00009 ' Coeficiente de Rugosidade da pista para v0 (m\symbol{94}%
+3/Ciclos)
+
+w1 = 2.14 ' Fator de ajuste da PSD
+
+w2 = 1.428 ' Fator de ajuste da PSD
+
+v0 = 1 / (2 * Pi) ' Numero de onda que marca o ponto de descontinuidade da
+PSD
+
+' Geracao da PSD da elevacao da pista
+
+For i = 1 To n
+
+ReDim Preserve Gh1(i)
+
+If v1(i) \TEXTsymbol{<}= v0 Then
+
+Gh1(i) = G0 * ((v1(i) / v0) \symbol{94}(-w1))
+
+Else
+
+Gh1(i) = G0 * ((v1(i) / v0) \symbol{94}(-w2))
+
+End If
+
+Next i
+
+d1 = ((1 / T) / V)
+
+' Calculo da amplitude do sinal aleatorio
+
+For i = 1 To n
+
+ReDim Preserve Amp1(i)
+
+Amp1(i) = Sqr(2 * Gh1(i) * d1)
+
+Next i
+
+dt = 1 / (4 * n / T) ' Passo de Tempo (segundos)
+
+j = Round(T / dt) ' Determinacao do numero de elementos do vetor do tempo
+
+' Construcao do vetor do tempo para a geracao do sinal
+
+For i = 1 To j
+
+ReDim Preserve T1(i)
+
+T1(i) = i * dt
+
+Next i
+
+' Criando dois vetores de Zeros
+
+For i = 1 To j
+
+ReDim Preserve Hdd(i)
+
+ReDim Preserve Hde(i)
+
+Hdd(i) = 0
+
+Hde(i) = 0
+
+Next i
+
+For r = 1 To j
+
+For g = 1 To n
+
+ReDim Preserve Hdd(r)
+
+ReDim Preserve Hde(r)
+
+ReDim Preserve FaseE(r)
+
+ReDim Preserve FaseD(r)
+
+FaseE(r) = Rnd(2 * Pi) ' Gerador de fases aleat\'{o}rias para o lado
+esquerdo da pista
+
+FaseD(r) = Rnd(2 * Pi) ' Gerador de fases aleat\'{o}rias para o lado direito
+da pista
+
+Hdd(r) = Hdd(r) + (Amp1(g) * 1000 * Sin(Wf(g) * T1(r) + FaseD(r)))
+
+Hde(r) = Hde(r) + (Amp1(g) * 1000 * Sin(Wf(g) * T1(r) + FaseE(r)))
+
+Next g
+
+Next r
+
+'Constru\c{c}\~{a}o do sinal para as rodas traseiras
+
+Te = L / V 'Tempo entre a passagem do eixo dinateiro e traseiro pelo mesmo
+ponto da pista
+
+np = Round(Te / dt)
+
+For i = np + 1 To j
+
+ReDim Preserve Htd(i)
+
+ReDim Preserve Hte(i)
+
+Htd(i) = Hdd(i - np)
+
+Hte(i) = Hde(i - np)
+
+Next i
+
+' Check do gerador do vetor de frequencias,numeros de onda, amplitude etc
+
+For i = 1 To n
+
+Range(''C'' + CStr(i + 1)).Value = Wf(i)
+
+Range(''D'' + CStr(i + 1)).Value = v1(i)
+
+Range(''E'' + CStr(i + 1)).Value = Gh1(i)
+
+Range(''F'' + CStr(i + 1)).Value = Amp1(i)
+
+Next i
+
+' Check do gerador do vetor do tempo
+
+For i = 1 To j
+
+Range(''G'' + CStr(i + 1)).Value = T1(i)
+
+Range(''H'' + CStr(i + 1)).Value = Hdd(i)
+
+Range(''I'' + CStr(i + 1)).Value = Hde(i)
+
+Range(''J'' + CStr(i + 1)).Value = Htd(i)
+
+Range(''K'' + CStr(i + 1)).Value = Hte(i)
+
+Next i
+
+Range(''C1'').Value = ''Freq''
+
+Range(''D1'').Value = ''\# Onda''
+
+Range(''E1'').Value = ''PSD''
+
+Range(''F1'').Value = ''Ampl''
+
+Range(''G1'').Value = ''Tempo''
+
+Range(''H1'').Value = ''ElevDD\_''
+
+Range(''I1'').Value = ''ElevDE\_''
+
+Range(''J1'').Value = ''ElevTD\_''
+
+Range(''K1'').Value = ''ElevTE\_''
+
+' Check dos valores entrados no programa
+
+Range(''A1'').Value = n
+
+Range(''A2'').Value = T
+
+Range(''A3'').Value = Hf
+
+Range(''A4'').Value = V
+
+Range(''A5'').Value = d1
+
+Range(''A6'').Value = dt
+
+Range(''A7'').Value = j
+
+Range(''A8'').Value = v0
+
+Range(''A9'').Value = np
+
+Range(''A10'').Value = G0
+
+Range(''A11'').Value = w1
+
+Range(''A12'').Value = w2
+
+End Sub
+
+\QTP{bibsection}
+Bibliografia
+
+\begin{thebibliography}{99}
+\bibitem{Alex Don}  Alexander, Don. (1991). Performance Handling. 1${{}^{a}}$
+ed. MBI Publishing Company. NY. USA
+
+\bibitem{Bastow}  Bastow, D; Howard, G.P. (1993). Car Suspension and
+Handling. 3${{}^{a}}$ ed. SAE.
+
+\bibitem{Darling}  Darling, J.; Hickson, L. R. (1998). An Experimental Study
+of a Prototype Active Anti-Roll Suspension System. Vehicle System Dynamics
+Supplement 29. Pp.309-329
+
+\bibitem{choi}  Design Sensitivity Analysis of Structural Systems, Haug,
+E.J., CHOI, K.K., Komkov, V. , 1986, Academic Press Inc. Orlando, Florida,
+U.S.A.
+
+\bibitem{Gillespie}  Gillespie, T. D. (1992). Fundamentals of Vehicle
+Dynamics. SAE
+
+\bibitem{Neto}  Neto, A C; Prado, M. (1995). Prot\'{o}tipo Virtual: Um Novo
+Conceito no Desenvolvimento de Projetos Mec\^{a}nicos. SAE Thecnical Papers
+Series. 982938.
+
+\bibitem{Pollone}  Pollone, G.(1970). Il Veicolo - Libreria Editrice
+Universitaria Levrotto \& Bella - 3${{}^{a}}$ Ed. - Torino - Italia
+
+\bibitem{Reimpell}  Reimpell, J. ; Stoll, H. (1996). The Automotive Chassis:
+Engineering Principles. SAE.
+
+\bibitem{Sayers00}  Sayers, M.W.; Han, D. (1996). A Generic Multibody
+Vehicle Model for Simulating Handling and Braking. Vehicle System Dynamics
+Supplement 25. Pp.599-613.
+
+\bibitem{Wallentowitz}  Wallentowitz, H.(1998). Analysis of Dynamic Driving
+Control Systems (DDC) on a full Vehicle in ADAMS. http\TEXTsymbol{\backslash}%
+\TEXTsymbol{\backslash}www.ika.rwth-aachen.de.
+
+\bibitem{Wunsche}  Wunsche, T. and Muhr, K ; Biecker, K; Schnaubelt L. :
+Side Load Springs as a Solution to Minimize Adverse Side Loads Acting on the
+McPherson Strut. SAE paper 940862.
+
+\bibitem{Montiglio}  Montiglio, Mauro.(1996). Ride Comfort del Veicolo -
+Veicolo, Modulo R3. Master in Car Engineering - 3%
+%TCIMACRO{\UNICODE{0xaa} }%
+%BeginExpansion
+${{}^a}$%
+%EndExpansion
+Edizione. Centro Richerche FIAT. Modena, Italia.
+
+\bibitem{Genta}  Genta, G.''Motor Vehicle Dynamics'' ,World Scientific
+Publishing, London, 1997.
+
+\bibitem{ElBeheiry and Karnopp}  E.M.ElBeheiry ; D.C.Karnopp (1996) Journal
+of Sound and Vibration, 189(5), 547-564. Optimal Control of Vehicle Random
+Vibration with Constrained Suspension Deflection.
+
+\bibitem{X.P.Lu}  X.P.Lu ; L. Segel. Vehicular Energy Losses Associated with
+the Transversal of an Uneven Road. IAVSD Extensive Summaries.
+
+\bibitem{X.P.Lu01}  X.P.Lu.1985 American Society for Testing and Materials
+Proceeding of Symposium on Measuring Road Roughness and Its Effect On User
+Cost and Comfort, 143-161. Effects of Road Roughness on Vehicular Rolling
+Resistance.
+
+\bibitem{Sayers01}  M.W.Sayers 1985 American Society of Mechanical Engineers
+Proceeding of Symposium on Simulation Control of Ground Vehicles and
+Transportation Systems, 113-129. Characteristic Power Spectral Density
+Functions for Vertical and Roll Components of Road Roughness.
+
+\bibitem{Sayers02}  Sayers,M.W.; Karamihas, S.M. Interpretation of Road
+Roughness Profile Data. Prepared for Federal Highway Administration. June
+1996.
+
+\bibitem{Gillespie and Sayers}  Gillespie,T.D.;Sayers, M.W. e Segel, L.
+Calibration of Response-Type Road Roughness Measuring Systems.Transportation
+Research Board. National Reserch Council. Washington, D.C. 1980.
+
+\bibitem{Tamboli and Joshi}  Tamboli, J.A.; Joshi, S.G.Optimum Design of a
+Passive Suspension System of a Vehicle Subjected to Actual Random Road
+Excitations. Journal of Sound and Vibration, 1999, 292(2), 193-205.
+
+\bibitem{Kozin}  Kozin, F.; Bogdanoff, J.L. On the Statistical Analysis of
+the Motion of Some Simple Two-Dimensional Linear Vehicles Moving on a Random
+Track. Int. J. Mech. Sci. Pergamon Press Ltd. 1960. Vol. 2, pp. 168-178.
+Great Britain.
+
+\bibitem{Dodds}  Dodds, C.J.; Robson, J.D. The Description of Road Surface
+Roughness, Journal of Sound and Vibration. 1973, 31 (2), pp.175-183.
+
+\bibitem{Schlesinger}  Schlesinger, A. Laboratory assessment of ride quality
+of a vehicle using a limited number of actuators.IMechE paper C466/043/93.
+1993, pp.195-198.
+
+\bibitem{Alonso}  Alonso, J. Manuel.(1997). Tecnolog\'{i}as Avanzadas del
+Autom\'{o}vil.2%
+%TCIMACRO{\UNICODE{0xaa}}%
+%BeginExpansion
+${{}^a}$%
+%EndExpansion
+Ed. Editorial Paraninfo. Madrid, Espa\~{n}a.
+
+\bibitem{Jolly}  Jolly,A.(1983).Study of ride comfort using a nonlinear
+mathematical model of a vehicle suspension. Int.J. of Vehicle Design, Vol.4,
+no.3, pp.233-244. Printed in U.K.
+
+\bibitem{Thomson}  Thomson,W.T.\ Theory of Vibration with Applications, 5th
+edition, Prentice Hall, New Jersey . EUA.1998.
+
+\bibitem{Ewins}  Ewins,D.J. Modal Testing: Theory an Practice.Research
+Studies Press LTD. Tauton, Somerset, England.1995.
+
+\bibitem{Inman}  Inman,D.J. Engineering Vibration.Prentice Hall, New Jersey
+. EUA.1996.
+
+\bibitem{Pipes}  Pipes, L.A. Applied Mathematics for Engineers and
+Physicists.2nd edition, McGraw-Hill Book Company, Inc. New York, USA. 1958
+
+\bibitem{Griffin}  Griffin, M.J. Handbook of Human Vibration, 1st Edition,
+Academic Press,San Diego, California, USA.1996.
+
+\bibitem{Satchell}  Satchell, Terry L. The Design of Trailing Twist Axels.
+International Congress and Exposition, Cobo Hall,\ Detroit, Michigan.SAE
+paper n%
+%TCIMACRO{\UNICODE{0xba}}%
+%BeginExpansion
+${{}^o}$%
+%EndExpansion
+.810420, February 23-27, 1981. USA.
+
+\bibitem{Salmon}  Salmon, C.G., Jonhson, J.E., \textit{Steel Structures
+Design and Behaivor}, Harper \& Row, New York, 1980.
+
+\bibitem{ADAMS Manual}  Using ADAMS/Post Processor - Manipulating Curve Data.
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,176 @@
+This is TeX, Version 3.14159 (preloaded format=latex 97.9.16)  29 OCT 2001 10:02
+**&latex_ml D:/Mauro/tese/Oct10-mod.tex
+(D:/Mauro/tese/Oct10-mod.tex
+LaTeX2e <1997/06/01>
+Babel <v3.6h> and hyphenation patterns for american, english, french, dutch, ge
+rman, loaded.
+(C:\SWP30\TCITeX\tex\LaTeX\styledit\sebase.cls
+sebase.cls 29 Sep 1997
+Base style for Style Editor v 2.52
+NOTICE: This macro file is NOT proprietary and may be freely copied and distrib
+uted.
+(C:\SWP30\TCITeX\tex\LaTeX\packages\tools\theorem.sty
+Package: theorem 1995/11/23 v2.2c Theorem extension package (FMi)
+\theorem@style=\toks14
+\theorem@bodyfont=\toks15
+\theorempreskipamount=\skip41
+\theorempostskipamount=\skip42
+
+(C:\SWP30\TCITeX\tex\LaTeX\packages\tools\thp.sty
+File: thp.sty 1995/11/23 v2.2c Theorem extension package (FMi)
+))
+(C:\SWP30\TCITeX\tex\LaTeX\packages\tools\multicol.sty
+Package: multicol 1997/06/05 v1.5n multicolumn formatting (FMi)
+\c@tracingmulticols=\count79
+\mult@box=\box26
+\multicol@leftmargin=\dimen102
+\c@unbalance=\count80
+\c@collectmore=\count81
+\doublecol@number=\count82
+\multicoltolerance=\count83
+\multicolpretolerance=\count84
+\full@width=\dimen103
+\page@free=\dimen104
+\premulticols=\dimen105
+\postmulticols=\dimen106
+\multicolsep=\skip43
+\multicolbaselineskip=\skip44
+\partial@page=\box27
+\last@line=\box28
+\mult@rightbox=\box29
+\mult@grightbox=\box30
+\mult@gfirstbox=\box31
+\mult@firstbox=\box32
+\@tempa=\box33
+\@tempa=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\c@columnbadness=\count85
+\c@finalcolumnbadness=\count86
+\last@try=\dimen107
+\multicolovershoot=\dimen108
+\multicolundershoot=\dimen109
+\mult@nat@firstbox=\box50
+)
+(C:\SWP30\TCITeX\tex\LaTeX\TCImisc\crop.sty)
+(C:\SWP30\TCITeX\tex\LaTeX\packages\amsfonts\amssymb.sty
+Package: amssymb 1996/11/03 v2.2b
+
+(C:\SWP30\TCITeX\tex\LaTeX\packages\amsfonts\amsfonts.sty
+Package: amsfonts 1997/03/24 v2.2c
+\@emptytoks=\toks16
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 133.
+))
+\@temptokenb=\toks17
+\c@equationnumber=\count87
+\NormalParIndent=\dimen110
+\thepar=\toks18
+\@tempcount=\count88
+\trimmargin=\dimen111
+\verttrimmargin=\dimen112
+\c@Document=\count89
+\CurrentMark=\toks19
+\NewMark=\toks20
+\PreviousPrimaryMark=\toks21
+\MarkToks=\toks22
+\OldOutput=\toks23
+
+(C:\SWP30\TCITeX\tex\LaTeX\packages\tools\afterpage.sty
+Package: afterpage 1995/10/27 v1.08 After-Page Package (DPC)
+\AP@output=\toks24
+\AP@partial=\box51
+\AP@footins=\box52
+)
+\@GenTocEntryLevel=\count90
+\c@Temp=\count91
+\mathindent=\dimen113
+\abovecaptionskip=\skip45
+\belowcaptionskip=\skip46
+\c@figure=\count92
+\c@table=\count93
+\c@LevelFiveDiv=\count94
+\c@LevelFourDiv=\count95
+\c@LevelOneDiv=\count96
+\c@LevelThreeDiv=\count97
+\c@LevelTwoDiv=\count98
+)
+(C:\SWP30\TCITeX\tex\LaTeX\tci\tcilatex.tex
+TCILATEX Macros for Scientific Word 3.0 <19 May 1997>.
+NOTICE: This macro file is NOT proprietary and may be freely copied and distrib
+uted.
+\@hour=\count99
+\@minute=\count100
+\GRAPHICSTYPE=\count101
+\draft=\count102
+\dispkind=\count103
+\c@chapter=\count104
+\theight=\dimen114
+LaTeX Info: Redefining \it on input line 549.
+\c@theorem=\count105
+\c@axiom=\count106
+\c@remark=\count107
+\c@example=\count108
+\c@exercise=\count109
+\c@definition=\count110
+\intno@=\count111
+\ex@=\dimen115
+) (.\Oct10-mod.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Try loading font information for T1+Serif on input line 14.
+
+LaTeX Font Info:    No file T1Serif.fd. on input line 14.
+
+
+LaTeX Font Warning: Font shape `T1/Serif/medium/upright' undefined
+(Font)              using `T1/cmr/m/n' instead on input line 14.
+
+! Undefined control sequence.
+\document ...aces \csname \theGenericFont 
+                                          \endcsname \csname \theGene...
+l.14 \begin{document}
+                     
+? 
+! Emergency stop.
+\document ...aces \csname \theGenericFont 
+                                          \endcsname \csname \theGene...
+l.14 \begin{document}
+                     
+End of file on the terminal!
+
+
+Here is how much of TeX's memory you used:
+1826 strings out of 25902
+19665 string characters out of 248789
+71170 words of memory out of 262141
+4764 multiletter control sequences out of 20000
+4160 words of font info for 15 fonts, out of 300000 for 255
+14 hyphenation exceptions out of 607
+30i,0n,26p,251b,112s stack positions out of 300i,40n,60p,5000b,10000s
+No pages of output.

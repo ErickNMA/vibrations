@@ -1,0 +1,52 @@
+\ContentsEntry {chapter@toc}{1}{Introdu\c {c}\~{a}o}{1}
+\ContentsEntry {section@toc}{1.1}{Justificativa}{2}
+\ContentsEntry {chapter@toc}{2}{O autom\'{o}vel}{5}
+\ContentsEntry {section@toc}{2.1}{Introdu\c {c}\~{a}o}{5}
+\ContentsEntry {section@toc}{2.2}{Suspens\~{a}o Dianteira - MacPherson}{6}
+\ContentsEntry {section@toc}{2.3}{Suspens\~{a}o Traseira - Bra\c {c}os Arrastados Interconectados}{10}
+\ContentsEntry {section@toc}{2.4}{Molas}{15}
+\ContentsEntry {section@toc}{2.5}{Amortecedores}{20}
+\ContentsEntry {section@toc}{2.6}{Barra Estabilizadora}{24}
+\ContentsEntry {chapter@toc}{3}{Conforto Vibracional}{27}
+\ContentsEntry {section@toc}{3.1}{Introdu\c {c}\~{a}o}{27}
+\ContentsEntry {section@toc}{3.2}{Fontes internas de Excita\c {c}\~{a}o}{28}
+\ContentsEntry {subsection@toc}{3.2.1}{Conjunto Pneum\'{a}ticos e Rodas}{29}
+\ContentsEntry {subsection@toc}{3.2.2}{Comportamento din\^{a}mico dos pneus}{31}
+\ContentsEntry {subsection@toc}{3.2.3}{Sistema de Transmiss\~{a}o}{32}
+\ContentsEntry {subsection@toc}{3.2.4}{Motor}{34}
+\ContentsEntry {section@toc}{3.3}{Fontes Externas de Vibra\c {c}\~{a}o}{35}
+\ContentsEntry {subsection@toc}{3.3.1}{Excita\c {c}\~{a}o devido \`{a}s irregularidades da pista}{36}
+\ContentsEntry {section@toc}{3.4}{A Resposta Din\^{a}mica de um Autom\'{o}vel}{42}
+\ContentsEntry {subsection@toc}{3.4.1}{Comportamento Din\^{a}mico de um Autom\'{o}vel}{43}
+\ContentsEntry {subsection@toc}{3.4.2}{ Modelo de 1/4 de ve\'{i}culo}{44}
+\ContentsEntry {subsection@toc}{3.4.3}{Resposta da massa suspensa e n\~{a}o suspensa.}{48}
+\ContentsEntry {subsection@toc}{3.4.4}{Influencia do amortecimento na resposta da massa suspensa.}{51}
+\ContentsEntry {subsection@toc}{3.4.5}{A influ\^{e}ncia da rigidez na resposta da massa suspensa}{54}
+\ContentsEntry {subsection@toc}{3.4.6}{A influ\^{e}ncia da resson\^{a}ncia da massa n\~{a}o suspensa na resposta da massa suspensa.}{56}
+\ContentsEntry {subsection@toc}{3.4.7}{Os modos de ''Bounce'' e ''Pitch''}{57}
+\ContentsEntry {section@toc}{3.5}{A percep\c {c}\~{a}o do conforto}{65}
+\ContentsEntry {subsection@toc}{3.5.1}{Toler\^{a}ncia humana \`{a}s vibra\c {c}\~{o}es}{66}
+\ContentsEntry {chapter@toc}{4}{Modelagem do Ve\'{i}culo}{70}
+\ContentsEntry {section@toc}{4.1}{Introdu\c {c}\~{a}o}{70}
+\ContentsEntry {section@toc}{4.2}{O modelo completo}{72}
+\ContentsEntry {section@toc}{4.3}{Suspens\~{a}o Dianteira}{74}
+\ContentsEntry {section@toc}{4.4}{Suspens\~{a}o Traseira}{81}
+\ContentsEntry {section@toc}{4.5}{Modelo de Pista}{85}
+\ContentsEntry {chapter@toc}{5}{Apresenta\c {c}\~{a}o e An\'{a}lise dos Resultados}{90}
+\ContentsEntry {section@toc}{5.1}{ Modos Naturais}{90}
+\ContentsEntry {section@toc}{5.2}{Resposta em Frequ\^{e}ncia da Carroceira}{92}
+\ContentsEntry {section@toc}{5.3}{An\'{a}lise de Sensibilidade}{98}
+\ContentsEntry {chapter@toc}{6}{Conclus\~{o}es}{104}
+\ContentsEntry {bibsection@toc}{}{Bibliografia }{107}
+\ContentsEntry {apendix@toc}{A}{Rotinas para gera\c {c}\~{a}o do sinal de pista. }{110}
+\ContentsEntry {apendixsection@toc}{A.1}{Perfis de Pista }{110}
+\ContentsEntry {apendixsubsection@toc}{A.1.1}{Perf\'{i}l para pista de asfalto liso }{110}
+\ContentsEntry {apendixsubsection@toc}{A.1.2}{Perfil da pista para asfalto irregular }{115}
+\ContentsEntry {apendix@toc}{B}{Modos Naturais do Modelo. }{121}
+\ContentsEntry {apendix@toc}{C}{Dados do ve\'{i}culo }{123}
+\ContentsEntry {apendix@toc}{D}{An\'{a}lise de Sensibilidade }{124}
+\ContentsEntry {apendixsection@toc}{D.1}{O problema de otimiza\c {c}\~{a}o de sistemas }{124}
+\ContentsEntry {apendixsubsection@toc}{D.1.1}{A an\'{a}lise de sensibilidade }{127}
+\ContentsEntry {apendixsubsection@toc}{D.1.2}{Diferenciabilidade da vari\'{a}vel dependente. }{129}
+\ContentsEntry {apendixsubsection@toc}{D.1.3}{M\'{e}todo de diferencia\c {c}\~{a}o direta }{130}
+\ContentsEntry {apendixsubsection@toc}{D.1.4}{M\'{e}todo Adjunto (M\'{e}todo da vari\'{a}vel adjunta) }{131}

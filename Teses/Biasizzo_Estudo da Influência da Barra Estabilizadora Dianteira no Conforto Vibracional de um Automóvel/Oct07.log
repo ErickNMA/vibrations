@@ -1,0 +1,860 @@
+This is TeX, Version 3.14159 (preloaded format=latex 97.9.16)  8 OCT 2001 10:44
+**&latex_ml D:/Mauro/tese/Oct07.tex
+(D:/Mauro/tese/Oct07.tex
+LaTeX2e <1997/06/01>
+Babel <v3.6h> and hyphenation patterns for american, english, french, dutch, ge
+rman, loaded.
+(C:\SWP30\TCITeX\tex\LaTeX\styledit\sebase.cls
+sebase.cls 29 Sep 1997
+Base style for Style Editor v 2.52
+NOTICE: This macro file is NOT proprietary and may be freely copied and distrib
+uted.
+(C:\SWP30\TCITeX\tex\LaTeX\packages\tools\theorem.sty
+Package: theorem 1995/11/23 v2.2c Theorem extension package (FMi)
+\theorem@style=\toks14
+\theorem@bodyfont=\toks15
+\theorempreskipamount=\skip41
+\theorempostskipamount=\skip42
+
+(C:\SWP30\TCITeX\tex\LaTeX\packages\tools\thp.sty
+File: thp.sty 1995/11/23 v2.2c Theorem extension package (FMi)
+))
+(C:\SWP30\TCITeX\tex\LaTeX\packages\tools\multicol.sty
+Package: multicol 1997/06/05 v1.5n multicolumn formatting (FMi)
+\c@tracingmulticols=\count79
+\mult@box=\box26
+\multicol@leftmargin=\dimen102
+\c@unbalance=\count80
+\c@collectmore=\count81
+\doublecol@number=\count82
+\multicoltolerance=\count83
+\multicolpretolerance=\count84
+\full@width=\dimen103
+\page@free=\dimen104
+\premulticols=\dimen105
+\postmulticols=\dimen106
+\multicolsep=\skip43
+\multicolbaselineskip=\skip44
+\partial@page=\box27
+\last@line=\box28
+\mult@rightbox=\box29
+\mult@grightbox=\box30
+\mult@gfirstbox=\box31
+\mult@firstbox=\box32
+\@tempa=\box33
+\@tempa=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\c@columnbadness=\count85
+\c@finalcolumnbadness=\count86
+\last@try=\dimen107
+\multicolovershoot=\dimen108
+\multicolundershoot=\dimen109
+\mult@nat@firstbox=\box50
+)
+(C:\SWP30\TCITeX\tex\LaTeX\TCImisc\crop.sty)
+(C:\SWP30\TCITeX\tex\LaTeX\packages\amsfonts\amssymb.sty
+Package: amssymb 1996/11/03 v2.2b
+
+(C:\SWP30\TCITeX\tex\LaTeX\packages\amsfonts\amsfonts.sty
+Package: amsfonts 1997/03/24 v2.2c
+\@emptytoks=\toks16
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 133.
+))
+\@temptokenb=\toks17
+\c@equationnumber=\count87
+\NormalParIndent=\dimen110
+\thepar=\toks18
+\@tempcount=\count88
+\trimmargin=\dimen111
+\verttrimmargin=\dimen112
+\c@Document=\count89
+\CurrentMark=\toks19
+\NewMark=\toks20
+\PreviousPrimaryMark=\toks21
+\MarkToks=\toks22
+\OldOutput=\toks23
+
+(C:\SWP30\TCITeX\tex\LaTeX\packages\tools\afterpage.sty
+Package: afterpage 1995/10/27 v1.08 After-Page Package (DPC)
+\AP@output=\toks24
+\AP@partial=\box51
+\AP@footins=\box52
+)
+\@GenTocEntryLevel=\count90
+\c@Temp=\count91
+\mathindent=\dimen113
+\abovecaptionskip=\skip45
+\belowcaptionskip=\skip46
+\c@figure=\count92
+\c@table=\count93
+\c@LevelFiveDiv=\count94
+\c@LevelFourDiv=\count95
+\c@LevelOneDiv=\count96
+\c@LevelThreeDiv=\count97
+\c@LevelTwoDiv=\count98
+) (.\tesepuc.sty
+(C:\SWP30\TCITeX\tex\LaTeX\styledit\Times.tex
+(C:\SWP30\TCITeX\tex\LaTeX\styledit\ARIAL.tex)
+(C:\SWP30\TCITeX\tex\LaTeX\styledit\COUR.tex)
+(C:\SWP30\TCITeX\tex\LaTeX\styledit\TIRM.tex))
+\c@DedicatoriaCount=\count99
+\c@IndexSectionCount=\count100
+\c@ListOfFiguresSectionCount=\count101
+\c@ListOfTablesSectionCount=\count102
+\c@ObsoleteEqCount=\count103
+\c@appendixCount=\count104
+\c@bibitemCount=\count105
+\c@bibliographyCount=\count106
+\c@bibsectionCount=\count107
+\c@chapterCount=\count108
+\c@contentssectionCount=\count109
+\c@descriptionAcount=\count110
+\c@descriptionBcount=\count111
+\c@descriptionCcount=\count112
+\c@descriptionDcount=\count113
+\c@enumerateAcount=\count114
+\c@enumerateBcount=\count115
+\c@enumerateCcount=\count116
+\c@enumerateDcount=\count117
+\c@itemizeAcount=\count118
+\c@itemizeBcount=\count119
+\c@itemizeCcount=\count120
+\c@itemizeDcount=\count121
+\c@paragraphCount=\count122
+\c@sectionCount=\count123
+\c@subparagraphCount=\count124
+\c@subsectionCount=\count125
+\c@subsubsectionCount=\count126
+\c@subsubsubsectionCount=\count127
+\argbox=\box53
+\c@example=\count128
+\c@remark=\count129
+\c@theorem=\count130
+)
+(C:\SWP30\TCITeX\tex\LaTeX\tci\tcilatex.tex
+TCILATEX Macros for Scientific Word 3.0 <19 May 1997>.
+NOTICE: This macro file is NOT proprietary and may be freely copied and distrib
+uted.
+\@hour=\count131
+\@minute=\count132
+\GRAPHICSTYPE=\count133
+\draft=\count134
+\dispkind=\count135
+\theight=\dimen114
+LaTeX Info: Redefining \it on input line 549.
+\c@axiom=\count136
+\c@exercise=\count137
+\c@definition=\count138
+\intno@=\count139
+\ex@=\dimen115
+) (.\Oct07.aux
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+ [1
+
+] [2
+
+] [3
+
+] (.\Oct07.toc
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4])
+\tf@toc=\write3
+
+[5] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 131--131
+[][]   [] \T1/Serif/bold/upright/20 Cap^^ed-tulo 1
+ []
+
+
+LaTeX Warning: Citation `teste01' on page 1 undefined on input line 153.
+
+
+LaTeX Warning: Citation `teste03' on page 1 undefined on input line 178.
+
+
+Overfull \vbox (54.77682pt too high) has occurred while \output is active []
+
+
+[1]
+
+LaTeX Warning: Citation `teste03' on page 2 undefined on input line 186.
+
+
+Underfull \hbox (badness 1019) in paragraph at lines 184--190
+\T1/Serif/medium/upright/12 realizados concentrando-se exclusivamente nos benef
+^^edcios alcan^^e7ados para as
+ []
+
+
+Underfull \hbox (badness 1092) in paragraph at lines 184--190
+\T1/Serif/medium/upright/12 caracter^^edsticas de handling\T1/Serif/medium/upri
+ght/10 [[]]\T1/Serif/medium/upright/12 . Mesmo tendo-se percebido uma consider^
+^e1vel
+ []
+
+
+Underfull \hbox (badness 1406) in paragraph at lines 193--200
+[]\T1/Serif/medium/upright/12 Nos ^^faltimos anos, com a libera^^e7^^e3o das im
+porta^^e7^^f5es de autom^^f3veis, temos
+ []
+
+
+Underfull \hbox (badness 1231) in paragraph at lines 193--200
+\T1/Serif/medium/upright/12 acompanhado uma substancial melhora tecnol^^f3gica 
+e, consequentemente, da
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+
+LaTeX Warning: Citation `teste05' on page 3 undefined on input line 234.
+
+
+LaTeX Warning: Citation `teste03' on page 3 undefined on input line 248.
+
+
+Underfull \hbox (badness 1248) in paragraph at lines 245--258
+\T1/Serif/medium/upright/12 estabilizadora ^^e9 uma alternativa, tratando-se de
+ suspens^^f5es ativas, de baixo
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 245--258
+\T1/Serif/medium/upright/12 (ve^^edculos com C.G. alto que necessitam minimizar
+ os efeitos do rolamento
+ []
+
+
+Underfull \hbox (badness 1668) in paragraph at lines 245--258
+\T1/Serif/medium/upright/12 da carro^^e7eria e que ao mesmo tempo sofrem com a 
+alta rigidez de suas
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 261--261
+[][]   [] \T1/Serif/bold/upright/20 Cap^^ed-tulo 2
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
+LaTeX Font Info:    Try loading font information for U+msa on input line 328.
+
+(C:\SWP30\TCITeX\tex\LaTeX\packages\amsfonts\umsa.fd
+File: umsa.fd 1995/01/05 v2.2e AMS font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 328.
+
+(C:\SWP30\TCITeX\tex\LaTeX\packages\amsfonts\umsb.fd
+File: umsb.fd 1995/01/05 v2.2e AMS font definitions
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8]
+[9]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[10] [11]
+Underfull \hbox (badness 1968) in paragraph at lines 551--560
+[]\T1/Serif/medium/upright/12 A posi^^e7^^e3o das buchas e das molas em rela^^e
+7^^e3o ao centro das rodas ^^e9
+ []
+
+
+Underfull \hbox (badness 2443) in paragraph at lines 551--560
+\T1/Serif/medium/upright/12 de grande influ^^eancia na efici^^eancia estrutural
+ do conjunto. A localiza^^e7^^e3o
+ []
+
+
+Underfull \vbox (badness 1424) has occurred while \output is active []
+
+ [12]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[13] [14] [15]
+Underfull \hbox (badness 1286) in paragraph at lines 677--684
+[]\T1/Serif/medium/upright/12 As molas a ar e a g^^e1s s^^e3o bastante utilizad
+as em ^^f4nibus e caminh^^f5es,
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16]
+Underfull \hbox (badness 1735) in paragraph at lines 703--711
+[]\T1/Serif/medium/upright/12 As barras de tor^^e7^^e3o consistem basicamente e
+m uma barra de a^^e7o reta,
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 1521) in paragraph at lines 806--809
+[]\T1/Serif/medium/upright/12 As molas auxilirares s^^e3o normalmente fixadas ^
+^e0 carroceira no ponto de
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[19]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[21]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23]
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 943--943
+[][]   [] \T1/Serif/bold/upright/20 Cap^^ed-tulo 3
+ []
+
+
+Underfull \hbox (badness 3792) in paragraph at lines 947--955
+\T1/Serif/medium/upright/12 induzidas pelas irregularidades da pista, pelas mas
+sas rotativas (conjunto
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26]
+Underfull \hbox (badness 1331) in paragraph at lines 1051--1056
+[]\T1/Serif/medium/upright/12 As causas da n^^e3o uniformidade dos pneus s^^e3o
+ resultado da sua pr^^f3pria
+ []
+
+[27] [28]
+Underfull \hbox (badness 1173) in paragraph at lines 1102--1111
+[]\T1/Serif/medium/upright/12 Os desvios dimensionais existentes na fabrica^^e7
+^^e3o das rodas e pneus n^^e3o
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29]
+[30]
+Underfull \hbox (badness 4254) in paragraph at lines 1182--1184
+[]\T1/Serif/medium/upright/12 -O eixo, por ser um componente el^^e1stico, pode 
+defletir e causar o
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [33]
+Underfull \hbox (badness 2662) in paragraph at lines 1294--1300
+[]\T1/Serif/bold/upright/12 Longas ondula^^e7^^f5es\T1/Serif/medium/upright/12 
+: Varia^^e7^^f5es de altura do perfil da estrada onde o
+ []
+
+
+Underfull \vbox (badness 3780) has occurred while \output is active []
+
+ [34]
+Underfull \hbox (badness 1205) in paragraph at lines 1307--1312
+[]\T1/Serif/bold/upright/12 Descontinuidades\T1/Serif/medium/upright/12 : Varia
+^^e7^^f5es cont^^ednuas do perfil da pista em dimens^^f5es
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35]
+[36]
+Underfull \hbox (badness 1009) in paragraph at lines 1366--1374
+\T1/Serif/medium/upright/12 que diminui com a frequ^^eancia na segunda ou quart
+a ordem. Os modelos,
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [37]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39]
+[40]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [42]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 1253) has occurred while \output is active []
+
+ [43]
+Overfull \hbox (51.70567pt too wide) in alignment at lines 1665--1670
+ [][][] []
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [44]
+Overfull \hbox (63.79868pt too wide) in alignment at lines 1674--1679
+ [][][] []
+ []
+
+
+Overfull \hbox (73.00793pt too wide) detected at line 1720
+[][]\OML/cmm/m/it/12 :[] \OT1/cmr/m/n/12 + []\OML/cmm/m/it/12 :[] \OT1/cmr/m/n/
+12 + []\OML/cmm/m/it/12 :[] \OT1/cmr/m/n/12 = [][]
+ []
+
+[45]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46]
+[47]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [48]
+Underfull \vbox (badness 6016) has occurred while \output is active []
+
+ [49]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 1946) in paragraph at lines 1925--1933
+[]\T1/Serif/medium/upright/12 O gr^^e1fico \T1/Serif/medium/upright/10 3.23[]\T
+1/Serif/medium/upright/12 , a seguir, apresenta o ganho da carroceria, em termo
+s de
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 1253) has occurred while \output is active []
+
+ [50]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [51]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [52]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [53]
+Underfull \hbox (badness 1087) in paragraph at lines 2048--2048
+[]   [] \T1/Serif/medium/upright/10 3.24-Influ^^eancia da rigidez da suspens^^e
+3o na resposta da carroceira as acelera^^e7^^f5es devido as
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [54]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [55]
+Underfull \hbox (badness 1365) in paragraph at lines 2118--2126
+\T1/Serif/medium/upright/12 pois geralmente s^^e3o considerados desagrad^^e1vei
+s e s^^e3o as fontes b^^e1sicas de
+ []
+
+[56]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 1424) has occurred while \output is active []
+
+ [57]
+[58]
+Overfull \hbox (133.5197pt too wide) detected at line 2304
+[][]\OML/cmm/m/it/12 :[] \OT1/cmr/m/n/12 + []\OML/cmm/m/it/12 :[] \OT1/cmr/m/n/
+12 + []\OML/cmm/m/it/12 :[] \OT1/cmr/m/n/12 = [][]
+ []
+
+[59]
+Overfull \hbox (21.72574pt too wide) in alignment at lines 2362--2373
+ [][][] []
+ []
+
+[60] [61]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [62]
+Underfull \hbox (badness 1484) in paragraph at lines 2488--2499
+\T1/Serif/medium/upright/12 que se opoem aos movimentos de ''pitch'' esse modo 
+pode ser controlado
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [63]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [64]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [65]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [66]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [67]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[68]
+Underfull \hbox (badness 10000) in paragraph at lines 2677--2677
+[][]   [] \T1/Serif/bold/upright/20 Cap^^ed-tulo 4
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [69]
+Underfull \vbox (badness 2762) has occurred while \output is active []
+
+ [70]
+Underfull \hbox (badness 2050) in paragraph at lines 2749--2750
+[]\T1/Serif/medium/italic/12 Como exemplo, seja uma estrutura cuja resposta ^^e
+9 governada por um
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2765--2766
+[]\T1/Serif/medium/italic/12 3. o princ^^edpio de superposi^^e7^^e3o ^^e9 v^^e1
+lido.
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [71]
+[72]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [73]
+[74] [75] [76] [77] [78]
+Underfull \hbox (badness 10000) in paragraph at lines 3045--3045
+[][]   [] \T1/Serif/bold/upright/20 Cap^^ed-tulo 5
+ []
+
+[79] [80]
+Underfull \hbox (badness 10000) in paragraph at lines 3047--3047
+[][]   [] \T1/Serif/bold/upright/20 Cap^^ed-tulo 6
+ []
+
+
+LaTeX Font Warning: Font shape `T1/Serif/medium/upright' in size <6> not availa
+ble
+(Font)              size <5> substituted on input line 3068.
+
+
+Underfull \vbox (badness 2644) has occurred while \output is active []
+
+ [81]
+Overfull \hbox (81.9151pt too wide) detected at line 3109
+[][][]
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `Result:WHFOFemode' on page 82 undefined on input line
+ 3167.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [82]
+[83]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[84]
+Underfull \hbox (badness 2245) in paragraph at lines 3216--3220
+[]\T1/Serif/medium/upright/12 No gr^^e1fico da figura \T1/Serif/medium/upright/
+10 6.35[] \T1/Serif/medium/upright/12 observa-se um comportamento semelhante ao
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [85]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [86]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [87]
+Underfull \hbox (badness 1048) in paragraph at lines 3290--3296
+\T1/Serif/medium/upright/12 estabilizadora, fazendo com que o curso do amortece
+dor seja menor e que
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 1033) in paragraph at lines 3327--3338
+\T1/Serif/medium/upright/12 vibra^^e7^^f5es para a carroceria do ve^^edculo com
+ o aumento da rigidez da barra
+ []
+
+[88] [89] [90]
+
+LaTeX Warning: Reference `Griffin' on page 91 undefined on input line 3389.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [91]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [92]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[93] [94]
+Underfull \hbox (badness 10000) in paragraph at lines 3448--3448
+[][]   [] \T1/Serif/bold/upright/20 Cap^^ed-tulo 7
+ []
+
+
+Underfull \vbox (badness 7433) has occurred while \output is active []
+
+ [95]
+Underfull \hbox (badness 1831) in paragraph at lines 3484--3490
+[]\T1/Serif/medium/upright/12 O modelo desenvolvido neste trabalho ^^e9 o prime
+iro modelo de ve^^edculo
+ []
+
+
+Underfull \hbox (badness 1137) in paragraph at lines 3491--3506
+\T1/Serif/medium/upright/12 nas acelera^^e7^^f5es da carroceira e das for^^e7as
+ atuantes nas fixa^^e7^^f5es das barras
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [96]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [97]
+[98]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [99]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [100]
+[101] [102]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [103
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [104]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [105]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [106]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [107]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [108]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [109]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [110]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [111]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [112]
+[113]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[114
+
+] [115] (.\Oct07.aux)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 1.0pt have occured.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ )
+Here is how much of TeX's memory you used:
+3354 strings out of 25902
+37338 string characters out of 248789
+122037 words of memory out of 262141
+6238 multiletter control sequences out of 20000
+32337 words of font info for 63 fonts, out of 300000 for 255
+14 hyphenation exceptions out of 607
+30i,12n,29p,638b,367s stack positions out of 300i,40n,60p,5000b,10000s
+
+Output written on Oct07.dvi (121 pages, 272032 bytes).
