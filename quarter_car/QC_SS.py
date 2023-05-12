@@ -64,10 +64,32 @@ plt.legend()
 plt.grid()
 plt.show()
 
-plt.figure(2)
-
 ft = ct.ss2tf(system)
+num = ft.num
+den = ft.den
 
-print(ft)
+ft1 = ct.tf(num[0][0], den[0][0])
+ft2 = ct.tf(num[1][0], den[1][0])
 
-#mag, phase, omega = ct.bode(system)
+bode1 = ct.bode(ft1, plot=False)
+bode2 = ct.bode(ft2, plot=False)
+
+plt.figure(2)
+plt.semilogx()
+plt.semilogy()
+plt.loglog()
+
+wu = 55.2694
+ws = 8.8671
+
+plt.plot((bode1[2]/wu), bode1[0], label='$Y_u(j\omega)$')
+plt.plot((bode2[2]/wu), bode2[0], label='$Y_s(j\omega)$')
+plt.plot((np.sqrt(2), np.sqrt(2)), (1e-2, 1e1), color='gray', linestyle='dashed', label='$r = \sqrt{2}$')
+
+plt.xlim(1e-2, 1e1)
+plt.ylim(1e-2, 1e1)
+plt.xlabel('r [$\\frac{\omega}{\omega_n}$]')
+plt.ylabel('Magnitude [dB]')
+plt.legend()
+plt.grid()
+plt.show()
