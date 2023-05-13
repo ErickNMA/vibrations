@@ -1,7 +1,14 @@
 # Importando bibliotecas:
 import numpy as np
 import matplotlib.pyplot as plt
+import scienceplots
 import control as ct
+
+# Configurações de plot:
+plt.style.use([
+    'grid',
+    'retro'
+])
 
 # Unidades no S.I [m, Kg, N/m, Kg*m², (N*s)/m]:
 # GDL não suspenso dianteiro:
@@ -76,44 +83,45 @@ tempo = np.arange(0, tf, ts)
 ut = (0.25*np.sin((0.3142*tempo)+0.1594))
 ud = (0.25*np.sin(0.3142*tempo))
 
-time, y = ct.forced_response(system, T=tempo, U=(
-    ut, ud), X0=(0, 0, 0, 0, 0, 0, 0, 0))
+time, y = ct.forced_response(system, T=tempo, U=(ut, ud), X0=(0, 0, 0, 0, 0, 0, 0, 0))
 
 # Plot dos gráficos:
-plt.figure(1)
-plt.plot(time, (y[0]*1e3), label=f'$y_s(t)$')
+plt.rcParams['figure.figsize'] = (12, 10)
+plt.subplots(4, sharex=True)
+labels = ['$y_s(t)~~[mm]$', '$\\theta(t)~~[°]$', '$y_1(t)~~[mm]$', '$y_2(t)~~[mm]$']
+for i in range(4):
+    plt.subplot(4, 1, (i+1))
+    if(i==1):
+        plt.plot(time, np.degrees(y[i]))
+    else:
+        plt.plot(time, (y[i]*1e3))
+    plt.ylabel(labels[i])
+    #plt.grid()
+plt.xlim(0, tf)
 plt.xlabel('Tempo [s]')
-plt.ylabel('Y [mm]')
-plt.legend()
-plt.grid()
-plt.show()
+plt.subplot(4, 1, 1)
+plt.title('Resposta Temporal Real')
+plt.savefig('curves/Y_sub_LTI.eps', dpi=600, transparent=True, bbox_inches='tight')
 
-# Plot dos gráficos:
-plt.figure(2)
-plt.plot(time, np.degrees(y[1]), label=f'$\\theta(t)$')
-plt.xlabel('Tempo [s]')
-plt.ylabel('$\\theta$ [°]')
-plt.legend()
-plt.grid()
-plt.show()
-
-# Plot dos gráficos:
-plt.figure(3)
-plt.plot(time, (y[2]*1e3), label=f'$y_1(t)$')
-plt.xlabel('Tempo [s]')
-plt.ylabel('Y [mm]')
-plt.legend()
-plt.grid()
-plt.show()
-
-# Plot dos gráficos:
-plt.figure(4)
-plt.plot(time, (y[3]*1e3), label=f'$y_2(t)$')
-plt.xlabel('Tempo [s]')
-plt.ylabel('Y [mm]')
-plt.legend()
-plt.grid()
-plt.show()
+#Plot único:
+plt.rcParams['figure.figsize'] = (12, 5)
+fig, ax1 = plt.subplots()
+ax2 = ax1.twinx()
+labels = ['$y_s(t)$', '$\\theta(t)$', '$y_1(t)$', '$y_2(t)$']
+for i in range(4):
+    if(i==1):
+        ax2.plot(time, np.degrees(y[i]), color='red', label=labels[i])
+    else:
+        ax1.plot(time, (y[i]*1e3), label=labels[i])
+ax1.set_ylabel('x [mm]')
+ax2.set_ylabel('$\\theta$ [°]')
+ax1.set_xlabel('Tempo [s]')
+ax1.legend(loc='lower left')
+ax2.legend(loc='upper right')
+plt.xlim(0, tf)
+#plt.grid()
+plt.title('Resposta Temporal Real')
+plt.savefig('curves/Y_LTI.eps', dpi=600, transparent=True, bbox_inches='tight')
 
 ft = ct.ss2tf(system)
 num = ft.num
@@ -129,25 +137,27 @@ bode2 = ct.bode(ft2, plot=False)
 bode3 = ct.bode(ft3, plot=False)
 bode4 = ct.bode(ft4, plot=False)
 
-plt.figure(5)
-plt.semilogx()
-plt.semilogy()
+plt.rcParams['figure.figsize'] = (12, 5)
+plt.figure()
 plt.loglog()
+ws = 62.9694
+wt = 52.9885
+w1 = 6.9936
+w2 = 9.1943
 
-wu = 4.2604
-ws = 40.6135
+plt.plot((bode1[2]/ws), bode1[0], label='$Y_s(j\omega)$')
+plt.plot((bode2[2]/ws), bode2[0], label='$\\theta(j\omega)$')
+plt.plot((bode3[2]/ws), bode3[0], label='$Y_1(j\omega)$')
+plt.plot((bode4[2]/ws), bode4[0], label='$Y_2(j\omega)$')
+plt.plot((np.sqrt(2), np.sqrt(2)), (1e-3, 1e1), color='gray', linestyle='dashed', label='$r = \sqrt{2}$')
 
-plt.plot((bode1[2]/1), bode1[0], label='$Y_s(j\omega)$')
-plt.plot((bode2[2]/1), bode2[0], label='$\\theta(j\omega)$')
-plt.plot((bode3[2]/1), bode3[0], label='$Y_1(j\omega)$')
-plt.plot((bode4[2]/1), bode4[0], label='$Y_2(j\omega)$')
-plt.plot((np.sqrt(2), np.sqrt(2)), (1e-2, 1e1), color='gray',
-         linestyle='dashed', label='$r = \sqrt{2}$')
-
-# plt.xlim(1e-2, 1e1)
-# plt.ylim(1e-2, 1e1)
+plt.xlim(1e-2, 1e1)
+plt.ylim(1e-3, 1e1)
 plt.xlabel('r [$\\frac{\omega}{\omega_n}$]')
 plt.ylabel('Magnitude [dB]')
 plt.legend()
-plt.grid()
+#plt.grid()
+plt.title('Resposta em Frequência')
+plt.savefig('curves/bode_LTI.eps', dpi=600, transparent=True, bbox_inches='tight')
+
 plt.show()
