@@ -4,6 +4,9 @@ import matplotlib.pyplot as plt
 import scienceplots
 import control as ct
 
+def mag2db(mag):
+    return (20*np.log10(mag))
+
 # Configurações de plot:
 plt.style.use([
     'grid',
@@ -76,7 +79,7 @@ D = np.array([
 
 system = ct.ss(A, B, C, D)
 
-tf = 80
+tf = 20
 ts = 1e-2
 
 tempo = np.arange(0, tf, ts)
@@ -96,7 +99,6 @@ for i in range(4):
     else:
         plt.plot(time, (y[i]*1e3))
     plt.ylabel(labels[i])
-    #plt.grid()
 plt.xlim(0, tf)
 plt.xlabel('Tempo [s]')
 plt.subplot(4, 1, 1)
@@ -119,7 +121,6 @@ ax1.set_xlabel('Tempo [s]')
 ax1.legend(loc='lower left')
 ax2.legend(loc='upper right')
 plt.xlim(0, tf)
-#plt.grid()
 plt.title('Resposta Temporal Real')
 plt.savefig('curves/Y_LTI.eps', dpi=600, transparent=True, bbox_inches='tight')
 
@@ -132,31 +133,36 @@ ft2 = ct.tf(num[1][0], den[1][0])
 ft3 = ct.tf(num[2][0], den[2][0])
 ft4 = ct.tf(num[3][0], den[3][0])
 
-bode1 = ct.bode(ft1, plot=False)
-bode2 = ct.bode(ft2, plot=False)
-bode3 = ct.bode(ft3, plot=False)
-bode4 = ct.bode(ft4, plot=False)
+bode1 = ct.bode(ft1, plot=False, dB=True)
+bode2 = ct.bode(ft2, plot=False, dB=True)
+bode3 = ct.bode(ft3, plot=False, dB=True)
+bode4 = ct.bode(ft4, plot=False, dB=True)
 
 plt.rcParams['figure.figsize'] = (12, 5)
 plt.figure()
-plt.loglog()
+
 ws = 62.9694
 wt = 52.9885
 w1 = 6.9936
 w2 = 9.1943
 
-plt.plot((bode1[2]/ws), bode1[0], label='$Y_s(j\omega)$')
-plt.plot((bode2[2]/ws), bode2[0], label='$\\theta(j\omega)$')
-plt.plot((bode3[2]/ws), bode3[0], label='$Y_1(j\omega)$')
-plt.plot((bode4[2]/ws), bode4[0], label='$Y_2(j\omega)$')
-plt.plot((np.sqrt(2), np.sqrt(2)), (1e-3, 1e1), color='gray', linestyle='dashed', label='$r = \sqrt{2}$')
+N = ws
 
-plt.xlim(1e-2, 1e1)
-plt.ylim(1e-3, 1e1)
+plt.plot((bode1[2]/N), mag2db(bode1[0]), label='$Y_s(j\omega)$')
+plt.plot((bode2[2]/N), mag2db(bode2[0]), label='$\\theta(j\omega)$')
+plt.plot((bode3[2]/N), mag2db(bode3[0]), label='$Y_1(j\omega)$')
+plt.plot((bode4[2]/N), mag2db(bode4[0]), label='$Y_2(j\omega)$')
+plt.plot((ws/N, ws/N), (-60, 10), linestyle='dotted', label=f'$\omega = {ws:.2f}$')
+plt.plot((wt/N, wt/N), (-60, 10), linestyle='dotted', label=f'$\omega = {wt:.2f}$')
+plt.plot((w1/N, w1/N), (-60, 10), linestyle='dotted', label=f'$\omega = {w1:.2f}$')
+plt.plot((w2/N, w2/N), (-60, 10), linestyle='dotted', label=f'$\omega = {w2:.2f}$')
+plt.plot((np.sqrt(2), np.sqrt(2)), (-60, 10), color='pink', linestyle='-.', label='$r = \sqrt{2}$')
+
+plt.xlim(0, 3)
+plt.ylim(-60, 10)
 plt.xlabel('r [$\\frac{\omega}{\omega_n}$]')
 plt.ylabel('Magnitude [dB]')
 plt.legend()
-#plt.grid()
 plt.title('Resposta em Frequência')
 plt.savefig('curves/bode_LTI.eps', dpi=600, transparent=True, bbox_inches='tight')
 
